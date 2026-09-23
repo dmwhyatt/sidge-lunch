@@ -9,6 +9,7 @@
 (
   wr["amenity"="university"]["name"];
   wr["amenity"="college"]["name"];
+  wr["name"~"^(Cambridge Biomedical Campus|Addenbrooke's Hospital)$"];
 )->.campus;
 .campus out geom tags;
 .campus map_to_area->.areas;
