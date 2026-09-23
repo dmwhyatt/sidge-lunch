@@ -54,7 +54,10 @@ def update_vendor(
         return entry | {"status": "unsupported", "error": "no adapter registered"}
 
     try:
-        days = [d.to_json() for d in adapter(fetcher(vendor["menu_url"]), today)]
+        # fetch_url, if set, is the page the adapter reads (it may differ from the page people are sent to);
+        # "{date}" in it becomes today's date.
+        url = vendor.get("fetch_url", vendor["menu_url"]).replace("{date}", today.isoformat())
+        days = [d.to_json() for d in adapter(fetcher(url), today)]
     except NotImplementedError as e:
         return entry | {"status": "unsupported", "error": str(e) or "adapter not written yet"}
     except Exception as e:  # any fetch or parse failure: keep the last good menu

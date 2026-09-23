@@ -89,7 +89,13 @@ function saveWhere(site: Site, building: Building) {
   }
 }
 
-function readFilters(): Filters & { sort: "walk" | "price"; types: VendorType[]; menuOnly: boolean; range: number } {
+function readFilters(): Filters & {
+  sort: "walk" | "price";
+  types: VendorType[];
+  menuOnly: boolean;
+  openOnly: boolean;
+  range: number;
+} {
   const form = $<HTMLFormElement>("#filters");
   const dietary = [...form.querySelectorAll<HTMLInputElement>('input[name="dietary"]:checked')].map(
     (i) => i.value as Dietary,
@@ -108,6 +114,7 @@ function readFilters(): Filters & { sort: "walk" | "price"; types: VendorType[];
     lunchOnly: $<HTMLInputElement>("#lunch-only").checked,
     sort: $<HTMLSelectElement>("#sort").value as "walk" | "price",
     menuOnly: $<HTMLInputElement>("#menu-only").checked,
+    openOnly: $<HTMLInputElement>("#open-only").checked,
     range: Number($<HTMLSelectElement>("#range").value) * 60,
     types: [...form.querySelectorAll<HTMLInputElement>('input[name="type"]:checked')].map((i) => i.value as VendorType),
   };
@@ -184,6 +191,9 @@ function infoHtml(v: Vendor, today: string): string {
     v.about ? `<p class="about">${esc(v.about)}</p>` : "",
     v.approx ? `<p class="hours">Map position is approximate.</p>` : "",
     v.hours ? `<p class="hours">Hours: ${esc(v.hours)}</p>` : "",
+    v.access
+      ? `<p class="access access-${v.access.level}">Non-members: ${esc(v.access.note)} <span>(reported ${v.access.checked})</span></p>`
+      : "",
   ].join("");
 }
 
@@ -314,7 +324,9 @@ function main(data: Data) {
         const day = todaysDay(menu, today);
         return { vendor, menu, walk: walkFor(routes, building, vendor), meals: filterMeals(day, f), hasToday: !!day };
       })
-      .filter((row) => row.walk.seconds <= f.range && (!f.menuOnly || row.hasToday));
+      .filter((row) => row.walk.seconds <= f.range && (!f.menuOnly || row.hasToday))
+      // Colleges with no reported policy are hidden too: the filter promises ones known to serve non-members.
+      .filter((row) => !f.openOnly || row.vendor.type !== "college" || row.vendor.access?.level === "open");
     rows.sort((a, b) => {
       // Vendors with matching items today first, then by chosen key.
       const am = a.meals.length > 0 ? 0 : 1;

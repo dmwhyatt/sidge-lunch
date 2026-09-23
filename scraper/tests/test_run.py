@@ -102,3 +102,11 @@ def test_link_only_vendors_are_never_fetched(tmp_path, monkeypatch):
     monkeypatch.setattr(run, "update_vendor", no_fetch)
     run.main(["--data-dir", str(tmp_path)])
     assert json.loads((tmp_path / "menus.json").read_text()) == {"vendors": {}}
+
+
+def test_fetch_url_gets_todays_date(register):
+    register(adapter_returning([Day(TODAY, [lunch("Soup")])]))
+    seen = []
+    vendor = {"id": "test", "menu_url": "https://example.org/menu", "fetch_url": "https://example.org/m?date={date}"}
+    run.update_vendor(vendor, None, TODAY, NOW, lambda url: seen.append(url) or "")
+    assert seen == ["https://example.org/m?date=2026-09-23"]

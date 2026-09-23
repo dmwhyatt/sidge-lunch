@@ -25,6 +25,7 @@ from pathlib import Path
 from .walking import slug
 
 SNAPSHOT = Path(__file__).resolve().parents[1] / "osm" / "cambridge.json"
+ACCESS = json.loads((Path(__file__).parent / "college_access.json").read_text())["colleges"]
 
 # University sites, by OSM way id. Named buildings inside these become the
 # site's buildings. Other University areas become standalone buildings.
@@ -212,8 +213,10 @@ def build(elements: list[dict], curated: list[dict]) -> tuple[dict, dict]:
         if name in curated_names:
             continue
         v = {"id": f"college-{slug(name)}", "name": name, "type": "college",
-             "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+             "about": "College hall and buttery. Check who it's open to before going.",
              **rounded(*position(a)), "link_only": True}
+        if name in ACCESS:
+            v["access"] = ACCESS[name]
         if url := a["tags"].get("website"):
             v["menu_url"] = url
         places.append(v)

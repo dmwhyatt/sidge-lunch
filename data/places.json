@@ -5,87 +5,97 @@
    "id": "college-christs-college",
    "name": "Christ's College",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.206137,
    "lng": 0.122939,
    "link_only": true,
+   "access": {
+    "level": "members",
+    "note": "college members only",
+    "checked": 2022
+   },
    "menu_url": "https://www.christs.cam.ac.uk/"
-  },
-  {
-   "id": "college-churchill-college",
-   "name": "Churchill College",
-   "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
-   "lat": 52.213701,
-   "lng": 0.100077,
-   "link_only": true,
-   "menu_url": "https://www.chu.cam.ac.uk/"
   },
   {
    "id": "college-clare-college",
    "name": "Clare College",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.2053,
    "lng": 0.113961,
    "link_only": true,
+   "access": {
+    "level": "with-member",
+    "note": "about 32% extra; since 2024 you may need to be with a Clare member",
+    "checked": 2024
+   },
    "menu_url": "https://www.clare.cam.ac.uk/"
   },
   {
    "id": "college-clare-hall",
    "name": "Clare Hall",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.20402,
    "lng": 0.104246,
    "link_only": true,
+   "access": {
+    "level": "members",
+    "note": "college members only",
+    "checked": 2022
+   },
    "menu_url": "https://www.clarehall.cam.ac.uk/"
-  },
-  {
-   "id": "college-corpus-christi-college",
-   "name": "Corpus Christi College",
-   "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
-   "lat": 52.203123,
-   "lng": 0.118444,
-   "link_only": true,
-   "menu_url": "https://www.corpus.cam.ac.uk/"
   },
   {
    "id": "college-downing-college",
    "name": "Downing College",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.200098,
    "lng": 0.124341,
    "link_only": true,
+   "access": {
+    "level": "open",
+    "note": "welcome, about 50% extra, cards accepted",
+    "checked": 2023
+   },
    "menu_url": "https://www.dow.cam.ac.uk/"
   },
   {
    "id": "college-emmanuel-college",
    "name": "Emmanuel College",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.203713,
    "lng": 0.125232,
    "link_only": true,
+   "access": {
+    "level": "members",
+    "note": "college members only",
+    "checked": 2015
+   },
    "menu_url": "http://www.emma.cam.ac.uk/"
   },
   {
    "id": "college-fitzwilliam-college",
    "name": "Fitzwilliam College",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.215185,
    "lng": 0.105697,
    "link_only": true,
+   "access": {
+    "level": "open",
+    "note": "served; surcharge not recorded",
+    "checked": 2017
+   },
    "menu_url": "https://www.fitz.cam.ac.uk/"
   },
   {
    "id": "college-girton-college",
    "name": "Girton College",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.228872,
    "lng": 0.083838,
    "link_only": true,
@@ -95,56 +105,81 @@
    "id": "college-gonville-and-caius-college",
    "name": "Gonville & Caius College",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.205997,
    "lng": 0.117221,
    "link_only": true,
+   "access": {
+    "level": "with-member",
+    "note": "a college member has to book for you",
+    "checked": 2022
+   },
    "menu_url": "https://www.cai.cam.ac.uk/"
   },
   {
    "id": "college-homerton-college",
    "name": "Homerton College",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.185405,
    "lng": 0.135036,
    "link_only": true,
+   "access": {
+    "level": "open",
+    "note": "welcome, non-member prices shown",
+    "checked": 2019
+   },
    "menu_url": "https://www.homerton.cam.ac.uk/"
   },
   {
    "id": "college-hughes-hall",
    "name": "Hughes Hall",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.200113,
    "lng": 0.132461,
-   "link_only": true
+   "link_only": true,
+   "access": {
+    "level": "members",
+    "note": "college card required",
+    "checked": 2015
+   }
   },
   {
    "id": "college-jesus-college",
    "name": "Jesus College",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.209578,
    "lng": 0.123627,
    "link_only": true,
+   "access": {
+    "level": "members",
+    "note": "college cards only",
+    "checked": 2015
+   },
    "menu_url": "https://www.jesus.cam.ac.uk/"
   },
   {
    "id": "college-kings-college",
    "name": "King's College",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.204149,
    "lng": 0.11489,
    "link_only": true,
+   "access": {
+    "level": "with-member",
+    "note": "college members and their guests only",
+    "checked": 2023
+   },
    "menu_url": "https://www.kings.cam.ac.uk/"
   },
   {
    "id": "college-lucy-cavendish-college",
    "name": "Lucy Cavendish College",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.211339,
    "lng": 0.109526,
    "link_only": true,
@@ -154,119 +189,145 @@
    "id": "college-magdalene-college",
    "name": "Magdalene College",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.211077,
    "lng": 0.116879,
    "link_only": true,
+   "access": {
+    "level": "members",
+    "note": "college members only (card reader at the door)",
+    "checked": 2015
+   },
    "menu_url": "https://www.magd.cam.ac.uk/"
   },
   {
    "id": "college-murray-edwards-college",
    "name": "Murray Edwards College",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.214141,
    "lng": 0.107668,
    "link_only": true,
+   "access": {
+    "level": "open",
+    "note": "welcome, about 10% extra, cards accepted",
+    "checked": 2023
+   },
    "menu_url": "https://www.murrayedwards.cam.ac.uk/"
   },
   {
    "id": "college-pembroke-college",
    "name": "Pembroke College",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.201965,
    "lng": 0.119713,
    "link_only": true,
+   "access": {
+    "level": "with-member",
+    "note": "about 67% extra, and you need to be with a Pembroke member",
+    "checked": 2022
+   },
    "menu_url": "https://www.pem.cam.ac.uk/"
   },
   {
    "id": "college-peterhouse",
    "name": "Peterhouse",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.199754,
    "lng": 0.119083,
    "link_only": true,
+   "access": {
+    "level": "open",
+    "note": "welcome in term time, about 56% extra",
+    "checked": 2015
+   },
    "menu_url": "https://www.pet.cam.ac.uk/"
-  },
-  {
-   "id": "college-robinson-college",
-   "name": "Robinson College",
-   "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
-   "lat": 52.205298,
-   "lng": 0.102898,
-   "link_only": true,
-   "menu_url": "https://www.robinson.cam.ac.uk/"
   },
   {
    "id": "college-sidney-sussex-college",
    "name": "Sidney Sussex College",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.207488,
    "lng": 0.12075,
    "link_only": true,
+   "access": {
+    "level": "open",
+    "note": "welcome, separate non-member prices",
+    "checked": 2024
+   },
    "menu_url": "https://www.sid.cam.ac.uk/"
   },
   {
    "id": "college-st-catharines-college",
    "name": "St Catharine's College",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.202896,
    "lng": 0.116956,
    "link_only": true,
+   "access": {
+    "level": "open",
+    "note": "welcome, about 50% extra, card only",
+    "checked": 2023
+   },
    "menu_url": "https://www.caths.cam.ac.uk/"
   },
   {
    "id": "college-st-edmunds-college",
    "name": "St Edmund's College",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.213013,
    "lng": 0.108867,
    "link_only": true,
    "menu_url": "https://www.st-edmunds.cam.ac.uk/"
   },
   {
-   "id": "college-st-johns-college",
-   "name": "St John's College",
-   "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
-   "lat": 52.209769,
-   "lng": 0.113805,
-   "link_only": true
-  },
-  {
    "id": "college-trinity-college",
    "name": "Trinity College",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.206902,
    "lng": 0.114914,
    "link_only": true,
+   "access": {
+    "level": "with-member",
+    "note": "non-member prices shown, but you need to be with a Trinity member",
+    "checked": 2024
+   },
    "menu_url": "https://www.trin.cam.ac.uk/"
   },
   {
    "id": "college-trinity-hall",
    "name": "Trinity Hall",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.205759,
    "lng": 0.115136,
    "link_only": true,
+   "access": {
+    "level": "members",
+    "note": "college members only",
+    "checked": 2015
+   },
    "menu_url": "https://www.trinhall.cam.ac.uk/"
   },
   {
    "id": "college-wolfson-college",
    "name": "Wolfson College",
    "type": "college",
-   "about": "College hall and buttery. Usually for members, staff and their guests: check before going.",
+   "about": "College hall and buttery. Check who it's open to before going.",
    "lat": 52.198245,
    "lng": 0.100809,
    "link_only": true,
+   "access": {
+    "level": "members",
+    "note": "college card required",
+    "checked": 2015
+   },
    "menu_url": "https://www.wolfson.cam.ac.uk/"
   },
   {

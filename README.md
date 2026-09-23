@@ -67,6 +67,14 @@ Each vendor in `menus.json` has a `status`:
 - `error`: the latest fetch or parse failed. The last good menu is kept and the site says it may be stale.
 - `unsupported`: no adapter written yet. The site links to the vendor's page.
 
+Menus are only scraped from pages anyone can open: never from intranets or Raven-protected pages, and never
+past a bot check (Queens', Wolfson and Pembroke use one) or robots.txt. PDF, Word, image and Canva menus are
+linked, not read.
+
+Who can eat at each college (`scraper/sidge_lunch/college_access.json`) is paraphrased from Silas S. Brown's
+[Eating at other Cambridge colleges](https://ssb22.user.srcf.net/buttery.html), with the year each entry was
+last checked.
+
 Dietary labels are only recorded when the vendor publishes them. Adapters must never guess them from dish
 names. Items without a published price show "price not listed".
 

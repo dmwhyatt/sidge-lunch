@@ -63,6 +63,13 @@ export const VENDOR_TYPE_LABELS: Record<VendorType, string> = {
   commercial: "Commercial",
 };
 
+// From a community guide to eating at other colleges; see college_access.json.
+export interface Access {
+  level: "open" | "with-member" | "members";
+  note: string;
+  checked: number; // year last reported
+}
+
 export interface Vendor extends Place {
   type: VendorType;
   about?: string; // what it is / sells, e.g. "Pub" or "Sandwiches, wraps and coffee"
@@ -73,6 +80,8 @@ export interface Vendor extends Place {
   notice?: string; // temporary notice, e.g. a closure
   notice_until?: string; // YYYY-MM-DD; the notice is hidden from this date
   approx?: boolean; // position isn't exact
+  fetch_url?: string; // page the scraper reads, if not menu_url
+  access?: Access; // colleges: whether non-members can eat there
 }
 
 export interface Building extends Place {

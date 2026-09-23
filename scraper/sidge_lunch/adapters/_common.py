@@ -7,7 +7,7 @@ import re
 from ..schema import Price
 
 _SPACE = re.compile(r"\s+")
-_PRICE = re.compile(r"£\s*(\d+(?:\.\d{1,2})?)")
+_PRICE = re.compile(r"£\s*(\d*\.\d{1,2}|\d+)")  # "£4", "£4.50", and "£.95"
 
 # Labels vendors put in dish names. Only explicit labels count: "(vegan)", "(V)",
 # a leading "Vegan"/"Halal", or "(halal)". Never guess from ingredients.
@@ -52,6 +52,9 @@ _ALLERGEN_WORDS = {
     "sulphites": "sulphites",
     "sulphur dioxide": "sulphites",
     "sulphur dioxide/sulphites": "sulphites",
+    "sesame seed": "sesame",
+    "sesame seeds": "sesame",
+    "contains nuts": "nuts",
 }
 
 
@@ -75,7 +78,9 @@ def split_labels(name: str) -> tuple[str, list[str]]:
 
 
 def allergen(word: str) -> str | None:
-    return _ALLERGEN_WORDS.get(clean(word).lower())
+    """Map a vendor's allergen wording to the schema name, ignoring detail like "Gluten (wheat)"."""
+    word = re.sub(r"\s*\(.*?\)", "", clean(word)).lower()
+    return _ALLERGEN_WORDS.get(word)
 
 
 def split_sides(name: str) -> tuple[str, str] | None:

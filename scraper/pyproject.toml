@@ -15,5 +15,8 @@ dev = ["pytest>=8"]
 [tool.setuptools]
 packages = ["sidge_lunch", "sidge_lunch.adapters"]
 
+[tool.setuptools.package-data]
+sidge_lunch = ["college_access.json"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]

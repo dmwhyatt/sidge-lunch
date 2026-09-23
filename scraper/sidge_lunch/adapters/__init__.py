@@ -14,7 +14,7 @@ from collections.abc import Callable
 from datetime import date
 
 from ..schema import Day
-from . import darwin, newnham, selwyn, the_mill
+from . import churchill, corpus, darwin, newnham, robinson, selwyn, st_johns, the_mill
 
 Adapter = Callable[[str, date], list[Day]]
 
@@ -23,4 +23,8 @@ ADAPTERS: dict[str, Adapter] = {
     "newnham": newnham.parse,
     "darwin": darwin.parse,
     "the-mill": the_mill.parse,
+    "st-johns": st_johns.parse,
+    "robinson": robinson.parse,
+    "churchill": churchill.parse,
+    "corpus": corpus.parse,
 }

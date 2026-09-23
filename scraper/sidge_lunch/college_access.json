@@ -1,0 +1,145 @@
+{
+ "_source": "Paraphrased from Silas S. Brown, 'Eating at other Cambridge colleges', https://ssb22.user.srcf.net/buttery.html (personal visits; rules may have changed).",
+ "colleges": {
+  "Gonville & Caius College": {
+   "level": "with-member",
+   "note": "a college member has to book for you",
+   "checked": 2022
+  },
+  "St Catharine's College": {
+   "level": "open",
+   "note": "welcome, about 50% extra, card only",
+   "checked": 2023
+  },
+  "Christ's College": {
+   "level": "members",
+   "note": "college members only",
+   "checked": 2022
+  },
+  "Churchill College": {
+   "level": "open",
+   "note": "welcome, non-member prices shown, cards accepted",
+   "checked": 2023
+  },
+  "Clare College": {
+   "level": "with-member",
+   "note": "about 32% extra; since 2024 you may need to be with a Clare member",
+   "checked": 2024
+  },
+  "Clare Hall": {
+   "level": "members",
+   "note": "college members only",
+   "checked": 2022
+  },
+  "Corpus Christi College": {
+   "level": "with-member",
+   "note": "college members and their guests only",
+   "checked": 2015
+  },
+  "Darwin College": {
+   "level": "with-member",
+   "note": "about 30% extra, but you need to be with a Darwin member",
+   "checked": 2017
+  },
+  "Downing College": {
+   "level": "open",
+   "note": "welcome, about 50% extra, cards accepted",
+   "checked": 2023
+  },
+  "Emmanuel College": {
+   "level": "members",
+   "note": "college members only",
+   "checked": 2015
+  },
+  "Fitzwilliam College": {
+   "level": "open",
+   "note": "served; surcharge not recorded",
+   "checked": 2017
+  },
+  "Homerton College": {
+   "level": "open",
+   "note": "welcome, non-member prices shown",
+   "checked": 2019
+  },
+  "Hughes Hall": {
+   "level": "members",
+   "note": "college card required",
+   "checked": 2015
+  },
+  "Jesus College": {
+   "level": "members",
+   "note": "college cards only",
+   "checked": 2015
+  },
+  "St John's College": {
+   "level": "with-member",
+   "note": "non-member prices shown, but you need to be with a St John's member",
+   "checked": 2025
+  },
+  "King's College": {
+   "level": "with-member",
+   "note": "college members and their guests only",
+   "checked": 2023
+  },
+  "Magdalene College": {
+   "level": "members",
+   "note": "college members only (card reader at the door)",
+   "checked": 2015
+  },
+  "Murray Edwards College": {
+   "level": "open",
+   "note": "welcome, about 10% extra, cards accepted",
+   "checked": 2023
+  },
+  "Newnham College": {
+   "level": "open",
+   "note": "welcome, small surcharge, cards accepted",
+   "checked": 2022
+  },
+  "Pembroke College": {
+   "level": "with-member",
+   "note": "about 67% extra, and you need to be with a Pembroke member",
+   "checked": 2022
+  },
+  "Peterhouse": {
+   "level": "open",
+   "note": "welcome in term time, about 56% extra",
+   "checked": 2015
+  },
+  "Queens' College": {
+   "level": "open",
+   "note": "welcome, about 30% extra, card only",
+   "checked": 2024
+  },
+  "Robinson College": {
+   "level": "open",
+   "note": "welcome, non-member prices shown, cards accepted",
+   "checked": 2026
+  },
+  "Selwyn College": {
+   "level": "open",
+   "note": "welcome, prices as marked, card only",
+   "checked": 2024
+  },
+  "Sidney Sussex College": {
+   "level": "open",
+   "note": "welcome, separate non-member prices",
+   "checked": 2024
+  },
+  "Trinity College": {
+   "level": "with-member",
+   "note": "non-member prices shown, but you need to be with a Trinity member",
+   "checked": 2024
+  },
+  "Trinity Hall": {
+   "level": "members",
+   "note": "college members only",
+   "checked": 2015
+  },
+  "Wolfson College": {
+   "level": "members",
+   "note": "college card required",
+   "checked": 2015
+  }
+ }
+}

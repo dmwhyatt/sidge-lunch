@@ -89,7 +89,64 @@ def test_the_mill():
     assert {i["category"] for i in meal["items"]} >= {"Sides", "Mains", "Puddings"}
 
 
-@pytest.mark.parametrize("vendor", ["newnham", "selwyn", "darwin", "the-mill"])
+def test_st_johns():
+    [day] = parse("st-johns")
+    assert day["date"] == "2026-09-23"
+    [dinner] = day["meals"]
+    assert dinner["name"] == "Dinner"
+    dishes = {i["name"]: i for i in dinner["items"]}
+    soup = dishes["Sweetcorn soup with chimicurri"]
+    assert soup["category"] == "Starter"
+    assert soup["dietary"] == ["vegan", "vegetarian"]
+    assert soup["allergens"] == ["celery", "sulphites"]
+    korma = dishes["Quorn korma, toasted almonds, coriander and yogurt"]
+    assert korma["allergens"] == ["milk", "mustard", "nuts", "soya"]  # "Nuts (almonds)"
+    assert all(i["price"] is None for i in dinner["items"])
+
+
+def test_robinson():
+    [day] = parse("robinson")
+    assert day["date"] == "2026-09-23"
+    [lunch] = day["meals"]
+    assert lunch["name"] == "Lunch"
+    assert "£6.30 / £8.30" in lunch["note"]
+    mac, sausage = lunch["items"][:2]
+    assert mac == {"name": "Macaroni cheese", "description": None, "category": "Main Courses", "price": None,
+                   "price_text": None, "dietary": ["vegetarian"], "allergens": ["milk", "mustard"]}
+    assert sausage["name"] == "Braised Cumberland sausage chasseur"
+    assert sausage["allergens"] == ["celery", "gluten", "sulphites"]
+
+
+def test_churchill():
+    days = parse("churchill")
+    by_date = {d["date"]: d for d in days}
+    assert "2026-09-24" not in by_date  # "*" only: not published yet
+    wed = by_date["2026-09-23"]
+    lunch = {i["name"]: i for i in wed["meals"][0]["items"]}
+    assert wed["meals"][0]["name"] == "Lunch"
+    assert lunch["Lentil Dhal"]["dietary"] == ["vegan", "vegetarian"]
+    assert lunch["Gremolata Chicken"]["dietary"] == ["halal"]
+    assert lunch["Beef Chilli"]["dietary"] == []
+    assert [m["name"] for m in wed["meals"]] == ["Lunch", "Dinner"]
+
+
+def test_corpus():
+    [day] = parse("corpus")
+    assert [m["name"] for m in day["meals"]] == ["Breakfast", "Lunch", "Dinner"]
+    lunch = {i["name"]: i for i in day["meals"][1]["items"]}
+    samosas = lunch["Vegetable samosas plant based Raita"]
+    assert samosas["category"] == "Plant Based"
+    assert samosas["dietary"] == ["vegan", "vegetarian"]
+    assert samosas["price"] == {"amount": 2.9, "currency": "GBP"}
+    assert samosas["allergens"] == ["gluten", "soya", "sulphites"]
+    fish = lunch["Catch of the day with samphire and butter sauce"]
+    assert fish["category"] == "Meat/Fish" and fish["dietary"] == []
+    assert lunch["Steamed summer greens"]["price_text"] == "£0.95"  # written "£.95"
+    breakfast = {i["name"]: i for i in day["meals"][0]["items"]}
+    assert breakfast["Variety of hot breads"]["price"] is None  # "£0.00": not a real price
+
+
+@pytest.mark.parametrize("vendor", ["newnham", "selwyn", "darwin", "the-mill", "st-johns", "robinson", "corpus", "churchill"])
 def test_rejects_unrelated_page(vendor):
     with pytest.raises(ValueError):
         ADAPTERS[vendor]("<html><body><p>Page not found</p></body></html>", TODAY)

@@ -8,7 +8,12 @@
       "about": "Hall",
       "menu_url": "https://www.sel.cam.ac.uk/current-members/hall-menu",
       "lat": 52.20065,
-      "lng": 0.106071
+      "lng": 0.106071,
+      "access": {
+        "level": "open",
+        "note": "welcome, prices as marked, card only",
+        "checked": 2024
+      }
     },
     {
       "id": "newnham",
@@ -17,7 +22,12 @@
       "about": "Buttery",
       "menu_url": "https://newn.cam.ac.uk/todays-menu",
       "lat": 52.200354,
-      "lng": 0.107331
+      "lng": 0.107331,
+      "access": {
+        "level": "open",
+        "note": "welcome, small surcharge, cards accepted",
+        "checked": 2022
+      }
     },
     {
       "id": "darwin",
@@ -27,7 +37,12 @@
       "menu_url": "https://www.darwin.cam.ac.uk/dine/weekly-menu/",
       "lat": 52.200972,
       "lng": 0.114015,
-      "hours": "Lunch Mo-Fr 12:00-14:00; brunch Sa,Su 10:00-14:00"
+      "hours": "Lunch Mo-Fr 12:00-14:00; brunch Sa,Su 10:00-14:00",
+      "access": {
+        "level": "with-member",
+        "note": "about 30% extra, but you need to be with a Darwin member",
+        "checked": 2017
+      }
     },
     {
       "id": "queens",
@@ -37,7 +52,69 @@
       "menu_url": "https://www.queens.cam.ac.uk/life-at-queens/catering/dining-hall/weekly-menu/",
       "lat": 52.201663,
       "lng": 0.114874,
-      "link_only": true
+      "link_only": true,
+      "access": {
+        "level": "open",
+        "note": "welcome, about 30% extra, card only",
+        "checked": 2024
+      }
+    },
+    {
+      "id": "st-johns",
+      "name": "St John's College",
+      "type": "college",
+      "about": "Buttery",
+      "menu_url": "https://menu.joh.cam/today",
+      "lat": 52.209769,
+      "lng": 0.113805,
+      "access": {
+        "level": "with-member",
+        "note": "non-member prices shown, but you need to be with a St John's member",
+        "checked": 2025
+      }
+    },
+    {
+      "id": "robinson",
+      "name": "Robinson College",
+      "type": "college",
+      "about": "Garden Restaurant",
+      "menu_url": "https://www.robinson.cam.ac.uk/college-life/garden-restaurant-menu",
+      "lat": 52.205298,
+      "lng": 0.102898,
+      "access": {
+        "level": "open",
+        "note": "welcome, non-member prices shown, cards accepted",
+        "checked": 2026
+      }
+    },
+    {
+      "id": "churchill",
+      "name": "Churchill College",
+      "type": "college",
+      "about": "Dining Hall",
+      "menu_url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/lunch-and-dinner-menu/",
+      "lat": 52.213701,
+      "lng": 0.100077,
+      "access": {
+        "level": "open",
+        "note": "welcome, non-member prices shown, cards accepted",
+        "checked": 2023
+      }
+    },
+    {
+      "id": "corpus",
+      "name": "Corpus Christi College",
+      "type": "college",
+      "about": "Cafeteria",
+      "menu_url": "https://www.corpus.cam.ac.uk/foodmenu/",
+      "fetch_url": "https://www.corpus.cam.ac.uk/foodmenu/menu/?reference=1&date={date}",
+      "lat": 52.203123,
+      "lng": 0.118444,
+      "access": {
+        "level": "with-member",
+        "note": "college members and their guests only",
+        "checked": 2015
+      }
     },
     {
       "id": "arc-cafe",
