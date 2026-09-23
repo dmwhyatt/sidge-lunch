@@ -1,7 +1,7 @@
 """OpenStreetMap helpers for vendor and faculty locations (via the Overpass API).
 
     python -m sidge_lunch.osm survey [--radius 800]   # list food places near the Sidgwick Site
-    python -m sidge_lunch.osm buildings               # list named buildings on/around the site
+    python -m sidge_lunch.osm buildings --name REGEX  # find features by name, e.g. to get faculty ids
     python -m sidge_lunch.osm sync                    # set lat/lng from each entry's "osm" id
 
 Entries in data/vendors.json and data/faculties.json can carry an "osm" id such
@@ -67,11 +67,11 @@ def survey(radius: int) -> list[dict]:
     return sorted(found, key=lambda p: (p["kind"] or "", p["name"] or ""))
 
 
-def buildings(radius: int) -> list[dict]:
+def buildings(radius: int, name: str) -> list[dict]:
     lat, lng = SIDGWICK
+    name = name.replace('"', "")
     query = (
-        f'[out:json][timeout:60];(nwr["building"]["name"](around:{radius},{lat},{lng});'
-        f'nwr["amenity"="college"](around:{radius},{lat},{lng}););out center tags;'
+        f'[out:json][timeout:60];nwr["name"~"{name}",i](around:{radius},{lat},{lng});out center tags;'
     )
     return sorted(
         ({"osm": osm_id(el), "name": el["tags"].get("name"), "lat": position(el)[0], "lng": position(el)[1]}
@@ -110,12 +110,13 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("command", choices=["survey", "buildings", "sync"])
     ap.add_argument("--radius", type=int, default=800, help="metres from the Sidgwick Site")
+    ap.add_argument("--name", default=".", help="buildings: regex the feature name must match")
     ap.add_argument("--data-dir", type=Path, default=Path(__file__).resolve().parents[2] / "data")
     args = ap.parse_args(argv)
     if args.command == "sync":
         sync(args.data_dir)
     else:
-        rows = survey(args.radius) if args.command == "survey" else buildings(args.radius)
+        rows = survey(args.radius) if args.command == "survey" else buildings(args.radius, args.name)
         print(json.dumps(rows, indent=2, ensure_ascii=False))
     return 0
 
