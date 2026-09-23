@@ -1,221 +1,941 @@
 {
   "source": "OSRM foot profile, routing.openstreetmap.de (OpenStreetMap contributors)",
-  "generated_at": "2026-09-23T14:39:52+00:00",
+  "generated_at": "2026-09-23T15:33:13+00:00",
   "times": {
     "english": {
       "selwyn": {
-        "seconds": 291,
-        "metres": 363
+        "seconds": 441,
+        "metres": 552
       },
       "newnham": {
-        "seconds": 521,
-        "metres": 651
+        "seconds": 511,
+        "metres": 639
       },
       "darwin": {
-        "seconds": 508,
-        "metres": 632
+        "seconds": 464,
+        "metres": 580
       },
       "queens": {
-        "seconds": 537,
-        "metres": 672
+        "seconds": 464,
+        "metres": 581
+      },
+      "arc-cafe": {
+        "seconds": 25,
+        "metres": 32
+      },
+      "buttery": {
+        "seconds": 577,
+        "metres": 721
+      },
+      "ul-tea-room": {
+        "seconds": 325,
+        "metres": 406
+      },
+      "florey": {
+        "seconds": 132,
+        "metres": 165
+      },
+      "bean-theory": {
+        "seconds": 554,
+        "metres": 689
+      },
+      "big-chefs": {
+        "seconds": 497,
+        "metres": 621
+      },
+      "cafe-aristo": {
+        "seconds": 536,
+        "metres": 670
+      },
+      "the-anchor": {
+        "seconds": 524,
+        "metres": 655
+      },
+      "the-mill": {
+        "seconds": 578,
+        "metres": 723
+      },
+      "the-granta": {
+        "seconds": 515,
+        "metres": 641
+      },
+      "millworks": {
+        "seconds": 577,
+        "metres": 719
+      },
+      "sala-thong": {
+        "seconds": 564,
+        "metres": 703
+      },
+      "the-red-bull": {
+        "seconds": 933,
+        "metres": 1166
+      },
+      "fitzbillies": {
+        "seconds": 681,
+        "metres": 851
+      },
+      "espresso-lane": {
+        "seconds": 671,
+        "metres": 838
       }
     },
     "history": {
       "selwyn": {
-        "seconds": 405,
-        "metres": 506
+        "seconds": 495,
+        "metres": 619
       },
       "newnham": {
-        "seconds": 635,
-        "metres": 794
+        "seconds": 565,
+        "metres": 706
       },
       "darwin": {
-        "seconds": 512,
-        "metres": 638
+        "seconds": 518,
+        "metres": 648
       },
       "queens": {
-        "seconds": 542,
-        "metres": 678
+        "seconds": 518,
+        "metres": 648
+      },
+      "arc-cafe": {
+        "seconds": 29,
+        "metres": 36
+      },
+      "buttery": {
+        "seconds": 631,
+        "metres": 788
+      },
+      "ul-tea-room": {
+        "seconds": 379,
+        "metres": 474
+      },
+      "florey": {
+        "seconds": 186,
+        "metres": 232
+      },
+      "bean-theory": {
+        "seconds": 608,
+        "metres": 757
+      },
+      "big-chefs": {
+        "seconds": 551,
+        "metres": 689
+      },
+      "cafe-aristo": {
+        "seconds": 590,
+        "metres": 737
+      },
+      "the-anchor": {
+        "seconds": 578,
+        "metres": 723
+      },
+      "the-mill": {
+        "seconds": 632,
+        "metres": 790
+      },
+      "the-granta": {
+        "seconds": 569,
+        "metres": 709
+      },
+      "millworks": {
+        "seconds": 631,
+        "metres": 787
+      },
+      "sala-thong": {
+        "seconds": 618,
+        "metres": 771
+      },
+      "the-red-bull": {
+        "seconds": 987,
+        "metres": 1234
+      },
+      "fitzbillies": {
+        "seconds": 735,
+        "metres": 919
+      },
+      "espresso-lane": {
+        "seconds": 725,
+        "metres": 906
       }
     },
     "law": {
       "selwyn": {
-        "seconds": 483,
-        "metres": 604
+        "seconds": 553,
+        "metres": 692
       },
       "newnham": {
-        "seconds": 713,
-        "metres": 891
+        "seconds": 623,
+        "metres": 778
       },
       "darwin": {
-        "seconds": 590,
-        "metres": 736
+        "seconds": 576,
+        "metres": 720
       },
       "queens": {
-        "seconds": 620,
-        "metres": 775
+        "seconds": 576,
+        "metres": 720
+      },
+      "arc-cafe": {
+        "seconds": 86,
+        "metres": 108
+      },
+      "buttery": {
+        "seconds": 688,
+        "metres": 860
+      },
+      "ul-tea-room": {
+        "seconds": 437,
+        "metres": 546
+      },
+      "florey": {
+        "seconds": 244,
+        "metres": 304
+      },
+      "bean-theory": {
+        "seconds": 665,
+        "metres": 829
+      },
+      "big-chefs": {
+        "seconds": 609,
+        "metres": 761
+      },
+      "cafe-aristo": {
+        "seconds": 648,
+        "metres": 809
+      },
+      "the-anchor": {
+        "seconds": 636,
+        "metres": 795
+      },
+      "the-mill": {
+        "seconds": 690,
+        "metres": 863
+      },
+      "the-granta": {
+        "seconds": 627,
+        "metres": 781
+      },
+      "millworks": {
+        "seconds": 689,
+        "metres": 859
+      },
+      "sala-thong": {
+        "seconds": 676,
+        "metres": 843
+      },
+      "the-red-bull": {
+        "seconds": 1045,
+        "metres": 1306
+      },
+      "fitzbillies": {
+        "seconds": 793,
+        "metres": 991
+      },
+      "espresso-lane": {
+        "seconds": 782,
+        "metres": 978
       }
     },
     "economics": {
       "selwyn": {
-        "seconds": 451,
-        "metres": 564
+        "seconds": 562,
+        "metres": 702
       },
       "newnham": {
-        "seconds": 681,
-        "metres": 851
+        "seconds": 631,
+        "metres": 789
       },
       "darwin": {
-        "seconds": 558,
-        "metres": 695
+        "seconds": 584,
+        "metres": 730
       },
       "queens": {
-        "seconds": 588,
-        "metres": 735
+        "seconds": 585,
+        "metres": 731
+      },
+      "arc-cafe": {
+        "seconds": 95,
+        "metres": 118
+      },
+      "buttery": {
+        "seconds": 697,
+        "metres": 871
+      },
+      "ul-tea-room": {
+        "seconds": 445,
+        "metres": 556
+      },
+      "florey": {
+        "seconds": 252,
+        "metres": 315
+      },
+      "bean-theory": {
+        "seconds": 674,
+        "metres": 840
+      },
+      "big-chefs": {
+        "seconds": 617,
+        "metres": 771
+      },
+      "cafe-aristo": {
+        "seconds": 656,
+        "metres": 820
+      },
+      "the-anchor": {
+        "seconds": 644,
+        "metres": 805
+      },
+      "the-mill": {
+        "seconds": 698,
+        "metres": 873
+      },
+      "the-granta": {
+        "seconds": 635,
+        "metres": 792
+      },
+      "millworks": {
+        "seconds": 697,
+        "metres": 869
+      },
+      "sala-thong": {
+        "seconds": 684,
+        "metres": 853
+      },
+      "the-red-bull": {
+        "seconds": 1053,
+        "metres": 1316
+      },
+      "fitzbillies": {
+        "seconds": 801,
+        "metres": 1001
+      },
+      "espresso-lane": {
+        "seconds": 791,
+        "metres": 988
       }
     },
     "mmll": {
       "selwyn": {
-        "seconds": 501,
-        "metres": 626
+        "seconds": 524,
+        "metres": 654
       },
       "newnham": {
-        "seconds": 731,
-        "metres": 913
+        "seconds": 593,
+        "metres": 741
       },
       "darwin": {
-        "seconds": 608,
-        "metres": 757
+        "seconds": 546,
+        "metres": 683
       },
       "queens": {
-        "seconds": 637,
-        "metres": 797
+        "seconds": 547,
+        "metres": 683
+      },
+      "arc-cafe": {
+        "seconds": 57,
+        "metres": 71
+      },
+      "buttery": {
+        "seconds": 659,
+        "metres": 823
+      },
+      "ul-tea-room": {
+        "seconds": 407,
+        "metres": 509
+      },
+      "florey": {
+        "seconds": 214,
+        "metres": 267
+      },
+      "bean-theory": {
+        "seconds": 636,
+        "metres": 792
+      },
+      "big-chefs": {
+        "seconds": 579,
+        "metres": 724
+      },
+      "cafe-aristo": {
+        "seconds": 618,
+        "metres": 772
+      },
+      "the-anchor": {
+        "seconds": 606,
+        "metres": 758
+      },
+      "the-mill": {
+        "seconds": 660,
+        "metres": 826
+      },
+      "the-granta": {
+        "seconds": 597,
+        "metres": 744
+      },
+      "millworks": {
+        "seconds": 659,
+        "metres": 822
+      },
+      "sala-thong": {
+        "seconds": 646,
+        "metres": 806
+      },
+      "the-red-bull": {
+        "seconds": 1015,
+        "metres": 1269
+      },
+      "fitzbillies": {
+        "seconds": 763,
+        "metres": 954
+      },
+      "espresso-lane": {
+        "seconds": 753,
+        "metres": 941
       }
     },
     "ames": {
       "selwyn": {
-        "seconds": 501,
-        "metres": 626
+        "seconds": 524,
+        "metres": 654
       },
       "newnham": {
-        "seconds": 731,
-        "metres": 913
+        "seconds": 593,
+        "metres": 741
       },
       "darwin": {
-        "seconds": 608,
-        "metres": 757
+        "seconds": 546,
+        "metres": 683
       },
       "queens": {
-        "seconds": 637,
-        "metres": 797
+        "seconds": 547,
+        "metres": 683
+      },
+      "arc-cafe": {
+        "seconds": 57,
+        "metres": 71
+      },
+      "buttery": {
+        "seconds": 659,
+        "metres": 823
+      },
+      "ul-tea-room": {
+        "seconds": 407,
+        "metres": 509
+      },
+      "florey": {
+        "seconds": 214,
+        "metres": 267
+      },
+      "bean-theory": {
+        "seconds": 636,
+        "metres": 792
+      },
+      "big-chefs": {
+        "seconds": 579,
+        "metres": 724
+      },
+      "cafe-aristo": {
+        "seconds": 618,
+        "metres": 772
+      },
+      "the-anchor": {
+        "seconds": 606,
+        "metres": 758
+      },
+      "the-mill": {
+        "seconds": 660,
+        "metres": 826
+      },
+      "the-granta": {
+        "seconds": 597,
+        "metres": 744
+      },
+      "millworks": {
+        "seconds": 659,
+        "metres": 822
+      },
+      "sala-thong": {
+        "seconds": 646,
+        "metres": 806
+      },
+      "the-red-bull": {
+        "seconds": 1015,
+        "metres": 1269
+      },
+      "fitzbillies": {
+        "seconds": 763,
+        "metres": 954
+      },
+      "espresso-lane": {
+        "seconds": 753,
+        "metres": 941
       }
     },
     "philosophy": {
       "selwyn": {
-        "seconds": 501,
-        "metres": 626
+        "seconds": 524,
+        "metres": 654
       },
       "newnham": {
-        "seconds": 731,
-        "metres": 913
+        "seconds": 593,
+        "metres": 741
       },
       "darwin": {
-        "seconds": 608,
-        "metres": 757
+        "seconds": 546,
+        "metres": 683
       },
       "queens": {
-        "seconds": 637,
-        "metres": 797
+        "seconds": 547,
+        "metres": 683
+      },
+      "arc-cafe": {
+        "seconds": 57,
+        "metres": 71
+      },
+      "buttery": {
+        "seconds": 659,
+        "metres": 823
+      },
+      "ul-tea-room": {
+        "seconds": 407,
+        "metres": 509
+      },
+      "florey": {
+        "seconds": 214,
+        "metres": 267
+      },
+      "bean-theory": {
+        "seconds": 636,
+        "metres": 792
+      },
+      "big-chefs": {
+        "seconds": 579,
+        "metres": 724
+      },
+      "cafe-aristo": {
+        "seconds": 618,
+        "metres": 772
+      },
+      "the-anchor": {
+        "seconds": 606,
+        "metres": 758
+      },
+      "the-mill": {
+        "seconds": 660,
+        "metres": 826
+      },
+      "the-granta": {
+        "seconds": 597,
+        "metres": 744
+      },
+      "millworks": {
+        "seconds": 659,
+        "metres": 822
+      },
+      "sala-thong": {
+        "seconds": 646,
+        "metres": 806
+      },
+      "the-red-bull": {
+        "seconds": 1015,
+        "metres": 1269
+      },
+      "fitzbillies": {
+        "seconds": 763,
+        "metres": 954
+      },
+      "espresso-lane": {
+        "seconds": 753,
+        "metres": 941
       }
     },
     "classics": {
       "selwyn": {
-        "seconds": 474,
-        "metres": 592
+        "seconds": 273,
+        "metres": 341
       },
       "newnham": {
-        "seconds": 704,
-        "metres": 880
+        "seconds": 203,
+        "metres": 254
       },
       "darwin": {
-        "seconds": 581,
-        "metres": 724
+        "seconds": 175,
+        "metres": 216
       },
       "queens": {
-        "seconds": 610,
-        "metres": 763
+        "seconds": 265,
+        "metres": 329
+      },
+      "arc-cafe": {
+        "seconds": 561,
+        "metres": 698
+      },
+      "buttery": {
+        "seconds": 138,
+        "metres": 172
+      },
+      "ul-tea-room": {
+        "seconds": 777,
+        "metres": 969
+      },
+      "florey": {
+        "seconds": 404,
+        "metres": 502
+      },
+      "bean-theory": {
+        "seconds": 256,
+        "metres": 320
+      },
+      "big-chefs": {
+        "seconds": 282,
+        "metres": 350
+      },
+      "cafe-aristo": {
+        "seconds": 321,
+        "metres": 398
+      },
+      "the-anchor": {
+        "seconds": 309,
+        "metres": 384
+      },
+      "the-mill": {
+        "seconds": 363,
+        "metres": 452
+      },
+      "the-granta": {
+        "seconds": 207,
+        "metres": 256
+      },
+      "millworks": {
+        "seconds": 279,
+        "metres": 349
+      },
+      "sala-thong": {
+        "seconds": 266,
+        "metres": 333
+      },
+      "the-red-bull": {
+        "seconds": 502,
+        "metres": 624
+      },
+      "fitzbillies": {
+        "seconds": 472,
+        "metres": 588
+      },
+      "espresso-lane": {
+        "seconds": 462,
+        "metres": 575
       }
     },
     "divinity": {
       "selwyn": {
-        "seconds": 478,
-        "metres": 598
+        "seconds": 543,
+        "metres": 679
       },
       "newnham": {
-        "seconds": 708,
-        "metres": 885
+        "seconds": 612,
+        "metres": 766
       },
       "darwin": {
-        "seconds": 586,
-        "metres": 729
+        "seconds": 566,
+        "metres": 707
       },
       "queens": {
-        "seconds": 615,
-        "metres": 769
+        "seconds": 566,
+        "metres": 708
+      },
+      "arc-cafe": {
+        "seconds": 76,
+        "metres": 95
+      },
+      "buttery": {
+        "seconds": 678,
+        "metres": 848
+      },
+      "ul-tea-room": {
+        "seconds": 426,
+        "metres": 533
+      },
+      "florey": {
+        "seconds": 233,
+        "metres": 291
+      },
+      "bean-theory": {
+        "seconds": 655,
+        "metres": 816
+      },
+      "big-chefs": {
+        "seconds": 598,
+        "metres": 748
+      },
+      "cafe-aristo": {
+        "seconds": 637,
+        "metres": 796
+      },
+      "the-anchor": {
+        "seconds": 625,
+        "metres": 782
+      },
+      "the-mill": {
+        "seconds": 680,
+        "metres": 850
+      },
+      "the-granta": {
+        "seconds": 616,
+        "metres": 768
+      },
+      "millworks": {
+        "seconds": 679,
+        "metres": 846
+      },
+      "sala-thong": {
+        "seconds": 666,
+        "metres": 830
+      },
+      "the-red-bull": {
+        "seconds": 1035,
+        "metres": 1293
+      },
+      "fitzbillies": {
+        "seconds": 782,
+        "metres": 978
+      },
+      "espresso-lane": {
+        "seconds": 772,
+        "metres": 965
       }
     },
     "criminology": {
       "selwyn": {
-        "seconds": 224,
-        "metres": 281
+        "seconds": 579,
+        "metres": 723
       },
       "newnham": {
-        "seconds": 22,
-        "metres": 28
+        "seconds": 648,
+        "metres": 810
       },
       "darwin": {
-        "seconds": 306,
-        "metres": 380
+        "seconds": 602,
+        "metres": 752
       },
       "queens": {
-        "seconds": 435,
-        "metres": 541
+        "seconds": 602,
+        "metres": 752
+      },
+      "arc-cafe": {
+        "seconds": 112,
+        "metres": 140
+      },
+      "buttery": {
+        "seconds": 714,
+        "metres": 892
+      },
+      "ul-tea-room": {
+        "seconds": 462,
+        "metres": 578
+      },
+      "florey": {
+        "seconds": 269,
+        "metres": 336
+      },
+      "bean-theory": {
+        "seconds": 691,
+        "metres": 861
+      },
+      "big-chefs": {
+        "seconds": 634,
+        "metres": 793
+      },
+      "cafe-aristo": {
+        "seconds": 673,
+        "metres": 841
+      },
+      "the-anchor": {
+        "seconds": 661,
+        "metres": 827
+      },
+      "the-mill": {
+        "seconds": 716,
+        "metres": 894
+      },
+      "the-granta": {
+        "seconds": 652,
+        "metres": 813
+      },
+      "millworks": {
+        "seconds": 715,
+        "metres": 891
+      },
+      "sala-thong": {
+        "seconds": 702,
+        "metres": 875
+      },
+      "the-red-bull": {
+        "seconds": 1071,
+        "metres": 1338
+      },
+      "fitzbillies": {
+        "seconds": 818,
+        "metres": 1023
+      },
+      "espresso-lane": {
+        "seconds": 808,
+        "metres": 1010
       }
     },
     "hsps": {
       "selwyn": {
-        "seconds": 396,
-        "metres": 494
+        "seconds": 451,
+        "metres": 563
       },
       "newnham": {
-        "seconds": 626,
-        "metres": 782
+        "seconds": 520,
+        "metres": 650
       },
       "darwin": {
-        "seconds": 503,
-        "metres": 626
+        "seconds": 473,
+        "metres": 592
       },
       "queens": {
-        "seconds": 532,
-        "metres": 666
+        "seconds": 474,
+        "metres": 592
+      },
+      "arc-cafe": {
+        "seconds": 16,
+        "metres": 20
+      },
+      "buttery": {
+        "seconds": 586,
+        "metres": 732
+      },
+      "ul-tea-room": {
+        "seconds": 334,
+        "metres": 418
+      },
+      "florey": {
+        "seconds": 141,
+        "metres": 176
+      },
+      "bean-theory": {
+        "seconds": 563,
+        "metres": 701
+      },
+      "big-chefs": {
+        "seconds": 506,
+        "metres": 633
+      },
+      "cafe-aristo": {
+        "seconds": 545,
+        "metres": 681
+      },
+      "the-anchor": {
+        "seconds": 533,
+        "metres": 667
+      },
+      "the-mill": {
+        "seconds": 587,
+        "metres": 734
+      },
+      "the-granta": {
+        "seconds": 524,
+        "metres": 653
+      },
+      "millworks": {
+        "seconds": 586,
+        "metres": 730
+      },
+      "sala-thong": {
+        "seconds": 574,
+        "metres": 715
+      },
+      "the-red-bull": {
+        "seconds": 942,
+        "metres": 1178
+      },
+      "fitzbillies": {
+        "seconds": 690,
+        "metres": 863
+      },
+      "espresso-lane": {
+        "seconds": 680,
+        "metres": 850
       }
     },
     "music": {
       "selwyn": {
-        "seconds": 342,
-        "metres": 427
+        "seconds": 386,
+        "metres": 483
       },
       "newnham": {
-        "seconds": 572,
-        "metres": 715
+        "seconds": 456,
+        "metres": 570
       },
       "darwin": {
-        "seconds": 449,
-        "metres": 559
+        "seconds": 519,
+        "metres": 649
       },
       "queens": {
-        "seconds": 478,
-        "metres": 598
+        "seconds": 520,
+        "metres": 649
+      },
+      "arc-cafe": {
+        "seconds": 128,
+        "metres": 161
+      },
+      "buttery": {
+        "seconds": 522,
+        "metres": 652
+      },
+      "ul-tea-room": {
+        "seconds": 380,
+        "metres": 475
+      },
+      "florey": {
+        "seconds": 187,
+        "metres": 233
+      },
+      "bean-theory": {
+        "seconds": 609,
+        "metres": 758
+      },
+      "big-chefs": {
+        "seconds": 552,
+        "metres": 690
+      },
+      "cafe-aristo": {
+        "seconds": 591,
+        "metres": 738
+      },
+      "the-anchor": {
+        "seconds": 579,
+        "metres": 724
+      },
+      "the-mill": {
+        "seconds": 633,
+        "metres": 791
+      },
+      "the-granta": {
+        "seconds": 570,
+        "metres": 710
+      },
+      "millworks": {
+        "seconds": 632,
+        "metres": 788
+      },
+      "sala-thong": {
+        "seconds": 619,
+        "metres": 772
+      },
+      "the-red-bull": {
+        "seconds": 878,
+        "metres": 1097
+      },
+      "fitzbillies": {
+        "seconds": 736,
+        "metres": 920
+      },
+      "espresso-lane": {
+        "seconds": 726,
+        "metres": 907
       }
     }
   }
