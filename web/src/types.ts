@@ -54,7 +54,17 @@ export interface Place {
   lng: number;
 }
 
+// Order is fixed: it sets each type's colour slot (see style.css) and the legend order.
+export const VENDOR_TYPES = ["college", "university", "independent"] as const;
+export type VendorType = (typeof VENDOR_TYPES)[number];
+export const VENDOR_TYPE_LABELS: Record<VendorType, string> = {
+  college: "College",
+  university: "University café",
+  independent: "Independent",
+};
+
 export interface Vendor extends Place {
+  type: VendorType;
   menu_url: string;
   link_only?: boolean; // menu isn't scraped; the site just links to it
 }

@@ -12,7 +12,7 @@ import {
   walkFor,
   type Filters,
 } from "./logic";
-import { ALLERGENS, type Allergen } from "./types";
+import { ALLERGENS, VENDOR_TYPES, VENDOR_TYPE_LABELS, type Allergen, type VendorType } from "./types";
 import type { Dietary, Faculty, Meal, Vendor, VendorMenu, Walk, WalkingFile } from "./types";
 
 const DIETARY_ABBR: Record<Dietary, string> = {
@@ -72,7 +72,7 @@ function storedFaculty(faculties: Faculty[]): Faculty {
   return faculties[0];
 }
 
-function readFilters(): Filters & { sort: "walk" | "price" } {
+function readFilters(): Filters & { sort: "walk" | "price"; types: VendorType[] } {
   const form = $<HTMLFormElement>("#filters");
   const dietary = [...form.querySelectorAll<HTMLInputElement>('input[name="dietary"]:checked')].map(
     (i) => i.value as Dietary,
@@ -90,6 +90,7 @@ function readFilters(): Filters & { sort: "walk" | "price" } {
     includeUnpriced: $<HTMLInputElement>("#include-unpriced").checked,
     lunchOnly: $<HTMLInputElement>("#lunch-only").checked,
     sort: $<HTMLSelectElement>("#sort").value as "walk" | "price",
+    types: [...form.querySelectorAll<HTMLInputElement>('input[name="type"]:checked')].map((i) => i.value as VendorType),
   };
 }
 
@@ -142,6 +143,10 @@ function mealsHtml(row: Row): string {
     .join("");
 }
 
+function typeTag(type: VendorType): string {
+  return `<span class="vendor-type t-${type}"><span class="type-dot"></span>${VENDOR_TYPE_LABELS[type]}</span>`;
+}
+
 function sourceLink(row: Row): string {
   return `<a class="source" href="${esc(row.vendor.menu_url)}" target="_blank" rel="noopener">Vendor's menu page ↗</a>`;
 }
@@ -160,6 +165,11 @@ function main(data: Data) {
   } else {
     $("#walk-source").textContent = "Walking times marked ≈ are straight-line estimates.";
   }
+
+  $("#type-options").innerHTML = VENDOR_TYPES.map(
+    (t) => `<label class="type-option t-${t}"><input type="checkbox" name="type" value="${t}" checked />
+      <span class="type-dot"></span>${VENDOR_TYPE_LABELS[t]}</label>`,
+  ).join("");
 
   $("#allergen-options").innerHTML = ALLERGENS.map(
     (a) => `<label><input type="checkbox" name="allergen" value="${a}" /> ${a}</label>`,
@@ -183,6 +193,16 @@ function main(data: Data) {
     padding: [70, 30], // pin labels are centred on the point, so leave room either side
   });
 
+  const legend = new L.Control({ position: "bottomleft" });
+  legend.onAdd = () => {
+    const div = L.DomUtil.create("div", "legend");
+    div.innerHTML = VENDOR_TYPES.map(
+      (t) => `<div class="t-${t}"><span class="type-dot"></span>${VENDOR_TYPE_LABELS[t]}</div>`,
+    ).join("");
+    return div;
+  };
+  legend.addTo(map);
+
   const pinIcon = (label: string, cls: string) =>
     L.divIcon({ className: "pin-host", html: `<span class="pin ${cls}">${esc(label)}</span>`, iconSize: [0, 0] });
 
@@ -194,7 +214,7 @@ function main(data: Data) {
 
   const vendorMarkers = new Map<string, L.Marker>();
   for (const v of data.vendors) {
-    const m = L.marker([v.lat, v.lng], { icon: pinIcon(v.name, ""), title: v.name }).addTo(map);
+    const m = L.marker([v.lat, v.lng], { icon: pinIcon(v.name, `t-${v.type}`), title: v.name }).addTo(map);
     m.bindPopup("", { maxWidth: 320, autoPanPadding: [20, 20] });
     m.on("popupopen", () => select_(v.id, false));
     vendorMarkers.set(v.id, m);
@@ -227,7 +247,12 @@ function main(data: Data) {
     out.textContent = f.maxPrice === null ? "any" : `£${f.maxPrice.toFixed(2)}`;
     $("#allergen-count").textContent = f.excludeAllergens.length ? `(${f.excludeAllergens.length})` : "";
 
-    rows = data.vendors.map((vendor) => {
+    for (const v of data.vendors) {
+      const marker = vendorMarkers.get(v.id)!;
+      if (f.types.includes(v.type)) marker.addTo(map);
+      else marker.remove();
+    }
+    rows = data.vendors.filter((v) => f.types.includes(v.type)).map((vendor) => {
       const menu = data.menus[vendor.id];
       const day = todaysDay(menu, today);
       return { vendor, menu, walk: walkFor(data.walking, faculty, vendor), meals: filterMeals(day, f), hasToday: !!day };
@@ -251,6 +276,7 @@ function main(data: Data) {
         <article class="vendor${row.vendor.id === selectedVendor ? " selected" : ""}" id="v-${esc(row.vendor.id)}">
           <header>
             <h2><button type="button" data-vendor="${esc(row.vendor.id)}">${esc(row.vendor.name)}</button></h2>
+            ${typeTag(row.vendor.type)}
             <span class="walk">${formatWalk(row.walk)}</span>
           </header>
           ${statusLine(row)}
@@ -268,6 +294,7 @@ function main(data: Data) {
       marker.setPopupContent(`
         <div class="vendor-popup">
           <h2>${esc(row.vendor.name)}</h2>
+          ${typeTag(row.vendor.type)}
           <div class="walk">${formatWalk(row.walk)} from ${esc(faculty.building)}</div>
           ${statusLine(row)}
           ${mealsHtml(row)}

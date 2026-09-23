@@ -11,6 +11,10 @@
   --error: #9b2c2c;
   --chip: #eeece5;
   --faculty: #3a4fa3;
+  /* Vendor types: categorical slots 1–3, validated all-pairs for CVD in both modes. */
+  --type-college: #2a78d6;
+  --type-university: #eb6834;
+  --type-independent: #1baf7a;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   color-scheme: light;
 }
@@ -28,6 +32,9 @@
     --error: #f19a9a;
     --chip: #30322d;
     --faculty: #9aabf0;
+    --type-college: #3987e5;
+    --type-university: #d95926;
+    --type-independent: #199e70;
     color-scheme: dark;
   }
 }
@@ -143,21 +150,49 @@ input[type="checkbox"] { accent-color: var(--accent); }
 
 /* Map markers and popups */
 .pin {
-  background: var(--accent);
-  color: #fff;
-  border: 2px solid #fff;
+  --type: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: var(--surface);
+  color: var(--text);
+  border: 2px solid var(--type);
   border-radius: 999px;
-  padding: 0.1rem 0.5rem;
+  padding: 0.05rem 0.5rem 0.05rem 0.35rem;
   font-size: 0.75rem;
   font-weight: 600;
   white-space: nowrap;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
   transform: translate(-50%, -50%);
-  display: inline-block;
 }
-.pin.dim { opacity: 0.55; filter: grayscale(0.7); }
-.pin.selected { outline: 3px solid var(--text); }
-.pin.faculty { background: var(--faculty); }
+.pin::before, .type-dot {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--type);
+  flex: none;
+}
+.type-dot { display: inline-block; }
+.t-college { --type: var(--type-college); }
+.t-university { --type: var(--type-university); }
+.t-independent { --type: var(--type-independent); }
+.pin.dim { opacity: 0.6; }
+.pin.selected { box-shadow: 0 0 0 3px var(--text); }
+.pin.faculty { background: var(--text); color: var(--surface); border-color: var(--text); padding-left: 0.5rem; }
+.pin.faculty::before { display: none; }
+.legend {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+.legend div { display: flex; align-items: center; gap: 0.4rem; }
+.vendor-type { font-size: 0.78rem; color: var(--muted); display: inline-flex; align-items: center; gap: 0.3rem; }
+.filters .type-option { display: inline-flex; align-items: center; gap: 0.35rem; }
 .leaflet-div-icon.pin-host { background: none; border: none; }
 .leaflet-popup-content { margin: 0.6rem 0.8rem; font-size: 0.85rem; }
 .leaflet-popup-content .vendor-popup h2 { font-size: 1rem; margin: 0 0 0.2rem; }

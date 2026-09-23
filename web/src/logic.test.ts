@@ -72,7 +72,7 @@ describe("helpers", () => {
 
   it("prefers routed times and marks estimates", () => {
     const fac = { id: "f", name: "F", building: "B", lat: 52.2016, lng: 0.1089 };
-    const ven = { id: "v", name: "V", menu_url: "", lat: 52.2009, lng: 0.1059 };
+    const ven = { id: "v", name: "V", type: "college" as const, menu_url: "", lat: 52.2009, lng: 0.1059 };
     expect(walkFor({ source: "x", generated_at: null, times: { f: { v: { seconds: 300, metres: 400 } } } }, fac, ven)).toEqual({
       seconds: 300,
       metres: 400,

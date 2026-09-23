@@ -1,9 +1,10 @@
 {
-  "_note": "Static vendor metadata. Coordinates are approximate (hall/entrance) and should be checked against OpenStreetMap.",
+  "_note": "Static vendor metadata. type is one of college, university, independent. Coordinates are approximate (hall/entrance) and should be checked against OpenStreetMap.",
   "vendors": [
     {
       "id": "selwyn",
       "name": "Selwyn College",
+      "type": "college",
       "menu_url": "https://www.sel.cam.ac.uk/current-members/hall-menu",
       "lat": 52.2009,
       "lng": 0.1059
@@ -11,6 +12,7 @@
     {
       "id": "newnham",
       "name": "Newnham College",
+      "type": "college",
       "menu_url": "https://newn.cam.ac.uk/todays-menu",
       "lat": 52.2002,
       "lng": 0.1087
@@ -18,6 +20,7 @@
     {
       "id": "darwin",
       "name": "Darwin College",
+      "type": "college",
       "menu_url": "https://www.darwin.cam.ac.uk/dine/weekly-menu/",
       "lat": 52.2003,
       "lng": 0.1137
@@ -25,6 +28,7 @@
     {
       "id": "queens",
       "name": "Queens' College",
+      "type": "college",
       "menu_url": "https://www.queens.cam.ac.uk/life-at-queens/catering/dining-hall/weekly-menu/",
       "lat": 52.202,
       "lng": 0.1151,
