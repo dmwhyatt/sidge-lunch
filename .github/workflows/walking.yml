@@ -1,0 +1,51 @@
+name: Walking times
+
+# Recompute faculty → vendor walking routes when locations change, or on demand.
+on:
+  push:
+    branches: [main]
+    paths: ["data/faculties.json", "data/vendors.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-commit
+  cancel-in-progress: false
+
+jobs:
+  walking:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install ./scraper
+      - run: python -m sidge_lunch.walking --data-dir data
+      - id: commit
+        run: |
+          if git diff --quiet -- data/walking.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/walking.json
+          git commit -m "Update walking times"
+          git push origin HEAD:${{ github.ref_name }}
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    needs: walking
+    if: needs.walking.outputs.changed == 'true'
+    uses: ./.github/workflows/deploy.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

@@ -1,0 +1,17 @@
+{
+  "_note": "Sidgwick Site buildings. Coordinates are approximate (main entrance) and should be checked against OpenStreetMap.",
+  "faculties": [
+    { "id": "english", "name": "Faculty of English", "building": "English Faculty Building", "lat": 52.2025, "lng": 0.1081 },
+    { "id": "history", "name": "Faculty of History", "building": "History Faculty Building", "lat": 52.2020, "lng": 0.1086 },
+    { "id": "law", "name": "Faculty of Law", "building": "David Williams Building", "lat": 52.2016, "lng": 0.1099 },
+    { "id": "economics", "name": "Faculty of Economics", "building": "Austin Robinson Building", "lat": 52.2011, "lng": 0.1094 },
+    { "id": "mmll", "name": "Faculty of Modern and Medieval Languages and Linguistics", "building": "Raised Faculty Building", "lat": 52.2015, "lng": 0.1104 },
+    { "id": "ames", "name": "Faculty of Asian and Middle Eastern Studies", "building": "Raised Faculty Building", "lat": 52.2015, "lng": 0.1104 },
+    { "id": "philosophy", "name": "Faculty of Philosophy", "building": "Raised Faculty Building", "lat": 52.2015, "lng": 0.1104 },
+    { "id": "classics", "name": "Faculty of Classics", "building": "Classics Faculty Building", "lat": 52.2016, "lng": 0.1081 },
+    { "id": "divinity", "name": "Faculty of Divinity", "building": "Divinity Faculty Building", "lat": 52.2011, "lng": 0.1079 },
+    { "id": "criminology", "name": "Institute of Criminology", "building": "Institute of Criminology", "lat": 52.2008, "lng": 0.1083 },
+    { "id": "hsps", "name": "Human, Social and Political Science (POLIS, Sociology)", "building": "Alison Richard Building", "lat": 52.2021, "lng": 0.1093 },
+    { "id": "music", "name": "Faculty of Music", "building": "Faculty of Music, West Road", "lat": 52.2029, "lng": 0.1087 }
+  ]
+}

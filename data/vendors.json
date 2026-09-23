@@ -1,0 +1,40 @@
+{
+  "_note": "Static vendor metadata. Coordinates are approximate (hall/entrance) and should be checked against OpenStreetMap.",
+  "vendors": [
+    {
+      "id": "selwyn",
+      "name": "Selwyn College",
+      "menu_url": "https://www.sel.cam.ac.uk/current-members/hall-menu",
+      "lat": 52.2009,
+      "lng": 0.1059
+    },
+    {
+      "id": "newnham",
+      "name": "Newnham College",
+      "menu_url": "https://newn.cam.ac.uk/todays-menu",
+      "lat": 52.2002,
+      "lng": 0.1087
+    },
+    {
+      "id": "clare-hall",
+      "name": "Clare Hall",
+      "menu_url": "https://sway.cloud.microsoft/b7Zz74Q2g96EIhE9?ref=Link&loc=play",
+      "lat": 52.2041,
+      "lng": 0.1031
+    },
+    {
+      "id": "darwin",
+      "name": "Darwin College",
+      "menu_url": "https://www.darwin.cam.ac.uk/dine/weekly-menu/",
+      "lat": 52.2003,
+      "lng": 0.1137
+    },
+    {
+      "id": "queens",
+      "name": "Queens' College",
+      "menu_url": "https://www.queens.cam.ac.uk/life-at-queens/catering/dining-hall/weekly-menu/",
+      "lat": 52.2020,
+      "lng": 0.1151
+    }
+  ]
+}

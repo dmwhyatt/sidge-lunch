@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Unofficial guide to today's lunch menus near the Sidgwick Site, Cambridge." />
+    <title>Sidge Lunch</title>
+  </head>
+  <body>
+    <div class="disclaimer" role="note">
+      <strong>Unofficial.</strong> Not affiliated with, endorsed by, or run by the University of Cambridge or any college or
+      vendor listed. Menus are collected automatically from public web pages and may be incomplete, wrong or out of date.
+      Always check with the vendor, especially about allergens and dietary requirements.
+    </div>
+
+    <header class="topbar">
+      <div class="title">
+        <h1>Sidge Lunch</h1>
+        <p id="today" class="muted"></p>
+      </div>
+      <label class="faculty-picker">
+        <span>I'm at</span>
+        <select id="faculty"></select>
+      </label>
+    </header>
+
+    <main class="layout">
+      <section class="dashboard" aria-label="Menus">
+        <form id="filters" class="filters" aria-label="Filters">
+          <fieldset>
+            <legend>Dietary</legend>
+            <label><input type="checkbox" name="dietary" value="vegetarian" /> Vegetarian</label>
+            <label><input type="checkbox" name="dietary" value="vegan" /> Vegan</label>
+            <label><input type="checkbox" name="dietary" value="gluten-free" /> Gluten-free</label>
+            <label><input type="checkbox" name="dietary" value="dairy-free" /> Dairy-free</label>
+            <label><input type="checkbox" name="dietary" value="halal" /> Halal</label>
+          </fieldset>
+          <fieldset>
+            <legend>Price</legend>
+            <label class="price-range">
+              <span>Up to <output id="max-price-out">any</output></span>
+              <input type="range" id="max-price" min="1" max="15" step="0.5" value="15" />
+            </label>
+            <label><input type="checkbox" id="include-unpriced" checked /> Include items with no listed price</label>
+          </fieldset>
+          <fieldset>
+            <legend>Show</legend>
+            <label><input type="checkbox" id="lunch-only" checked /> Lunch only</label>
+            <label>
+              Sort by
+              <select id="sort">
+                <option value="walk">Walking time</option>
+                <option value="price">Cheapest item</option>
+              </select>
+            </label>
+          </fieldset>
+        </form>
+        <p class="dietary-note muted">
+          Dietary labels are shown only where the vendor publishes them. An item without a label may still be suitable,
+          or may not be.
+        </p>
+        <div id="vendors" class="vendors"></div>
+      </section>
+
+      <section class="map-wrap" aria-label="Map">
+        <div id="map"></div>
+      </section>
+    </main>
+
+    <footer class="footer muted">
+      <p>
+        Unofficial and independent: not associated with the University of Cambridge or any vendor. Names are used only to
+        identify where menus come from. Map data © OpenStreetMap contributors.
+        <a href="https://github.com/dmwhyatt/sidge-lunch">Source code</a>.
+      </p>
+      <p id="walk-source"></p>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

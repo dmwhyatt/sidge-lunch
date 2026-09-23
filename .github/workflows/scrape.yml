@@ -1,0 +1,54 @@
+name: Scrape menus
+
+on:
+  schedule:
+    # UTC. Every 30 min through the morning (05:00–12:30 UTC, i.e. 06:00–13:30 in BST),
+    # then every 3 h for menus posted in the afternoon or the night before.
+    - cron: "*/30 5-12 * * *"
+    - cron: "0 14-23/3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-commit
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scraper/pyproject.toml
+      - run: pip install ./scraper
+      - run: python -m sidge_lunch.run --data-dir data
+      - id: commit
+        name: Commit if menus changed
+        run: |
+          if git diff --quiet -- data/menus.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/menus.json
+          git commit -m "Update menus"
+          git push origin HEAD:${{ github.ref_name }}
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+  # Pushes made with GITHUB_TOKEN don't trigger other workflows, so deploy from here.
+  deploy:
+    needs: scrape
+    if: needs.scrape.outputs.changed == 'true'
+    uses: ./.github/workflows/deploy.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
