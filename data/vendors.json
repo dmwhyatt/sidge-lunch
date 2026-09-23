@@ -117,6 +117,21 @@
       }
     },
     {
+      "id": "downing",
+      "name": "Downing College",
+      "type": "college",
+      "about": "Servery. The weekly menu is on Kafoodle, which doesn't allow automated reading, so it isn't shown here.",
+      "menu_url": "https://wba.kafoodle.com/17260",
+      "lat": 52.200098,
+      "lng": 0.124341,
+      "access": {
+        "level": "open",
+        "note": "welcome, about 50% extra, cards accepted",
+        "checked": 2023
+      },
+      "link_only": true
+    },
+    {
       "id": "arc-cafe",
       "name": "ARC Café",
       "type": "university",

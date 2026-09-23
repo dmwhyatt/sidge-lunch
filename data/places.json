@@ -47,21 +47,6 @@
    "menu_url": "https://www.clarehall.cam.ac.uk/"
   },
   {
-   "id": "college-downing-college",
-   "name": "Downing College",
-   "type": "college",
-   "about": "College hall and buttery. Check who it's open to before going.",
-   "lat": 52.200098,
-   "lng": 0.124341,
-   "link_only": true,
-   "access": {
-    "level": "open",
-    "note": "welcome, about 50% extra, cards accepted",
-    "checked": 2023
-   },
-   "menu_url": "https://www.dow.cam.ac.uk/"
-  },
-  {
    "id": "college-emmanuel-college",
    "name": "Emmanuel College",
    "type": "college",
