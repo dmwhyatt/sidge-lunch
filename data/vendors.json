@@ -1,37 +1,218 @@
 {
-  "_note": "Static vendor metadata. type is one of college, university, independent. Coordinates are approximate (hall/entrance) and should be checked against OpenStreetMap.",
+  "_note": "Static vendor metadata. type is college, university or commercial. link_only vendors are not scraped. hours use OpenStreetMap opening_hours syntax. Positions come from OpenStreetMap (osm id) or were read off OpenStreetMap map tiles at the hall or entrance.",
   "vendors": [
     {
       "id": "selwyn",
       "name": "Selwyn College",
       "type": "college",
+      "about": "Hall",
       "menu_url": "https://www.sel.cam.ac.uk/current-members/hall-menu",
-      "lat": 52.2009,
-      "lng": 0.1059
+      "lat": 52.20065,
+      "lng": 0.106071
     },
     {
       "id": "newnham",
       "name": "Newnham College",
       "type": "college",
+      "about": "Buttery",
       "menu_url": "https://newn.cam.ac.uk/todays-menu",
-      "lat": 52.2002,
-      "lng": 0.1087
+      "lat": 52.200354,
+      "lng": 0.107331
     },
     {
       "id": "darwin",
       "name": "Darwin College",
       "type": "college",
+      "about": "Servery",
       "menu_url": "https://www.darwin.cam.ac.uk/dine/weekly-menu/",
-      "lat": 52.2003,
-      "lng": 0.1137
+      "lat": 52.200972,
+      "lng": 0.114015,
+      "hours": "Lunch Mo-Fr 12:00-14:00; brunch Sa,Su 10:00-14:00"
     },
     {
       "id": "queens",
       "name": "Queens' College",
       "type": "college",
+      "about": "Dining hall",
       "menu_url": "https://www.queens.cam.ac.uk/life-at-queens/catering/dining-hall/weekly-menu/",
-      "lat": 52.202,
-      "lng": 0.1151,
+      "lat": 52.201663,
+      "lng": 0.114874,
+      "link_only": true
+    },
+    {
+      "id": "arc-cafe",
+      "name": "ARC Café",
+      "type": "university",
+      "about": "Hot food, snacks and cakes, with vegetarian and vegan options",
+      "menu_url": "https://www.catering.admin.cam.ac.uk/cafes/arc-cafe",
+      "osm": "node/1616855188",
+      "lat": 52.202252,
+      "lng": 0.109152,
+      "hours": "Mo-Fr 08:30-16:30",
+      "link_only": true
+    },
+    {
+      "id": "buttery",
+      "name": "Sidgwick Buttery",
+      "type": "university",
+      "about": "Sandwiches, wraps, sausage rolls and coffee",
+      "menu_url": "https://www.catering.admin.cam.ac.uk/food-and-drink/places-eat/out-university-centre/buttery",
+      "osm": "node/1616855180",
+      "lat": 52.200941,
+      "lng": 0.108534,
+      "hours": "Mo-Fr 08:30-16:00",
+      "notice": "Closed until Monday 5 October",
+      "notice_until": "2026-10-05",
+      "link_only": true
+    },
+    {
+      "id": "ul-tea-room",
+      "name": "University Library Tea Room",
+      "type": "university",
+      "about": "Café",
+      "menu_url": "https://www.lib.cam.ac.uk/using-library/tea-room",
+      "osm": "node/4485279691",
+      "lat": 52.205632,
+      "lng": 0.108009,
+      "hours": "Mo-Fr 09:00-17:00; Sa 10:00-14:00",
+      "link_only": true
+    },
+    {
+      "id": "florey",
+      "name": "Florey",
+      "type": "commercial",
+      "about": "Café in Harvey Court gardens: coffee, pastries, cakes and savoury snacks",
+      "menu_url": "https://www.instagram.com/florey_cafe/",
+      "osm": "node/13524586925",
+      "lat": 52.202297,
+      "lng": 0.110881,
+      "hours": "Mo-Fr 08:30-16:00; Sa,Su 10:00-16:00",
+      "link_only": true
+    },
+    {
+      "id": "bean-theory",
+      "name": "Bean Theory",
+      "type": "commercial",
+      "about": "Café",
+      "osm": "node/14169797480",
+      "lat": 52.199236,
+      "lng": 0.113821,
+      "link_only": true
+    },
+    {
+      "id": "big-chefs",
+      "name": "Big Chef's Hot Dog",
+      "type": "commercial",
+      "about": "Hot dogs",
+      "osm": "node/9997101788",
+      "lat": 52.201788,
+      "lng": 0.115334,
+      "link_only": true
+    },
+    {
+      "id": "cafe-aristo",
+      "name": "Cafe Aristo",
+      "type": "commercial",
+      "about": "Café",
+      "menu_url": "https://www.aristocaters.co.uk/silverstreet/",
+      "osm": "node/4947474638",
+      "lat": 52.202057,
+      "lng": 0.115864,
+      "hours": "Mo-Fr 09:00-15:00; Sa 10:00-15:00",
+      "link_only": true
+    },
+    {
+      "id": "the-anchor",
+      "name": "The Anchor",
+      "type": "commercial",
+      "about": "Pub",
+      "menu_url": "https://www.anchorcambridge.com/",
+      "osm": "way/136330945",
+      "lat": 52.201932,
+      "lng": 0.115752,
+      "link_only": true
+    },
+    {
+      "id": "the-mill",
+      "name": "The Mill",
+      "type": "commercial",
+      "about": "Pub",
+      "menu_url": "https://www.themillpubcambridge.com/",
+      "osm": "way/136330946",
+      "lat": 52.201488,
+      "lng": 0.116269,
+      "hours": "Mo-Fr 12:00-15:00,17:00-21:00; Sa-Su 12:00-21:00",
+      "link_only": true
+    },
+    {
+      "id": "the-granta",
+      "name": "The Granta",
+      "type": "commercial",
+      "about": "Pub",
+      "menu_url": "https://www.greeneking.co.uk/pubs/cambridgeshire/granta",
+      "osm": "way/143469264",
+      "lat": 52.199704,
+      "lng": 0.113848,
+      "link_only": true
+    },
+    {
+      "id": "millworks",
+      "name": "Millworks",
+      "type": "commercial",
+      "about": "Restaurant",
+      "menu_url": "http://www.themillworks.co.uk/",
+      "osm": "way/143469256",
+      "lat": 52.199075,
+      "lng": 0.114122,
+      "hours": "Mo-Th 11:00-22:00; Fr 11:00-22:30; Sa 10:00-22:30; Su 10:00-21:30",
+      "link_only": true
+    },
+    {
+      "id": "sala-thong",
+      "name": "Sala Thong",
+      "type": "commercial",
+      "about": "Thai restaurant",
+      "menu_url": "https://www.salathong.co.uk/cambridge",
+      "osm": "node/299607147",
+      "lat": 52.19907,
+      "lng": 0.113652,
+      "hours": "Mo-Sa 12:00-14:30,17:30-21:30; Su 12:00-21:00",
+      "link_only": true
+    },
+    {
+      "id": "the-red-bull",
+      "name": "The Red Bull",
+      "type": "commercial",
+      "about": "Pub",
+      "menu_url": "https://www.redbullcambridge.co.uk",
+      "osm": "way/174752202",
+      "lat": 52.196529,
+      "lng": 0.108688,
+      "hours": "Mo-Th 15:00-23:00; Fr,Sa 12:00-23:00; Su 12:00-22:00",
+      "link_only": true
+    },
+    {
+      "id": "fitzbillies",
+      "name": "Fitzbillies",
+      "type": "commercial",
+      "about": "Café and bakery",
+      "menu_url": "https://www.fitzbillies.com/pages/trumpington-street",
+      "osm": "node/1469982916",
+      "lat": 52.202042,
+      "lng": 0.118085,
+      "hours": "Mo-Fr 08:00-18:00; Sa,Su 09:00-18:00",
+      "link_only": true
+    },
+    {
+      "id": "espresso-lane",
+      "name": "Espresso Lane",
+      "type": "commercial",
+      "about": "Café",
+      "menu_url": "https://www.espressolane.co.uk/",
+      "osm": "node/302384491",
+      "lat": 52.20224,
+      "lng": 0.118089,
+      "hours": "Mo-Fr 08:30-16:30; Sa 08:30-17:30",
       "link_only": true
     }
   ]

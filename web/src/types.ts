@@ -55,18 +55,22 @@ export interface Place {
 }
 
 // Order is fixed: it sets each type's colour slot (see style.css) and the legend order.
-export const VENDOR_TYPES = ["college", "university", "independent"] as const;
+export const VENDOR_TYPES = ["college", "university", "commercial"] as const;
 export type VendorType = (typeof VENDOR_TYPES)[number];
 export const VENDOR_TYPE_LABELS: Record<VendorType, string> = {
   college: "College",
-  university: "University café",
-  independent: "Independent",
+  university: "University",
+  commercial: "Commercial",
 };
 
 export interface Vendor extends Place {
   type: VendorType;
-  menu_url: string;
+  about?: string; // what it is / sells, e.g. "Pub" or "Sandwiches, wraps and coffee"
+  menu_url?: string; // vendor's own page; absent if it has none
   link_only?: boolean; // menu isn't scraped; the site just links to it
+  hours?: string; // OpenStreetMap opening_hours syntax, shown as written
+  notice?: string; // temporary notice, e.g. a closure
+  notice_until?: string; // YYYY-MM-DD; the notice is hidden from this date
 }
 
 export interface Faculty extends Place {

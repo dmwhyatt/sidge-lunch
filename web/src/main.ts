@@ -96,7 +96,7 @@ function readFilters(): Filters & { sort: "walk" | "price"; types: VendorType[] 
 
 function statusLine(row: Row): string {
   if (row.vendor.link_only) {
-    return `<p class="status">Menu is on the vendor's own website.</p>`;
+    return row.vendor.menu_url ? `<p class="status">Menu not collected. See the vendor's own page.</p>` : "";
   }
   const m = row.menu;
   if (!m || m.status === "unsupported") {
@@ -148,7 +148,17 @@ function typeTag(type: VendorType): string {
 }
 
 function sourceLink(row: Row): string {
-  return `<a class="source" href="${esc(row.vendor.menu_url)}" target="_blank" rel="noopener">Vendor's menu page ↗</a>`;
+  const url = row.vendor.menu_url;
+  return url ? `<a class="source" href="${esc(url)}" target="_blank" rel="noopener">Vendor's page ↗</a>` : "";
+}
+
+function infoHtml(v: Vendor, today: string): string {
+  const notice = v.notice && (!v.notice_until || today < v.notice_until) ? v.notice : null;
+  return [
+    notice ? `<p class="notice">${esc(notice)}</p>` : "",
+    v.about ? `<p class="about">${esc(v.about)}</p>` : "",
+    v.hours ? `<p class="hours">Hours: ${esc(v.hours)}</p>` : "",
+  ].join("");
 }
 
 function main(data: Data) {
@@ -203,8 +213,18 @@ function main(data: Data) {
   };
   legend.addTo(map);
 
+  // Zoomed out, link-only places shrink to dots so labels don't pile up; names stay on hover.
+  const COMPACT_BELOW = 17;
+  const setCompact = () => map.getContainer().classList.toggle("compact", map.getZoom() < COMPACT_BELOW);
+  map.on("zoomend", setCompact);
+  setCompact();
+
   const pinIcon = (label: string, cls: string) =>
-    L.divIcon({ className: "pin-host", html: `<span class="pin ${cls}">${esc(label)}</span>`, iconSize: [0, 0] });
+    L.divIcon({
+      className: "pin-host",
+      html: `<span class="pin ${cls}"><span class="pin-label">${esc(label)}</span></span>`,
+      iconSize: [0, 0],
+    });
 
   const facultyMarker = L.marker([faculty.lat, faculty.lng], {
     icon: pinIcon("You", "faculty"),
@@ -214,7 +234,7 @@ function main(data: Data) {
 
   const vendorMarkers = new Map<string, L.Marker>();
   for (const v of data.vendors) {
-    const m = L.marker([v.lat, v.lng], { icon: pinIcon(v.name, `t-${v.type}`), title: v.name }).addTo(map);
+    const m = L.marker([v.lat, v.lng], { icon: pinIcon(v.name, `t-${v.type}${v.link_only ? " link-only" : ""}`), title: v.name }).addTo(map);
     m.bindPopup("", { maxWidth: 320, autoPanPadding: [20, 20] });
     m.on("popupopen", () => select_(v.id, false));
     vendorMarkers.set(v.id, m);
@@ -279,6 +299,7 @@ function main(data: Data) {
             ${typeTag(row.vendor.type)}
             <span class="walk">${formatWalk(row.walk)}</span>
           </header>
+          ${infoHtml(row.vendor, today)}
           ${statusLine(row)}
           ${mealsHtml(row)}
           ${sourceLink(row)}
@@ -289,13 +310,14 @@ function main(data: Data) {
     for (const row of rows) {
       const marker = vendorMarkers.get(row.vendor.id)!;
       const el = marker.getElement()?.querySelector(".pin");
-      el?.classList.toggle("dim", row.meals.length === 0);
+      el?.classList.toggle("dim", !row.vendor.link_only && row.meals.length === 0);
       el?.classList.toggle("selected", row.vendor.id === selectedVendor);
       marker.setPopupContent(`
         <div class="vendor-popup">
           <h2>${esc(row.vendor.name)}</h2>
           ${typeTag(row.vendor.type)}
           <div class="walk">${formatWalk(row.walk)} from ${esc(faculty.building)}</div>
+          ${infoHtml(row.vendor, today)}
           ${statusLine(row)}
           ${mealsHtml(row)}
           ${sourceLink(row)}
