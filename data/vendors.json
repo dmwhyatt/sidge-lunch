@@ -16,13 +16,6 @@
       "lng": 0.1087
     },
     {
-      "id": "clare-hall",
-      "name": "Clare Hall",
-      "menu_url": "https://sway.cloud.microsoft/b7Zz74Q2g96EIhE9?ref=Link&loc=play",
-      "lat": 52.2041,
-      "lng": 0.1031
-    },
-    {
       "id": "darwin",
       "name": "Darwin College",
       "menu_url": "https://www.darwin.cam.ac.uk/dine/weekly-menu/",
@@ -33,8 +26,9 @@
       "id": "queens",
       "name": "Queens' College",
       "menu_url": "https://www.queens.cam.ac.uk/life-at-queens/catering/dining-hall/weekly-menu/",
-      "lat": 52.2020,
-      "lng": 0.1151
+      "lat": 52.202,
+      "lng": 0.1151,
+      "link_only": true
     }
   ]
 }

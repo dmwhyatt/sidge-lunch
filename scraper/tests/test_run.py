@@ -86,3 +86,19 @@ def test_vegan_implies_vegetarian():
 def test_unknown_dietary_tag_rejected():
     with pytest.raises(ValueError):
         MenuItem("Stew", dietary=["keto"])
+
+
+def test_link_only_vendors_are_never_fetched(tmp_path, monkeypatch):
+    import json
+
+    (tmp_path / "vendors.json").write_text(json.dumps({"vendors": [
+        {"id": "queens", "name": "Q", "menu_url": "https://example.org", "lat": 0, "lng": 0, "link_only": True},
+    ]}))
+    (tmp_path / "menus.json").write_text(json.dumps({"vendors": {}}))
+
+    def no_fetch(*a, **k):
+        raise AssertionError("link-only vendor was fetched")
+
+    monkeypatch.setattr(run, "update_vendor", no_fetch)
+    run.main(["--data-dir", str(tmp_path)])
+    assert json.loads((tmp_path / "menus.json").read_text()) == {"vendors": {}}

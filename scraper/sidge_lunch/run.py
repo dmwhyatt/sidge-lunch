@@ -82,6 +82,8 @@ def main(argv: list[str] | None = None) -> int:
     now = datetime.now(LONDON)
     out = {"vendors": {}}
     for v in vendors:
+        if v.get("link_only"):
+            continue  # never fetched; the site links to the vendor's page
         prev = menus["vendors"].get(v["id"])
         if args.only and v["id"] not in args.only:
             if prev is not None:

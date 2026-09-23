@@ -94,6 +94,9 @@ function readFilters(): Filters & { sort: "walk" | "price" } {
 }
 
 function statusLine(row: Row): string {
+  if (row.vendor.link_only) {
+    return `<p class="status">Menu is on the vendor's own website.</p>`;
+  }
   const m = row.menu;
   if (!m || m.status === "unsupported") {
     return `<p class="status">Menu not collected yet. See the vendor's own page.</p>`;

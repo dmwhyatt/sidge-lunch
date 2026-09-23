@@ -61,7 +61,8 @@ names. Items without a published price show "price not listed".
 
 ## Adding a vendor
 
-1. Add it to `data/vendors.json` (id, name, menu URL, coordinates).
+1. Add it to `data/vendors.json` (id, name, menu URL, coordinates). If its menu can't be scraped, set
+   `"link_only": true` and stop here: the site will just link to the vendor's page.
 2. Save a copy of its menu page to `scraper/tests/fixtures/<id>.html`.
 3. Write `scraper/sidge_lunch/adapters/<id>.py` with `parse(html, today) -> list[Day]`, register it in
    `adapters/__init__.py`, and add a test against the fixture.

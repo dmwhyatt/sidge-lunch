@@ -56,6 +56,7 @@ export interface Place {
 
 export interface Vendor extends Place {
   menu_url: string;
+  link_only?: boolean; // menu isn't scraped; the site just links to it
 }
 
 export interface Faculty extends Place {

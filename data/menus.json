@@ -227,14 +227,6 @@
         }
       ]
     },
-    "clare-hall": {
-      "source_url": "https://sway.cloud.microsoft/b7Zz74Q2g96EIhE9?ref=Link&loc=play",
-      "status": "unsupported",
-      "error": "menu is a JavaScript-rendered Sway, not HTML",
-      "updated_at": null,
-      "content_hash": null,
-      "days": []
-    },
     "darwin": {
       "source_url": "https://www.darwin.cam.ac.uk/dine/weekly-menu/",
       "status": "ok",
@@ -1527,14 +1519,6 @@
           ]
         }
       ]
-    },
-    "queens": {
-      "source_url": "https://www.queens.cam.ac.uk/life-at-queens/catering/dining-hall/weekly-menu/",
-      "status": "unsupported",
-      "error": "page is behind a bot check",
-      "updated_at": null,
-      "content_hash": null,
-      "days": []
     }
   }
 }
