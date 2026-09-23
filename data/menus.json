@@ -137,17 +137,17 @@
       "source_url": "https://newn.cam.ac.uk/todays-menu",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-09-23T15:09:50+01:00",
-      "content_hash": "73118cff81be4c69",
+      "updated_at": "2026-09-23T20:54:23+01:00",
+      "content_hash": "acae7d95533e5299",
       "days": [
         {
           "date": "2026-09-23",
           "meals": [
             {
-              "name": "Lunch",
+              "name": "Dinner",
               "items": [
                 {
-                  "name": "Mushroom, Cauliflower & Vegetable Biryani",
+                  "name": "Sweet Potato Bean & Red Pepper Goulash",
                   "description": "£3.60 with a Newnham card",
                   "category": null,
                   "price": {
@@ -159,31 +159,27 @@
                     "vegan",
                     "vegetarian"
                   ],
-                  "allergens": [
-                    "mustard",
-                    "sulphites"
-                  ]
+                  "allergens": []
                 },
                 {
-                  "name": "Squash, Red Onion & Goats Cheese Quiche",
-                  "description": "£3.60 with a Newnham card",
+                  "name": "Breaded Scampi with Chive & Lemon Mayo",
+                  "description": "£4.00 with a Newnham card",
                   "category": null,
                   "price": {
-                    "amount": 4.79,
+                    "amount": 5.32,
                     "currency": "GBP"
                   },
-                  "price_text": "£4.79",
-                  "dietary": [
-                    "vegetarian"
-                  ],
+                  "price_text": "£5.32",
+                  "dietary": [],
                   "allergens": [
+                    "crustaceans",
                     "eggs",
                     "gluten",
-                    "milk"
+                    "mustard"
                   ]
                 },
                 {
-                  "name": "Halal Roast Turkey Breast with Cranberry Sauce",
+                  "name": "Halal Cajun Chicken Burger",
                   "description": "£4.00 with a Newnham card",
                   "category": null,
                   "price": {
@@ -194,10 +190,13 @@
                   "dietary": [
                     "halal"
                   ],
-                  "allergens": []
+                  "allergens": [
+                    "gluten",
+                    "milk"
+                  ]
                 },
                 {
-                  "name": "Rice Pudding",
+                  "name": "Chocolate Choux Buns",
                   "description": "£1.90 with a Newnham card",
                   "category": null,
                   "price": {
@@ -207,7 +206,10 @@
                   "price_text": "£2.53",
                   "dietary": [],
                   "allergens": [
-                    "milk"
+                    "eggs",
+                    "gluten",
+                    "milk",
+                    "soya"
                   ]
                 },
                 {
