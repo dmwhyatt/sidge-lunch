@@ -68,6 +68,7 @@ export interface Vendor extends Place {
   about?: string; // what it is / sells, e.g. "Pub" or "Sandwiches, wraps and coffee"
   menu_url?: string; // vendor's own page; absent if it has none
   link_only?: boolean; // menu isn't scraped; the site just links to it
+  menu?: "regular"; // a standing menu (e.g. a pub's), not one published daily
   hours?: string; // OpenStreetMap opening_hours syntax, shown as written
   notice?: string; // temporary notice, e.g. a closure
   notice_until?: string; // YYYY-MM-DD; the notice is hidden from this date

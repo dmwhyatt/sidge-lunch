@@ -72,7 +72,7 @@ function storedFaculty(faculties: Faculty[]): Faculty {
   return faculties[0];
 }
 
-function readFilters(): Filters & { sort: "walk" | "price"; types: VendorType[] } {
+function readFilters(): Filters & { sort: "walk" | "price"; types: VendorType[]; menuOnly: boolean } {
   const form = $<HTMLFormElement>("#filters");
   const dietary = [...form.querySelectorAll<HTMLInputElement>('input[name="dietary"]:checked')].map(
     (i) => i.value as Dietary,
@@ -90,6 +90,7 @@ function readFilters(): Filters & { sort: "walk" | "price"; types: VendorType[] 
     includeUnpriced: $<HTMLInputElement>("#include-unpriced").checked,
     lunchOnly: $<HTMLInputElement>("#lunch-only").checked,
     sort: $<HTMLSelectElement>("#sort").value as "walk" | "price",
+    menuOnly: $<HTMLInputElement>("#menu-only").checked,
     types: [...form.querySelectorAll<HTMLInputElement>('input[name="type"]:checked')].map((i) => i.value as VendorType),
   };
 }
@@ -107,6 +108,10 @@ function statusLine(row: Row): string {
     return `<p class="status error">Couldn't read the latest menu (last ${updated}). Check the vendor's page.</p>`;
   }
   if (!row.hasToday) return `<p class="status">No menu published for today (${updated}).</p>`;
+  if (row.vendor.menu === "regular") {
+    const changed = m.updated_at ? `, last changed ${timeAgo(m.updated_at)}` : "";
+    return `<p class="status">Regular menu, not a daily one${changed}.</p>`;
+  }
   return `<p class="status">Menu ${updated}.</p>`;
 }
 
@@ -120,7 +125,11 @@ function mealsHtml(row: Row): string {
         <h3>${esc(meal.name)}${meal.service ? ` <span>${esc(meal.service)}</span>` : ""}</h3>
         <ul class="items">
           ${meal.items
-            .map((item) => {
+            .map((item, i) => {
+              const category =
+                item.category && item.category !== meal.items[i - 1]?.category
+                  ? `<li class="category">${esc(item.category)}</li>`
+                  : "";
               const chips = item.dietary
                 .filter((t) => !(t === "vegetarian" && item.dietary.includes("vegan")))
                 .map((t) => `<abbr class="chip" title="${t}">${DIETARY_ABBR[t]}</abbr>`)
@@ -128,7 +137,7 @@ function mealsHtml(row: Row): string {
               const price = item.price_text
                 ? `<span class="item-price">${esc(item.price_text)}</span>`
                 : `<span class="item-price unlisted">price not listed</span>`;
-              return `<li>
+              return `${category}<li>
                 <span class="item-name">${esc(item.name)}${chips ? `<span class="chips">${chips}</span>` : ""}</span>
                 ${price}
                 ${item.description ? `<span class="item-desc">${esc(item.description)}</span>` : ""}
@@ -267,16 +276,19 @@ function main(data: Data) {
     out.textContent = f.maxPrice === null ? "any" : `£${f.maxPrice.toFixed(2)}`;
     $("#allergen-count").textContent = f.excludeAllergens.length ? `(${f.excludeAllergens.length})` : "";
 
-    for (const v of data.vendors) {
-      const marker = vendorMarkers.get(v.id)!;
-      if (f.types.includes(v.type)) marker.addTo(map);
+    rows = data.vendors
+      .filter((v) => f.types.includes(v.type))
+      .map((vendor) => {
+        const menu = data.menus[vendor.id];
+        const day = todaysDay(menu, today);
+        return { vendor, menu, walk: walkFor(data.walking, faculty, vendor), meals: filterMeals(day, f), hasToday: !!day };
+      })
+      .filter((row) => !f.menuOnly || row.hasToday);
+    const shown = new Set(rows.map((r) => r.vendor.id));
+    for (const [id, marker] of vendorMarkers) {
+      if (shown.has(id)) marker.addTo(map);
       else marker.remove();
     }
-    rows = data.vendors.filter((v) => f.types.includes(v.type)).map((vendor) => {
-      const menu = data.menus[vendor.id];
-      const day = todaysDay(menu, today);
-      return { vendor, menu, walk: walkFor(data.walking, faculty, vendor), meals: filterMeals(day, f), hasToday: !!day };
-    });
     rows.sort((a, b) => {
       // Vendors with matching items today first, then by chosen key.
       const am = a.meals.length > 0 ? 0 : 1;

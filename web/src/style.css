@@ -137,6 +137,14 @@ input[type="checkbox"] { accent-color: var(--accent); }
   border-top: 1px solid var(--border);
 }
 .items li:first-child { border-top: none; }
+.items li.category {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+  padding-top: 0.6rem;
+}
+.items li.category + li { border-top: none; }
 .item-name { font-weight: 500; }
 .item-desc { grid-column: 1; font-size: 0.85rem; color: var(--muted); }
 .item-price { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }

@@ -1,5 +1,5 @@
 {
-  "_note": "Static vendor metadata. type is college, university or commercial. link_only vendors are not scraped. hours use OpenStreetMap opening_hours syntax. Positions come from OpenStreetMap (osm id) or were read off OpenStreetMap map tiles at the hall or entrance.",
+  "_note": "Static vendor metadata. type is college, university or commercial. link_only vendors are not scraped; menu \"regular\" marks a standing menu rather than a daily one. hours use OpenStreetMap opening_hours syntax. Positions come from OpenStreetMap (osm id) or were read off OpenStreetMap map tiles at the hall or entrance.",
   "vendors": [
     {
       "id": "selwyn",
@@ -137,12 +137,12 @@
       "name": "The Mill",
       "type": "commercial",
       "about": "Pub",
-      "menu_url": "https://www.themillpubcambridge.com/",
+      "menu_url": "https://www.themillpubcambridge.com/food-and-drink",
       "osm": "way/136330946",
       "lat": 52.201488,
       "lng": 0.116269,
       "hours": "Mo-Fr 12:00-15:00,17:00-21:00; Sa-Su 12:00-21:00",
-      "link_only": true
+      "menu": "regular"
     },
     {
       "id": "the-granta",

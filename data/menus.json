@@ -1519,6 +1519,438 @@
           ]
         }
       ]
+    },
+    "the-mill": {
+      "source_url": "https://www.themillpubcambridge.com/food-and-drink",
+      "status": "ok",
+      "error": null,
+      "updated_at": "2026-09-23T16:31:02+01:00",
+      "content_hash": "6d3f78030c592335",
+      "days": [
+        {
+          "date": "2026-09-23",
+          "meals": [
+            {
+              "name": "Menu",
+              "items": [
+                {
+                  "name": "Watercress, pea & mint soup",
+                  "description": "Creme fresh & Sourdough",
+                  "category": "Small Plates",
+                  "price": {
+                    "amount": 9.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£9.00",
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Pan fried Gressingham duck breast",
+                  "description": "Monks beard, watercress, stilton & balsamic reduction",
+                  "category": "Small Plates",
+                  "price": {
+                    "amount": 15.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£15.00",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Smoked mackerel salad",
+                  "description": "Salsa Verde, pickled fennel & rocket",
+                  "category": "Small Plates",
+                  "price": {
+                    "amount": 11.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£11.00",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Isle of Wight heritage tomato salad",
+                  "description": "Pickled radish, vegan feta, sunflower seeds & basil oil",
+                  "category": "Small Plates",
+                  "price": {
+                    "amount": 11.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£11.00",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Ham hock & Davidstow cheddar croquettes",
+                  "description": "Whole grain mustard",
+                  "category": "Small Plates",
+                  "price": {
+                    "amount": 10.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£10.00",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Heritage tomato bruschetta",
+                  "description": "Cream cheese, garlic & pickled gerlot onion",
+                  "category": "Small Plates",
+                  "price": {
+                    "amount": 10.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£10.00",
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Triple cooked chips",
+                  "description": "Sea salt",
+                  "category": "Sides",
+                  "price": {
+                    "amount": 5.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£5.00",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Garlic & parmesan fries",
+                  "description": null,
+                  "category": "Sides",
+                  "price": {
+                    "amount": 6.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£6.00",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Heritage tomato salad",
+                  "description": "Pickled fennel vegan feta & balsamic reduction",
+                  "category": "Sides",
+                  "price": {
+                    "amount": 6.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£6.00",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Buttered bobby beans",
+                  "description": null,
+                  "category": "Sides",
+                  "price": {
+                    "amount": 5.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£5.00",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Jersey Royal Potatoes",
+                  "description": "Garlic butter",
+                  "category": "Sides",
+                  "price": {
+                    "amount": 5.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£5.00",
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Fish finger",
+                  "description": "Baby gem & tartar sauce",
+                  "category": "Sandwiches (Monday - Friday, 12 noon - 5pm)",
+                  "price": {
+                    "amount": 11.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£11.00",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Heritage tomato & buffalo mozzarella",
+                  "description": "Basil pesto & baby gem",
+                  "category": "Sandwiches (Monday - Friday, 12 noon - 5pm)",
+                  "price": {
+                    "amount": 11.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£11.00",
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Chicken Club",
+                  "description": "Bacon, tomato, baby gem & mayo",
+                  "category": "Sandwiches (Monday - Friday, 12 noon - 5pm)",
+                  "price": {
+                    "amount": 11.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£11.00",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Vegan applewood & pickle",
+                  "description": "tomato & baby gem",
+                  "category": "Sandwiches (Monday - Friday, 12 noon - 5pm)",
+                  "price": {
+                    "amount": 11.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£11.00",
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Kalamata Olives",
+                  "description": null,
+                  "category": "Bar Snacks",
+                  "price": {
+                    "amount": 5.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£5.00",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Roasted salted nuts",
+                  "description": null,
+                  "category": "Bar Snacks",
+                  "price": {
+                    "amount": 5.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£5.00",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Davidstow cheddar cheese straws",
+                  "description": null,
+                  "category": "Bar Snacks",
+                  "price": {
+                    "amount": 5.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£5.00",
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Digley Dell pork T-bone",
+                  "description": "Bobby beans, cream & chestnut mushroom sauce",
+                  "category": "Mains",
+                  "price": {
+                    "amount": 21.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£21.00",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "28 day - 8oz dry aged west country ribeye steak",
+                  "description": "Triple cooked chips, peppercorn sauce & watercress",
+                  "category": "Mains",
+                  "price": {
+                    "amount": 32.5,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£32.50",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Isle of wight heritage tomato & burrata salad",
+                  "description": "Pickled shallots, fresh basil, croutons & wild garlic dressing",
+                  "category": "Mains",
+                  "price": {
+                    "amount": 25.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£25.00",
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "The Mill short rib & brisket British beef burger",
+                  "description": "Sesame bun, cheese pickles, burger sauce, crispy onions & fries - plant option available",
+                  "category": "Mains",
+                  "price": {
+                    "amount": 17.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£17.00",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Chicken Caesar salad",
+                  "description": "Anchovies, soft boiled egg, Caesar dressing, parmesan & brioche croutons",
+                  "category": "Mains",
+                  "price": {
+                    "amount": 16.5,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£16.50",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Pan fried chalk stream trout",
+                  "description": "Jersey Royals, samphire, wild garlic butter & crispy capers",
+                  "category": "Mains",
+                  "price": {
+                    "amount": 25.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£25.00",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Fish & chips",
+                  "description": "Cyder battered haddock, Triple cooked chips, mushy peas & tartar sauce",
+                  "category": "Mains",
+                  "price": {
+                    "amount": 18.5,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£18.50",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Roasted lamb rump",
+                  "description": "Jersey Royals, tender stem broccoli, pea & spinach pesto",
+                  "category": "Mains",
+                  "price": {
+                    "amount": 30.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£30.00",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "St George’s mushroom & wild rice salad",
+                  "description": "Pea’s, pickled fennel & sunflower seeds",
+                  "category": "Mains",
+                  "price": {
+                    "amount": 22.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£22.00",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Eton mess",
+                  "description": null,
+                  "category": "Puddings",
+                  "price": {
+                    "amount": 9.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£9.00",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Chocolate fudge sundae",
+                  "description": "Brownie bites",
+                  "category": "Puddings",
+                  "price": {
+                    "amount": 10.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£10.00",
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Bakewell tart",
+                  "description": "Clotted cream",
+                  "category": "Puddings",
+                  "price": {
+                    "amount": 10.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£10.00",
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Banoffee pie",
+                  "description": "Fresh cream & salted caramel",
+                  "category": "Puddings",
+                  "price": {
+                    "amount": 10.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£10.00",
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        }
+      ]
     }
   }
 }

@@ -73,7 +73,23 @@ def test_darwin():
     note = next(m["note"] for m in days[2]["meals"] if m["name"] == "Dinner")
     assert note == "See daily boards for specials and allergens"
 
-@pytest.mark.parametrize("vendor", ["newnham", "selwyn", "darwin"])
+def test_the_mill():
+    [day] = parse("the-mill")
+    assert day["date"] == "2026-09-23"  # a regular menu is reported as today's
+    [meal] = day["meals"]
+    by_name = {i["name"]: i for i in meal["items"]}
+    soup = by_name["Watercress, pea & mint soup"]
+    assert soup["price"] == {"amount": 9.0, "currency": "GBP"}
+    assert soup["price_text"] == "£9.00"
+    assert soup["description"] == "Creme fresh & Sourdough"
+    assert soup["dietary"] == ["vegetarian"]
+    assert soup["category"] == "Small Plates"
+    assert by_name["Pan fried Gressingham duck breast"]["dietary"] == []
+    assert any(i["dietary"] == ["vegan", "vegetarian"] for i in meal["items"])
+    assert {i["category"] for i in meal["items"]} >= {"Sides", "Mains", "Puddings"}
+
+
+@pytest.mark.parametrize("vendor", ["newnham", "selwyn", "darwin", "the-mill"])
 def test_rejects_unrelated_page(vendor):
     with pytest.raises(ValueError):
         ADAPTERS[vendor]("<html><body><p>Page not found</p></body></html>", TODAY)
