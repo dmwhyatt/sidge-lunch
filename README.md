@@ -7,8 +7,7 @@ Where can I get lunch on Sidgwick site, and what is it today?
 > collected automatically from the vendors' public web pages and may be incomplete, wrong or out of date.
 > Always check with the vendor, especially about allergens and dietary requirements.
 
-> **Vibe coded using [Claude](https://claude.ai/code).** Most of this code was written by an AI assistant
-> and has had limited human review. Expect rough edges, and don't rely on it for anything important.
+Vibe coded using Claude.
 
 A static site with two views of the same data:
 
