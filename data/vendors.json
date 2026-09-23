@@ -1,5 +1,5 @@
 {
-  "_note": "Static vendor metadata. type is college, university or commercial. link_only vendors are not scraped; menu \"regular\" marks a standing menu rather than a daily one. hours use OpenStreetMap opening_hours syntax. Positions come from OpenStreetMap (osm id) or were read off OpenStreetMap map tiles at the hall or entrance.",
+  "_note": "Hand-curated vendors: anything scraped, University Catering cafés (hours from their pages), and places whose details were checked by hand. They override the generated places.json. type is college, university or commercial; link_only vendors are not scraped; menu \"regular\" marks a standing menu; hours use OpenStreetMap opening_hours syntax; approx marks a position that isn't exact.",
   "vendors": [
     {
       "id": "selwyn",
@@ -70,11 +70,147 @@
       "name": "University Library Tea Room",
       "type": "university",
       "about": "Café",
-      "menu_url": "https://www.lib.cam.ac.uk/using-library/tea-room",
+      "menu_url": "https://www.catering.admin.cam.ac.uk/cafes/university-library-tea-room",
       "osm": "node/4485279691",
       "lat": 52.205632,
       "lng": 0.108009,
-      "hours": "Mo-Fr 09:00-17:00; Sa 10:00-14:00",
+      "hours": "Mo-Fr 09:00-15:00; Sa 09:00-14:00",
+      "link_only": true
+    },
+    {
+      "id": "west-hub",
+      "name": "West Hub Canteen & Coffee Bar",
+      "type": "university",
+      "about": "Canteen until 14:30; coffee bar until 16:00. JJ Thomson Avenue",
+      "menu_url": "https://www.catering.admin.cam.ac.uk/food-and-drink/places-eat/out-university-centre/west-hub-canteen",
+      "osm": "node/9772842304",
+      "lat": 52.210323,
+      "lng": 0.09014,
+      "hours": "Mo-Fr 08:00-16:00",
+      "link_only": true
+    },
+    {
+      "id": "scholars-brew",
+      "name": "Scholars Brew",
+      "type": "university",
+      "about": "Café, Hauser Forum, 3 Charles Babbage Road",
+      "menu_url": "https://www.catering.admin.cam.ac.uk/food-and-drink/places-eat/out-university-centre/scholars-brew",
+      "osm": "node/636875290",
+      "lat": 52.208871,
+      "lng": 0.090079,
+      "hours": "Mo-Fr 08:00-16:00",
+      "link_only": true
+    },
+    {
+      "id": "the-servery",
+      "name": "The Servery",
+      "type": "university",
+      "about": "Café, Department of Materials Science, Charles Babbage Road",
+      "menu_url": "https://www.catering.admin.cam.ac.uk/food-and-drink/places-eat/out-university-centre/servery",
+      "lat": 52.209331,
+      "lng": 0.084609,
+      "hours": "Mo-Fr 08:00-16:00",
+      "link_only": true
+    },
+    {
+      "id": "ceb-cafe",
+      "name": "CEB Café",
+      "type": "university",
+      "about": "Café, Department of Chemical Engineering & Biotechnology",
+      "menu_url": "https://www.catering.admin.cam.ac.uk/food-and-drink/places-eat/out-university-centre/ceb-cafe",
+      "lat": 52.209186,
+      "lng": 0.086111,
+      "hours": "Mo-Fr 08:00-16:00",
+      "link_only": true
+    },
+    {
+      "id": "blue-brew",
+      "name": "Blue & Brew Café",
+      "type": "university",
+      "about": "Café, University Sports Centre",
+      "menu_url": "https://www.catering.admin.cam.ac.uk/cafes/blue-brew-cafe",
+      "lat": 52.208125,
+      "lng": 0.085744,
+      "hours": "Mo-Fr 08:30-20:00; Sa,Su 08:30-19:00",
+      "link_only": true
+    },
+    {
+      "id": "greenwich-house-cafe",
+      "name": "Greenwich House Café",
+      "type": "university",
+      "about": "Café, Greenwich House, Madingley Rise",
+      "menu_url": "https://www.catering.admin.cam.ac.uk/food-and-drink/places-eat/out-university-centre/greenwich-house-cafe",
+      "lat": 52.215241,
+      "lng": 0.095754,
+      "hours": "Mo-Th 08:00-15:00; Fr 08:00-14:30",
+      "link_only": true
+    },
+    {
+      "id": "whale-cafe",
+      "name": "Whale Café",
+      "type": "university",
+      "about": "Café, Museum of Zoology, New Museums Site",
+      "menu_url": "https://www.catering.admin.cam.ac.uk/cafes/whale-cafe",
+      "osm": "node/5694726358",
+      "lat": 52.203366,
+      "lng": 0.120455,
+      "hours": "Tu-Sa 10:00-15:00",
+      "link_only": true
+    },
+    {
+      "id": "pathology-cafe",
+      "name": "Department of Pathology Café",
+      "type": "university",
+      "about": "Breakfast from 9:00; lunch 12:00-14:00. Tennis Court Road",
+      "menu_url": "https://www.catering.admin.cam.ac.uk/food-and-drink/places-eat/out-university-centre/department-pathology",
+      "lat": 52.201205,
+      "lng": 0.121975,
+      "hours": "Mo-We 09:00-15:30; Th,Fr 09:00-14:00",
+      "link_only": true
+    },
+    {
+      "id": "zest-cafe",
+      "name": "Zest Café",
+      "type": "university",
+      "about": "Café, Tennis Court Road (building not known; position approximate)",
+      "menu_url": "https://www.catering.admin.cam.ac.uk/food-and-drink/places-eat/out-university-centre/zest-cafe",
+      "lat": 52.2005,
+      "lng": 0.1226,
+      "hours": "Mo-Fr 08:30-15:00",
+      "approx": true,
+      "link_only": true
+    },
+    {
+      "id": "jcbc-cafe",
+      "name": "Jeffrey Cheah Biomedical Centre Café",
+      "type": "university",
+      "about": "Food until 14:00, drinks until 16:00. Puddicombe Way",
+      "menu_url": "https://www.catering.admin.cam.ac.uk/food-and-drink/places-eat/out-university-centre/jeffrey-cheah-biomedical-centre",
+      "lat": 52.176781,
+      "lng": 0.13669,
+      "hours": "Mo-Fr 08:00-16:00",
+      "link_only": true
+    },
+    {
+      "id": "cruk-cafe",
+      "name": "Cancer Research UK Café",
+      "type": "university",
+      "about": "Café, Li Ka Shing Centre, Robinson Way",
+      "menu_url": "https://www.catering.admin.cam.ac.uk/food-and-drink/places-eat/out-university-centre/cancer-research-uk-cafe",
+      "lat": 52.17687,
+      "lng": 0.135563,
+      "hours": "Mo-Fr 12:00-16:00",
+      "link_only": true
+    },
+    {
+      "id": "ground-cafe",
+      "name": "Ground Café",
+      "type": "university",
+      "about": "Café, School of Clinical Medicine",
+      "menu_url": "https://www.catering.admin.cam.ac.uk/food-and-drink/places-eat/out-university-centre/school-clinical-medicine-cafe",
+      "lat": 52.175961,
+      "lng": 0.141605,
+      "hours": "Mo-Fr 08:30-16:30",
       "link_only": true
     },
     {

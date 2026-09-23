@@ -64,8 +64,10 @@ a { color: var(--accent); }
 }
 .topbar h1 { margin: 0; font-size: 1.35rem; }
 .topbar p { margin: 0; font-size: 0.9rem; }
-.faculty-picker { display: flex; gap: 0.5rem; align-items: center; font-weight: 600; }
-.faculty-picker select { max-width: min(28rem, 70vw); }
+.where { display: flex; flex-wrap: wrap; gap: 0.5rem 0.9rem; align-items: flex-end; }
+.where label { display: flex; flex-direction: column; gap: 0.15rem; font-size: 0.78rem; font-weight: 600; color: var(--muted); }
+.where select { font-size: 0.95rem; color: var(--text); max-width: min(22rem, 90vw); }
+.count { font-size: 0.85rem; margin: 0 0 0.6rem; }
 select, input { font: inherit; color: inherit; }
 select { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.3rem 0.4rem; }
 

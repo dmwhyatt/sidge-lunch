@@ -72,20 +72,29 @@ export interface Vendor extends Place {
   hours?: string; // OpenStreetMap opening_hours syntax, shown as written
   notice?: string; // temporary notice, e.g. a closure
   notice_until?: string; // YYYY-MM-DD; the notice is hidden from this date
+  approx?: boolean; // position isn't exact
 }
 
-export interface Faculty extends Place {
-  building: string;
+export interface Building extends Place {
+  occupants?: string; // who is in it, where the name doesn't say
+}
+
+export interface Site {
+  id: string;
+  name: string;
+  kind: "university" | "college";
+  buildings: Building[];
+}
+
+// data/walking/<site>.json: routed walks from each building to nearby places.
+export interface SiteWalking {
+  source: string | null;
+  generated_at: string | null;
+  times: Record<string, Record<string, [seconds: number, metres: number]>>;
 }
 
 export interface Walk {
   seconds: number;
   metres: number;
   estimated: boolean; // true when straight-line fallback, not a real route
-}
-
-export interface WalkingFile {
-  source: string | null;
-  generated_at: string | null;
-  times: Record<string, Record<string, { seconds: number; metres: number }>>;
 }

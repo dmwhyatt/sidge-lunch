@@ -18,10 +18,25 @@
         <h1>Sidge Lunch</h1>
         <p id="today" class="muted"></p>
       </div>
-      <label class="faculty-picker">
-        <span>I'm at</span>
-        <select id="faculty"></select>
-      </label>
+      <div class="where" role="group" aria-label="Where are you?">
+        <label>
+          <span>Site</span>
+          <select id="site"></select>
+        </label>
+        <label>
+          <span>Building</span>
+          <select id="building"></select>
+        </label>
+        <label>
+          <span>Within</span>
+          <select id="range">
+            <option value="5">5 min walk</option>
+            <option value="10" selected>10 min walk</option>
+            <option value="15">15 min walk</option>
+            <option value="20">20 min walk</option>
+          </select>
+        </label>
+      </div>
     </header>
 
     <main class="layout">
@@ -71,6 +86,7 @@
           Dietary labels and allergens are shown only where the vendor publishes them. A dish without a label may
           still be suitable, or may not be, and hiding an allergen only hides dishes the vendor says contain it.
         </p>
+        <p id="count" class="count muted" aria-live="polite"></p>
         <div id="vendors" class="vendors"></div>
       </section>
 

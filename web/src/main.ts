@@ -13,7 +13,7 @@ import {
   type Filters,
 } from "./logic";
 import { ALLERGENS, VENDOR_TYPES, VENDOR_TYPE_LABELS, type Allergen, type VendorType } from "./types";
-import type { Dietary, Faculty, Meal, Vendor, VendorMenu, Walk, WalkingFile } from "./types";
+import type { Building, Dietary, Meal, Site, SiteWalking, Vendor, VendorMenu, Walk } from "./types";
 
 const DIETARY_ABBR: Record<Dietary, string> = {
   vegan: "VG",
@@ -22,13 +22,13 @@ const DIETARY_ABBR: Record<Dietary, string> = {
   "dairy-free": "DF",
   halal: "H",
 };
-const FACULTY_KEY = "sidge-lunch:faculty";
+const WHERE_KEY = "sidge-lunch:where";
+const DEFAULT_WHERE = { site: "sidgwick", building: "faculty-of-english" };
 
 interface Data {
-  vendors: Vendor[];
-  faculties: Faculty[];
+  vendors: Vendor[]; // hand-curated first, then generated places
+  sites: Site[];
   menus: Record<string, VendorMenu>;
-  walking: WalkingFile;
 }
 
 interface Row {
@@ -52,27 +52,44 @@ async function getJson<T>(name: string): Promise<T> {
 }
 
 async function load(): Promise<Data> {
-  const [v, f, m, walking] = await Promise.all([
+  const [curated, places, sites, menus] = await Promise.all([
     getJson<{ vendors: Vendor[] }>("vendors.json"),
-    getJson<{ faculties: Faculty[] }>("faculties.json"),
+    getJson<{ vendors: Vendor[] }>("places.json").catch(() => ({ vendors: [] as Vendor[] })),
+    getJson<{ sites: Site[] }>("sites.json"),
     getJson<{ vendors: Record<string, VendorMenu> }>("menus.json"),
-    getJson<WalkingFile>("walking.json").catch(() => ({ source: null, generated_at: null, times: {} })),
   ]);
-  return { vendors: v.vendors, faculties: f.faculties, menus: m.vendors, walking };
+  return { vendors: [...curated.vendors, ...places.vendors], sites: sites.sites, menus: menus.vendors };
 }
 
-function storedFaculty(faculties: Faculty[]): Faculty {
-  try {
-    const id = localStorage.getItem(FACULTY_KEY);
-    const found = faculties.find((f) => f.id === id);
-    if (found) return found;
-  } catch {
-    // storage unavailable; fall through to default
+const walkingCache = new Map<string, Promise<SiteWalking | null>>();
+function siteWalking(siteId: string): Promise<SiteWalking | null> {
+  if (!walkingCache.has(siteId)) {
+    walkingCache.set(siteId, getJson<SiteWalking>(`walking/${siteId}.json`).catch(() => null));
   }
-  return faculties[0];
+  return walkingCache.get(siteId)!;
 }
 
-function readFilters(): Filters & { sort: "walk" | "price"; types: VendorType[]; menuOnly: boolean } {
+function storedWhere(sites: Site[]): { site: Site; building: Building } {
+  let want = DEFAULT_WHERE;
+  try {
+    want = { ...want, ...JSON.parse(localStorage.getItem(WHERE_KEY) ?? "{}") };
+  } catch {
+    // storage unavailable or garbled; use the default
+  }
+  const site = sites.find((s) => s.id === want.site) ?? sites[0];
+  const building = site.buildings.find((b) => b.id === want.building) ?? site.buildings[0];
+  return { site, building };
+}
+
+function saveWhere(site: Site, building: Building) {
+  try {
+    localStorage.setItem(WHERE_KEY, JSON.stringify({ site: site.id, building: building.id }));
+  } catch {
+    // storage unavailable; the choice just won't persist
+  }
+}
+
+function readFilters(): Filters & { sort: "walk" | "price"; types: VendorType[]; menuOnly: boolean; range: number } {
   const form = $<HTMLFormElement>("#filters");
   const dietary = [...form.querySelectorAll<HTMLInputElement>('input[name="dietary"]:checked')].map(
     (i) => i.value as Dietary,
@@ -91,14 +108,13 @@ function readFilters(): Filters & { sort: "walk" | "price"; types: VendorType[];
     lunchOnly: $<HTMLInputElement>("#lunch-only").checked,
     sort: $<HTMLSelectElement>("#sort").value as "walk" | "price",
     menuOnly: $<HTMLInputElement>("#menu-only").checked,
+    range: Number($<HTMLSelectElement>("#range").value) * 60,
     types: [...form.querySelectorAll<HTMLInputElement>('input[name="type"]:checked')].map((i) => i.value as VendorType),
   };
 }
 
 function statusLine(row: Row): string {
-  if (row.vendor.link_only) {
-    return row.vendor.menu_url ? `<p class="status">Menu not collected. See the vendor's own page.</p>` : "";
-  }
+  if (row.vendor.link_only) return ""; // not scraped; the card links to the vendor instead
   const m = row.menu;
   if (!m || m.status === "unsupported") {
     return `<p class="status">Menu not collected yet. See the vendor's own page.</p>`;
@@ -166,8 +182,13 @@ function infoHtml(v: Vendor, today: string): string {
   return [
     notice ? `<p class="notice">${esc(notice)}</p>` : "",
     v.about ? `<p class="about">${esc(v.about)}</p>` : "",
+    v.approx ? `<p class="hours">Map position is approximate.</p>` : "",
     v.hours ? `<p class="hours">Hours: ${esc(v.hours)}</p>` : "",
   ].join("");
+}
+
+function buildingLabel(b: Building): string {
+  return b.occupants ? `${b.name} (${b.occupants})` : b.name;
 }
 
 function main(data: Data) {
@@ -179,12 +200,6 @@ function main(data: Data) {
     month: "long",
   }).format(new Date());
 
-  if (data.walking.source) {
-    $("#walk-source").textContent = `Walking times: ${data.walking.source}. Times marked ≈ are straight-line estimates.`;
-  } else {
-    $("#walk-source").textContent = "Walking times marked ≈ are straight-line estimates.";
-  }
-
   $("#type-options").innerHTML = VENDOR_TYPES.map(
     (t) => `<label class="type-option t-${t}"><input type="checkbox" name="type" value="${t}" checked />
       <span class="type-dot"></span>${VENDOR_TYPE_LABELS[t]}</label>`,
@@ -194,12 +209,25 @@ function main(data: Data) {
     (a) => `<label><input type="checkbox" name="allergen" value="${a}" /> ${a}</label>`,
   ).join("");
 
-  const select = $<HTMLSelectElement>("#faculty");
-  select.innerHTML = data.faculties
-    .map((f) => `<option value="${esc(f.id)}">${esc(f.name)}</option>`)
-    .join("");
-  let faculty = storedFaculty(data.faculties);
-  select.value = faculty.id;
+  // Where am I: site, then building within it.
+  const siteSelect = $<HTMLSelectElement>("#site");
+  const buildingSelect = $<HTMLSelectElement>("#building");
+  const group = (kind: Site["kind"], label: string) =>
+    `<optgroup label="${label}">${data.sites
+      .filter((s) => s.kind === kind)
+      .map((s) => `<option value="${esc(s.id)}">${esc(s.name)}</option>`)
+      .join("")}</optgroup>`;
+  siteSelect.innerHTML = group("university", "University") + group("college", "Colleges");
+  let { site, building } = storedWhere(data.sites);
+  let routes: Record<string, [number, number]> | undefined;
+  const fillBuildings = () => {
+    buildingSelect.innerHTML = site.buildings
+      .map((b) => `<option value="${esc(b.id)}">${esc(buildingLabel(b))}</option>`)
+      .join("");
+  };
+  siteSelect.value = site.id;
+  fillBuildings();
+  buildingSelect.value = building.id;
   let selectedVendor: string | null = null;
 
   // Map
@@ -208,9 +236,7 @@ function main(data: Data) {
     maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   }).addTo(map);
-  map.fitBounds(L.latLngBounds([...data.vendors, ...data.faculties].map((p) => [p.lat, p.lng])), {
-    padding: [70, 30], // pin labels are centred on the point, so leave room either side
-  });
+  map.setView([building.lat, building.lng], 16);
 
   const legend = new L.Control({ position: "bottomleft" });
   legend.onAdd = () => {
@@ -235,21 +261,27 @@ function main(data: Data) {
       iconSize: [0, 0],
     });
 
-  const facultyMarker = L.marker([faculty.lat, faculty.lng], {
+  const youMarker = L.marker([building.lat, building.lng], {
     icon: pinIcon("You", "faculty"),
     keyboard: false,
     zIndexOffset: -100,
   }).addTo(map);
 
+  // Markers are made when a place first comes into range; hundreds exist in total.
   const vendorMarkers = new Map<string, L.Marker>();
-  for (const v of data.vendors) {
-    const m = L.marker([v.lat, v.lng], { icon: pinIcon(v.name, `t-${v.type}${v.link_only ? " link-only" : ""}`), title: v.name }).addTo(map);
-    m.bindPopup("", { maxWidth: 320, autoPanPadding: [20, 20] });
-    m.on("popupopen", () => select_(v.id, false));
-    vendorMarkers.set(v.id, m);
-  }
-
-  let rows: Row[] = [];
+  const markerFor = (v: Vendor) => {
+    let m = vendorMarkers.get(v.id);
+    if (!m) {
+      m = L.marker([v.lat, v.lng], {
+        icon: pinIcon(v.name, `t-${v.type}${v.link_only ? " link-only" : ""}`),
+        title: v.name,
+      });
+      m.bindPopup("", { maxWidth: 320, autoPanPadding: [20, 20] });
+      m.on("popupopen", () => select_(v.id, false));
+      vendorMarkers.set(v.id, m);
+    }
+    return m;
+  };
 
   function select_(id: string, openPopup: boolean) {
     selectedVendor = id;
@@ -260,8 +292,8 @@ function main(data: Data) {
     // Side by side, keep the card list in step with the map. Stacked (phones), the map
     // sits above the list, so bring the map into view instead of scrolling away from it.
     const sideBySide = window.matchMedia("(min-width: 801px)").matches;
-    if (openPopup) {
-      const marker = vendorMarkers.get(id)!;
+    const marker = vendorMarkers.get(id);
+    if (openPopup && marker) {
       marker.openPopup();
       map.panTo(marker.getLatLng());
       if (!sideBySide) $("#map").scrollIntoView({ behavior: "smooth", block: "start" });
@@ -270,25 +302,19 @@ function main(data: Data) {
     }
   }
 
-  function render() {
+  function render(refit = false) {
     const f = readFilters();
-    const out = $<HTMLOutputElement>("#max-price-out");
-    out.textContent = f.maxPrice === null ? "any" : `£${f.maxPrice.toFixed(2)}`;
+    $<HTMLOutputElement>("#max-price-out").textContent = f.maxPrice === null ? "any" : `£${f.maxPrice.toFixed(2)}`;
     $("#allergen-count").textContent = f.excludeAllergens.length ? `(${f.excludeAllergens.length})` : "";
 
-    rows = data.vendors
+    const rows: Row[] = data.vendors
       .filter((v) => f.types.includes(v.type))
       .map((vendor) => {
         const menu = data.menus[vendor.id];
         const day = todaysDay(menu, today);
-        return { vendor, menu, walk: walkFor(data.walking, faculty, vendor), meals: filterMeals(day, f), hasToday: !!day };
+        return { vendor, menu, walk: walkFor(routes, building, vendor), meals: filterMeals(day, f), hasToday: !!day };
       })
-      .filter((row) => !f.menuOnly || row.hasToday);
-    const shown = new Set(rows.map((r) => r.vendor.id));
-    for (const [id, marker] of vendorMarkers) {
-      if (shown.has(id)) marker.addTo(map);
-      else marker.remove();
-    }
+      .filter((row) => row.walk.seconds <= f.range && (!f.menuOnly || row.hasToday));
     rows.sort((a, b) => {
       // Vendors with matching items today first, then by chosen key.
       const am = a.meals.length > 0 ? 0 : 1;
@@ -301,6 +327,12 @@ function main(data: Data) {
       }
       return a.walk.seconds - b.walk.seconds;
     });
+
+    const withMenu = rows.filter((r) => r.hasToday).length;
+    $("#count").textContent = rows.length
+      ? `${rows.length} place${rows.length === 1 ? "" : "s"} within ${f.range / 60} min of ${building.name}` +
+        (withMenu ? `, ${withMenu} with a menu today.` : ".")
+      : `Nothing within ${f.range / 60} min of ${building.name} matches. Try a longer walk.`;
 
     $("#vendors").innerHTML = rows
       .map(
@@ -319,8 +351,10 @@ function main(data: Data) {
       )
       .join("");
 
+    const shown = new Set(rows.map((r) => r.vendor.id));
+    for (const [id, marker] of vendorMarkers) if (!shown.has(id)) marker.remove();
     for (const row of rows) {
-      const marker = vendorMarkers.get(row.vendor.id)!;
+      const marker = markerFor(row.vendor).addTo(map);
       const el = marker.getElement()?.querySelector(".pin");
       el?.classList.toggle("dim", !row.vendor.link_only && row.meals.length === 0);
       el?.classList.toggle("selected", row.vendor.id === selectedVendor);
@@ -328,32 +362,54 @@ function main(data: Data) {
         <div class="vendor-popup">
           <h2>${esc(row.vendor.name)}</h2>
           ${typeTag(row.vendor.type)}
-          <div class="walk">${formatWalk(row.walk)} from ${esc(faculty.building)}</div>
+          <div class="walk">${formatWalk(row.walk)} from ${esc(building.name)}</div>
           ${infoHtml(row.vendor, today)}
           ${statusLine(row)}
           ${mealsHtml(row)}
           ${sourceLink(row)}
         </div>`);
     }
+
+    if (refit) {
+      const points: L.LatLngExpression[] = [[building.lat, building.lng], ...rows.map((r) => [r.vendor.lat, r.vendor.lng] as L.LatLngTuple)];
+      map.fitBounds(L.latLngBounds(points), { padding: [40, 40], maxZoom: 17 });
+    }
   }
 
-  select.addEventListener("change", () => {
-    faculty = data.faculties.find((f) => f.id === select.value)!;
-    try {
-      localStorage.setItem(FACULTY_KEY, faculty.id);
-    } catch {
-      // storage unavailable; the choice just won't persist
+  async function moveTo(newSite: Site, newBuilding: Building) {
+    site = newSite;
+    building = newBuilding;
+    saveWhere(site, building);
+    youMarker.setLatLng([building.lat, building.lng]);
+    routes = undefined;
+    render(true);
+    const walking = await siteWalking(site.id);
+    if (site === newSite && building === newBuilding) {
+      routes = walking?.times[building.id];
+      $("#walk-source").textContent = walking?.source
+        ? `Walking times: ${walking.source}. Times marked ≈ are straight-line estimates.`
+        : "Walking times marked ≈ are straight-line estimates.";
+      render(true);
     }
-    facultyMarker.setLatLng([faculty.lat, faculty.lng]);
-    render();
+  }
+
+  siteSelect.addEventListener("change", () => {
+    const s = data.sites.find((x) => x.id === siteSelect.value)!;
+    site = s;
+    fillBuildings();
+    moveTo(s, s.buildings[0]);
   });
-  $("#filters").addEventListener("input", render);
+  buildingSelect.addEventListener("change", () => {
+    moveTo(site, site.buildings.find((b) => b.id === buildingSelect.value)!);
+  });
+  $("#range").addEventListener("change", () => render(true));
+  $("#filters").addEventListener("input", () => render());
   $("#vendors").addEventListener("click", (e) => {
     const btn = (e.target as HTMLElement).closest<HTMLButtonElement>("button[data-vendor]");
     if (btn) select_(btn.dataset.vendor!, true);
   });
 
-  render();
+  moveTo(site, building);
 }
 
 load().then(main, (err) => {

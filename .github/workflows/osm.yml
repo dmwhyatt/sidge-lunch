@@ -1,7 +1,8 @@
 name: OpenStreetMap snapshot
 
 # Fetch the OpenStreetMap data behind sites.json and places.json in one Overpass
-# query, only when the query changes or on demand, and commit the raw result.
+# query, only when the query changes or on demand; rebuild those files and
+# commit. Walking times follow when anything changed.
 on:
   push:
     paths: ["scraper/osm/cambridge.overpassql"]
@@ -17,10 +18,16 @@ concurrency:
 jobs:
   snapshot:
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install ./scraper
       - name: Query Overpass
         run: |
           curl -sS --fail --retry 2 --retry-delay 60 -m 300 \
@@ -28,11 +35,27 @@ jobs:
             --data-urlencode "data@scraper/osm/cambridge.overpassql" \
             https://overpass-api.de/api/interpreter -o scraper/osm/cambridge.json
           python3 -c "import json; d=json.load(open('scraper/osm/cambridge.json')); print(len(d['elements']), 'elements')"
-      - name: Commit if changed
+      - run: python -m sidge_lunch.places --data-dir data
+      - id: commit
+        name: Commit if changed
         run: |
-          git diff --quiet -- scraper/osm/cambridge.json && git ls-files --error-unmatch scraper/osm/cambridge.json >/dev/null 2>&1 && exit 0
+          git add scraper/osm/cambridge.json data/sites.json data/places.json
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add scraper/osm/cambridge.json
           git commit -m "Update OpenStreetMap snapshot"
           git push origin HEAD:${{ github.ref_name }}
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+  # Pushes made with GITHUB_TOKEN don't trigger other workflows, so run walking times from here.
+  walking:
+    needs: snapshot
+    if: needs.snapshot.outputs.changed == 'true'
+    uses: ./.github/workflows/walking.yml
+    permissions:
+      contents: write
+      pages: write
+      id-token: write

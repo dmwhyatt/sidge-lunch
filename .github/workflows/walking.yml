@@ -1,11 +1,13 @@
 name: Walking times
 
-# Recompute faculty → vendor walking routes when locations change, or on demand.
+# Recompute building → place walking routes (data/walking/<site>.json) when
+# sites or places change, or on demand.
 on:
   push:
     branches: [main]
-    paths: ["data/faculties.json", "data/vendors.json"]
+    paths: ["data/sites.json", "data/vendors.json", "data/places.json"]
   workflow_dispatch:
+  workflow_call:
 
 permissions:
   contents: write
@@ -30,20 +32,20 @@ jobs:
       - run: python -m sidge_lunch.walking --data-dir data
       - id: commit
         run: |
-          if git diff --quiet -- data/walking.json; then
+          git add -A data/walking
+          if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/walking.json
           git commit -m "Update walking times"
           git push origin HEAD:${{ github.ref_name }}
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
   deploy:
     needs: walking
-    if: needs.walking.outputs.changed == 'true'
+    if: needs.walking.outputs.changed == 'true' && github.ref_name == 'main'
     uses: ./.github/workflows/deploy.yml
     permissions:
       contents: read

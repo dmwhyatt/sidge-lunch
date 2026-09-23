@@ -4,7 +4,7 @@
     python -m sidge_lunch.osm buildings --name REGEX  # find features by name, e.g. to get faculty ids
     python -m sidge_lunch.osm sync                    # set lat/lng from each entry's "osm" id
 
-Entries in data/vendors.json and data/faculties.json can carry an "osm" id such
+Entries in data/vendors.json can carry an "osm" id such
 as "way/123456" or "node/42". ``sync`` replaces their coordinates with the OSM
 feature's position (a node's point, or the centre of a way/relation), so the
 map follows OpenStreetMap rather than hand-typed guesses.
@@ -81,7 +81,7 @@ def buildings(radius: int, name: str) -> list[dict]:
 
 
 def sync(data_dir: Path) -> None:
-    files = {"vendors.json": "vendors", "faculties.json": "faculties"}
+    files = {"vendors.json": "vendors"}
     docs = {name: json.loads((data_dir / name).read_text()) for name in files}
     wanted = {e["osm"] for name, key in files.items() for e in docs[name][key] if e.get("osm")}
     if not wanted:

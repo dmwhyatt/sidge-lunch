@@ -1,4 +1,4 @@
-import type { Allergen, Day, Dietary, Faculty, Meal, MenuItem, Vendor, VendorMenu, Walk, WalkingFile } from "./types";
+import type { Allergen, Day, Dietary, Meal, MenuItem, Place, VendorMenu, Walk } from "./types";
 
 export function londonToday(now = new Date()): string {
   return new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/London" }).format(now);
@@ -21,10 +21,11 @@ function haversine(a: { lat: number; lng: number }, b: { lat: number; lng: numbe
   return 2 * R * Math.asin(Math.sqrt(h));
 }
 
-export function walkFor(walking: WalkingFile, faculty: Faculty, vendor: Vendor): Walk {
-  const routed = walking.times[faculty.id]?.[vendor.id];
-  if (routed) return { ...routed, estimated: false };
-  const metres = haversine(faculty, vendor) * DETOUR;
+/** Routed walk from a building if one was precomputed, else a straight-line estimate. */
+export function walkFor(routes: Record<string, [number, number]> | undefined, from: Place, vendor: Place): Walk {
+  const routed = routes?.[vendor.id];
+  if (routed) return { seconds: routed[0], metres: routed[1], estimated: false };
+  const metres = haversine(from, vendor) * DETOUR;
   return { metres: Math.round(metres), seconds: Math.round(metres / WALK_SPEED), estimated: true };
 }
 
