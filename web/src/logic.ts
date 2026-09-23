@@ -1,4 +1,4 @@
-import type { Day, Dietary, Faculty, Meal, MenuItem, Vendor, VendorMenu, Walk, WalkingFile } from "./types";
+import type { Allergen, Day, Dietary, Faculty, Meal, MenuItem, Vendor, VendorMenu, Walk, WalkingFile } from "./types";
 
 export function londonToday(now = new Date()): string {
   return new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/London" }).format(now);
@@ -30,6 +30,7 @@ export function walkFor(walking: WalkingFile, faculty: Faculty, vendor: Vendor):
 
 export interface Filters {
   dietary: Dietary[]; // item must carry every selected tag
+  excludeAllergens: Allergen[]; // hide items the vendor lists as containing any of these
   maxPrice: number | null; // null = any price
   includeUnpriced: boolean;
   lunchOnly: boolean;
@@ -37,6 +38,7 @@ export interface Filters {
 
 export const DEFAULT_FILTERS: Filters = {
   dietary: [],
+  excludeAllergens: [],
   maxPrice: null,
   includeUnpriced: true,
   lunchOnly: true,
@@ -46,6 +48,7 @@ const LUNCHY = /lunch|brunch|midday/i;
 
 export function itemMatches(item: MenuItem, f: Filters): boolean {
   if (!f.dietary.every((t) => item.dietary.includes(t))) return false;
+  if (f.excludeAllergens.some((a) => item.allergens.includes(a))) return false;
   if (item.price === null) return f.includeUnpriced;
   return f.maxPrice === null || item.price.amount <= f.maxPrice;
 }

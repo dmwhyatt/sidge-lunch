@@ -2,6 +2,13 @@
 
 export type Dietary = "vegan" | "vegetarian" | "gluten-free" | "dairy-free" | "halal";
 
+// The 14 UK-declarable allergens. An empty list means "none listed", not "none present".
+export const ALLERGENS = [
+  "celery", "gluten", "crustaceans", "eggs", "fish", "lupin", "milk",
+  "molluscs", "mustard", "nuts", "peanuts", "sesame", "soya", "sulphites",
+] as const;
+export type Allergen = (typeof ALLERGENS)[number];
+
 export interface Price {
   amount: number;
   currency: string;
@@ -14,11 +21,13 @@ export interface MenuItem {
   price: Price | null;
   price_text: string | null;
   dietary: Dietary[];
+  allergens: Allergen[];
 }
 
 export interface Meal {
   name: string;
   service: string | null;
+  note: string | null;
   items: MenuItem[];
 }
 

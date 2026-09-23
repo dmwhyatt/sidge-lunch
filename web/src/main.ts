@@ -12,6 +12,7 @@ import {
   walkFor,
   type Filters,
 } from "./logic";
+import { ALLERGENS, type Allergen } from "./types";
 import type { Dietary, Faculty, Meal, Vendor, VendorMenu, Walk, WalkingFile } from "./types";
 
 const DIETARY_ABBR: Record<Dietary, string> = {
@@ -76,11 +77,15 @@ function readFilters(): Filters & { sort: "walk" | "price" } {
   const dietary = [...form.querySelectorAll<HTMLInputElement>('input[name="dietary"]:checked')].map(
     (i) => i.value as Dietary,
   );
+  const excludeAllergens = [...form.querySelectorAll<HTMLInputElement>('input[name="allergen"]:checked')].map(
+    (i) => i.value as Allergen,
+  );
   const range = $<HTMLInputElement>("#max-price");
   const max = Number(range.value);
   return {
     ...DEFAULT_FILTERS,
     dietary,
+    excludeAllergens,
     maxPrice: max >= Number(range.max) ? null : max,
     includeUnpriced: $<HTMLInputElement>("#include-unpriced").checked,
     lunchOnly: $<HTMLInputElement>("#lunch-only").checked,
@@ -123,10 +128,12 @@ function mealsHtml(row: Row): string {
                 <span class="item-name">${esc(item.name)}${chips ? `<span class="chips">${chips}</span>` : ""}</span>
                 ${price}
                 ${item.description ? `<span class="item-desc">${esc(item.description)}</span>` : ""}
+                ${item.allergens.length ? `<span class="item-allergens">Contains: ${item.allergens.join(", ")}</span>` : ""}
               </li>`;
             })
             .join("")}
         </ul>
+        ${meal.note ? `<p class="meal-note">${esc(meal.note)}</p>` : ""}
       </div>`,
     )
     .join("");
@@ -150,6 +157,10 @@ function main(data: Data) {
   } else {
     $("#walk-source").textContent = "Walking times marked ≈ are straight-line estimates.";
   }
+
+  $("#allergen-options").innerHTML = ALLERGENS.map(
+    (a) => `<label><input type="checkbox" name="allergen" value="${a}" /> ${a}</label>`,
+  ).join("");
 
   const select = $<HTMLSelectElement>("#faculty");
   select.innerHTML = data.faculties
@@ -211,6 +222,7 @@ function main(data: Data) {
     const f = readFilters();
     const out = $<HTMLOutputElement>("#max-price-out");
     out.textContent = f.maxPrice === null ? "any" : `£${f.maxPrice.toFixed(2)}`;
+    $("#allergen-count").textContent = f.excludeAllergens.length ? `(${f.excludeAllergens.length})` : "";
 
     rows = data.vendors.map((vendor) => {
       const menu = data.menus[vendor.id];

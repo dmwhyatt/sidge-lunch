@@ -35,6 +35,13 @@
             <label><input type="checkbox" name="dietary" value="dairy-free" /> Dairy-free</label>
             <label><input type="checkbox" name="dietary" value="halal" /> Halal</label>
           </fieldset>
+          <fieldset class="allergen-filter">
+            <legend>Allergens</legend>
+            <details>
+              <summary>Hide dishes containing… <span id="allergen-count"></span></summary>
+              <div id="allergen-options" class="allergen-options"></div>
+            </details>
+          </fieldset>
           <fieldset>
             <legend>Price</legend>
             <label class="price-range">
@@ -56,8 +63,8 @@
           </fieldset>
         </form>
         <p class="dietary-note muted">
-          Dietary labels are shown only where the vendor publishes them. An item without a label may still be suitable,
-          or may not be.
+          Dietary labels and allergens are shown only where the vendor publishes them. A dish without a label may
+          still be suitable, or may not be, and hiding an allergen only hides dishes the vendor says contain it.
         </p>
         <div id="vendors" class="vendors"></div>
       </section>
