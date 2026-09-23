@@ -1,0 +1,38 @@
+name: OpenStreetMap snapshot
+
+# Fetch the OpenStreetMap data behind sites.json and places.json in one Overpass
+# query, only when the query changes or on demand, and commit the raw result.
+on:
+  push:
+    paths: ["scraper/osm/cambridge.overpassql"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-commit
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - name: Query Overpass
+        run: |
+          curl -sS --fail --retry 2 --retry-delay 60 -m 300 \
+            -A "sidge-lunch/0.1 (+https://github.com/${{ github.repository }})" \
+            --data-urlencode "data@scraper/osm/cambridge.overpassql" \
+            https://overpass-api.de/api/interpreter -o scraper/osm/cambridge.json
+          python3 -c "import json; d=json.load(open('scraper/osm/cambridge.json')); print(len(d['elements']), 'elements')"
+      - name: Commit if changed
+        run: |
+          git diff --quiet -- scraper/osm/cambridge.json && git ls-files --error-unmatch scraper/osm/cambridge.json >/dev/null 2>&1 && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scraper/osm/cambridge.json
+          git commit -m "Update OpenStreetMap snapshot"
+          git push origin HEAD:${{ github.ref_name }}
