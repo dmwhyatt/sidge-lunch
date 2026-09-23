@@ -12625,6 +12625,102 @@
 },
 {
   "type": "way",
+  "id": 4040865,
+  "bounds": {
+    "minlat": 52.1690220,
+    "minlon": 0.1311340,
+    "maxlat": 52.1783621,
+    "maxlon": 0.1458198
+  },
+  "geometry": [
+    { "lat": 52.1763921, "lon": 0.1444285 },
+    { "lat": 52.1765156, "lon": 0.1444988 },
+    { "lat": 52.1767494, "lon": 0.1445535 },
+    { "lat": 52.1768630, "lon": 0.1445337 },
+    { "lat": 52.1769440, "lon": 0.1444442 },
+    { "lat": 52.1772230, "lon": 0.1439770 },
+    { "lat": 52.1768571, "lon": 0.1431142 },
+    { "lat": 52.1770734, "lon": 0.1428537 },
+    { "lat": 52.1772631, "lon": 0.1426254 },
+    { "lat": 52.1774387, "lon": 0.1424720 },
+    { "lat": 52.1775941, "lon": 0.1423377 },
+    { "lat": 52.1777561, "lon": 0.1421978 },
+    { "lat": 52.1777275, "lon": 0.1421085 },
+    { "lat": 52.1775553, "lon": 0.1415709 },
+    { "lat": 52.1777876, "lon": 0.1416086 },
+    { "lat": 52.1778084, "lon": 0.1412448 },
+    { "lat": 52.1778647, "lon": 0.1402982 },
+    { "lat": 52.1778802, "lon": 0.1401394 },
+    { "lat": 52.1779231, "lon": 0.1397002 },
+    { "lat": 52.1779637, "lon": 0.1392839 },
+    { "lat": 52.1780394, "lon": 0.1385088 },
+    { "lat": 52.1781461, "lon": 0.1374153 },
+    { "lat": 52.1781516, "lon": 0.1373593 },
+    { "lat": 52.1783621, "lon": 0.1352469 },
+    { "lat": 52.1777444, "lon": 0.1350882 },
+    { "lat": 52.1763310, "lon": 0.1347368 },
+    { "lat": 52.1762941, "lon": 0.1347276 },
+    { "lat": 52.1763450, "lon": 0.1337973 },
+    { "lat": 52.1764907, "lon": 0.1311340 },
+    { "lat": 52.1743134, "lon": 0.1314063 },
+    { "lat": 52.1732139, "lon": 0.1315454 },
+    { "lat": 52.1704251, "lon": 0.1319136 },
+    { "lat": 52.1694930, "lon": 0.1320522 },
+    { "lat": 52.1697398, "lon": 0.1322008 },
+    { "lat": 52.1698042, "lon": 0.1322865 },
+    { "lat": 52.1698841, "lon": 0.1323927 },
+    { "lat": 52.1699258, "lon": 0.1325034 },
+    { "lat": 52.1699866, "lon": 0.1326650 },
+    { "lat": 52.1700025, "lon": 0.1327436 },
+    { "lat": 52.1702106, "lon": 0.1337731 },
+    { "lat": 52.1703700, "lon": 0.1337793 },
+    { "lat": 52.1704953, "lon": 0.1341816 },
+    { "lat": 52.1704610, "lon": 0.1344986 },
+    { "lat": 52.1701142, "lon": 0.1347889 },
+    { "lat": 52.1694194, "lon": 0.1343329 },
+    { "lat": 52.1690220, "lon": 0.1346206 },
+    { "lat": 52.1708840, "lon": 0.1412432 },
+    { "lat": 52.1720994, "lon": 0.1412253 },
+    { "lat": 52.1721161, "lon": 0.1412898 },
+    { "lat": 52.1724355, "lon": 0.1414742 },
+    { "lat": 52.1724272, "lon": 0.1417709 },
+    { "lat": 52.1732004, "lon": 0.1446899 },
+    { "lat": 52.1741687, "lon": 0.1440062 },
+    { "lat": 52.1742182, "lon": 0.1439707 },
+    { "lat": 52.1747840, "lon": 0.1435434 },
+    { "lat": 52.1751468, "lon": 0.1448157 },
+    { "lat": 52.1756321, "lon": 0.1444238 },
+    { "lat": 52.1759274, "lon": 0.1455411 },
+    { "lat": 52.1759738, "lon": 0.1457075 },
+    { "lat": 52.1760004, "lon": 0.1458198 },
+    { "lat": 52.1761088, "lon": 0.1456927 },
+    { "lat": 52.1761494, "lon": 0.1456573 },
+    { "lat": 52.1762064, "lon": 0.1455002 },
+    { "lat": 52.1762065, "lon": 0.1453846 },
+    { "lat": 52.1762035, "lon": 0.1453245 },
+    { "lat": 52.1762110, "lon": 0.1452720 },
+    { "lat": 52.1762344, "lon": 0.1447459 },
+    { "lat": 52.1762195, "lon": 0.1446806 },
+    { "lat": 52.1762163, "lon": 0.1446351 },
+    { "lat": 52.1762150, "lon": 0.1446044 },
+    { "lat": 52.1763789, "lon": 0.1443955 },
+    { "lat": 52.1763921, "lon": 0.1444285 }
+  ],
+  "tags": {
+    "alt_name": "Addenbrooke's",
+    "amenity": "hospital",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "name": "Cambridge Biomedical Campus",
+    "old_name": "Cambridge University Hospitals NHS Foundation Trust Addenbrooke's Hospital",
+    "operator": "Cambridge University Hospitals NHS Foundation Trust",
+    "ref:university_of_cambridge": "H",
+    "website": "https://cambridge-biomedical.com/",
+    "wikidata": "Q5025360"
+  }
+},
+{
+  "type": "way",
   "id": 4157944,
   "bounds": {
     "minlat": 52.2056958,
@@ -18162,6 +18258,33 @@
 },
 {
   "type": "way",
+  "id": 596657341,
+  "bounds": {
+    "minlat": 52.1712383,
+    "minlon": 0.1352154,
+    "maxlat": 52.1714427,
+    "maxlon": 0.1355497
+  },
+  "geometry": [
+    { "lat": 52.1713837, "lon": 0.1352154 },
+    { "lat": 52.1712383, "lon": 0.1353175 },
+    { "lat": 52.1712697, "lon": 0.1354363 },
+    { "lat": 52.1712997, "lon": 0.1355497 },
+    { "lat": 52.1714427, "lon": 0.1354493 },
+    { "lat": 52.1714117, "lon": 0.1353233 },
+    { "lat": 52.1714044, "lon": 0.1352952 },
+    { "lat": 52.1713837, "lon": 0.1352154 }
+  ],
+  "tags": {
+    "aeroway": "helipad",
+    "lit": "yes",
+    "name": "Addenbrooke's Hospital",
+    "opening_hours": "24/7",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
   "id": 667702050,
   "bounds": {
     "minlat": 52.2147397,
@@ -18231,6 +18354,33 @@
     "wikidata": "Q16830779",
     "wikimedia_commons": "Category:Cambridge Muslim College",
     "wikipedia": "en:Cambridge Muslim College"
+  }
+},
+{
+  "type": "way",
+  "id": 1040538818,
+  "bounds": {
+    "minlat": 52.1759274,
+    "minlon": 0.1454669,
+    "maxlat": 52.1760740,
+    "maxlon": 0.1457075
+  },
+  "geometry": [
+    { "lat": 52.1760276, "lon": 0.1454669 },
+    { "lat": 52.1759274, "lon": 0.1455411 },
+    { "lat": 52.1759738, "lon": 0.1457075 },
+    { "lat": 52.1760740, "lon": 0.1456333 },
+    { "lat": 52.1760276, "lon": 0.1454669 }
+  ],
+  "tags": {
+    "name": "Addenbrooke's Hospital",
+    "note": "Also identified as \"HV SUSSTATION DSS1\"",
+    "operator": "UK Power Networks",
+    "operator:wikidata": "Q7864927",
+    "power": "substation",
+    "ref": "TL46725504",
+    "substation": "minor_distribution",
+    "voltage": "11000"
   }
 },
 {
@@ -18622,6 +18772,24 @@
   "tags": {
     "amenity": "university",
     "name": "University of Cambridge Botanic Gardens"
+  }
+},
+{
+  "type": "relation",
+  "id": 2048374,
+  "bounds": {
+    "minlat": 52.1731329,
+    "minlon": 0.1387460,
+    "maxlat": 52.1749264,
+    "maxlon": 0.1435975
+  },
+  "tags": {
+    "amenity": "hospital",
+    "name": "Addenbrooke's Hospital",
+    "operator": "Cambridge University Hospitals NHS Foundation Trust",
+    "ref:GB:cqc_location": "RGT01",
+    "type": "site",
+    "wikidata": "Q130282"
   }
 },
 {
@@ -20805,6 +20973,29 @@
 },
 {
   "type": "way",
+  "id": 29026936,
+  "center": {
+    "lat": 52.1765469,
+    "lon": 0.1405032
+  },
+  "tags": {
+    "access": "yes",
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0XX",
+    "addr:street": "Puddicombe Way",
+    "amenity": "parking",
+    "building": "yes",
+    "building:levels": "8",
+    "fee": "yes",
+    "name": "Car Park 1",
+    "opening_hours": "Mo-Su 00:00-00:00",
+    "operator": "Cambridge University Hospitals NHS Foundation Trust",
+    "parking": "multi-storey",
+    "ref:university_of_cambridge": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 31770339,
   "center": {
     "lat": 52.2013056,
@@ -20908,6 +21099,23 @@
     "ref": "M035",
     "source": "laser measure ground survey",
     "source:ref": "University of Cambridge"
+  }
+},
+{
+  "type": "way",
+  "id": 37850638,
+  "center": {
+    "lat": 52.1768610,
+    "lon": 0.1378491
+  },
+  "tags": {
+    "access": "private",
+    "amenity": "parking",
+    "building": "yes",
+    "name": "Staff Car Park",
+    "operator": "University of Cambridge",
+    "parking": "multi-storey",
+    "ref": "H025"
   }
 },
 {
@@ -21240,6 +21448,25 @@
 },
 {
   "type": "way",
+  "id": 49200362,
+  "center": {
+    "lat": 52.1757442,
+    "lon": 0.1376516
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0SN",
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Frank Lee Leisure and Fitness Centre",
+    "operator": "Cambridge University Hospitals NHS Foundation Trust",
+    "ref:university_of_cambridge": "yes",
+    "replaces": "node 21391277",
+    "source": "Yahoo! aerials"
+  }
+},
+{
+  "type": "way",
   "id": 59294560,
   "center": {
     "lat": 52.2073472,
@@ -21447,6 +21674,44 @@
 },
 {
   "type": "way",
+  "id": 82622036,
+  "center": {
+    "lat": 52.1759605,
+    "lon": 0.1416053
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0SP",
+    "building": "university",
+    "building:levels": "3",
+    "internet_access": "yes",
+    "name": "School of Clinical Medicine",
+    "nohousenumber": "yes",
+    "occupier": "School of Clinical Medicine;Medical Library",
+    "operator": "University of Cambridge",
+    "ref": "H017",
+    "website": "https://www.medschl.cam.ac.uk",
+    "wikidata": "Q7432402"
+  }
+},
+{
+  "type": "way",
+  "id": 83383866,
+  "center": {
+    "lat": 52.1753997,
+    "lon": 0.1388566
+  },
+  "tags": {
+    "building": "hospital",
+    "building:levels": "3",
+    "name": "S Block: Psychological Medicine Services and Cambridge Cancer Trials Centre",
+    "nohousenumber": "yes",
+    "operator": "Cambridge University Hospitals NHS Foundation Trust",
+    "ref:university_of_cambridge": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 86331874,
   "center": {
     "lat": 52.2090805,
@@ -21618,6 +21883,25 @@
     "name": "Clare College",
     "operator": "Clare College (University of Cambridge)",
     "ref": "CLARE/MEM014"
+  }
+},
+{
+  "type": "way",
+  "id": 98713103,
+  "center": {
+    "lat": 52.1765705,
+    "lon": 0.1417482
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0XY",
+    "building": "university",
+    "building:levels": "6",
+    "name": "The Keith Peters Building",
+    "nohousenumber": "yes",
+    "occupier": "Cambridge Institute for Medical Research (Mitochondrial Biology Unit)",
+    "operator": "University of Cambridge",
+    "ref": "H018"
   }
 },
 {
@@ -27836,6 +28120,498 @@
 },
 {
   "type": "way",
+  "id": 151375034,
+  "center": {
+    "lat": 52.1759928,
+    "lon": 0.1388310
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0SA",
+    "addr:street": "Adrian Way",
+    "building": "apartments",
+    "building:levels": "5",
+    "name": "Abington House",
+    "roof:levels": "0"
+  }
+},
+{
+  "type": "way",
+  "id": 151375043,
+  "center": {
+    "lat": 52.1744693,
+    "lon": 0.1389178
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0GG",
+    "building": "university",
+    "building:levels": "5",
+    "name": "Patrick Sissons Building",
+    "nohousenumber": "yes",
+    "occupier": "Addenbrooke's Centre for Clinical Investigation",
+    "old_name": "Addenbrooke's Centre for Clinical Investigation",
+    "operator": "University of Cambridge",
+    "ref": "H021"
+  }
+},
+{
+  "type": "way",
+  "id": 151375046,
+  "center": {
+    "lat": 52.1759105,
+    "lon": 0.1391360
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0SB",
+    "addr:street": "Adrian Way",
+    "building": "apartments",
+    "building:levels": "5",
+    "name": "Barton House",
+    "operator": "University of Cambridge",
+    "roof:levels": "0"
+  }
+},
+{
+  "type": "way",
+  "id": 151375050,
+  "center": {
+    "lat": 52.1741384,
+    "lon": 0.1385575
+  },
+  "tags": {
+    "building": "hospital",
+    "name": "Child Development Centre",
+    "operator": "Cambridge University Hospitals NHS Foundation Trust",
+    "ref:university_of_cambridge": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 151375076,
+  "center": {
+    "lat": 52.1772881,
+    "lon": 0.1362093
+  },
+  "tags": {
+    "building": "university",
+    "name": "Cancer Research UK",
+    "nohousenumber": "yes",
+    "occupier": "CRUK",
+    "operator": "University of Cambridge",
+    "ref": "H023.3"
+  }
+},
+{
+  "type": "way",
+  "id": 151375081,
+  "center": {
+    "lat": 52.1768699,
+    "lon": 0.1355627
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0RE",
+    "building": "university",
+    "name": "Cancer Research UK Cambridge Research Centre: Li Ka Shing Centre",
+    "occupier": "CRUK",
+    "operator": "University of Cambridge",
+    "ref": "H023.1"
+  }
+},
+{
+  "type": "way",
+  "id": 151375096,
+  "center": {
+    "lat": 52.1777181,
+    "lon": 0.1369837
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0AF",
+    "addr:street": "Puddicombe Way",
+    "building": "residential",
+    "name": "Kingston House",
+    "nohousenumber": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 151375100,
+  "center": {
+    "lat": 52.1755963,
+    "lon": 0.1327093
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0QH",
+    "addr:street": "Francis Crick Avenue",
+    "amenity": "research_institute",
+    "building": "university",
+    "building:levels": "4",
+    "name": "MRC Laboratory of Molecular Biology (LMB)",
+    "occupier": "Department of Haematology, Medicine, Oncology, MRC",
+    "operator": "Medical Research Council",
+    "ref:university_of_cambridge": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 151375105,
+  "center": {
+    "lat": 52.1761765,
+    "lon": 0.1326041
+  },
+  "tags": {
+    "building": "university",
+    "name": "Energy Centre - MRC Laboratory of Molecular Biology",
+    "occupier": "Department of Haematology, Medicine, Oncology, MRC",
+    "operator": "Medical Research Council",
+    "ref:university_of_cambridge": "yes",
+    "wikidata": "Q185800"
+  }
+},
+{
+  "type": "way",
+  "id": 151375109,
+  "center": {
+    "lat": 52.1776713,
+    "lon": 0.1374675
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0AE",
+    "addr:street": "Puddicombe Way",
+    "building": "residential",
+    "name": "Linton House",
+    "nohousenumber": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 151375111,
+  "center": {
+    "lat": 52.1776435,
+    "lon": 0.1379507
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0AD",
+    "addr:street": "Puddicombe Way",
+    "building": "residential",
+    "name": "Milton House",
+    "nohousenumber": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 151375112,
+  "center": {
+    "lat": 52.1775970,
+    "lon": 0.1384363
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0AB",
+    "addr:street": "Puddicombe Way",
+    "building": "residential",
+    "name": "Newton House",
+    "nohousenumber": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 151375119,
+  "center": {
+    "lat": 52.1773429,
+    "lon": 0.1357118
+  },
+  "tags": {
+    "building": "university",
+    "name": "Martin Cohen Lecture Theatre",
+    "occupier": "CRUK",
+    "operator": "University of Cambridge",
+    "ref": "H023.2"
+  }
+},
+{
+  "type": "way",
+  "id": 151375122,
+  "center": {
+    "lat": 52.1763919,
+    "lon": 0.1399936
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0AG",
+    "building": "hospital",
+    "building:levels": "4",
+    "name": "Deakin Centre",
+    "occupier": "Clinical Skills Unit: The Learning centre",
+    "ref:university_of_cambridge": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 151375126,
+  "center": {
+    "lat": 52.1744530,
+    "lon": 0.1421130
+  },
+  "tags": {
+    "building": "university",
+    "name": "Wolfson Brain Imaging Centre",
+    "operator": "University of Cambridge",
+    "ref": "H019",
+    "wikidata": "Q8030211",
+    "wikipedia": "en:Wolfson Brain Imaging Centre"
+  }
+},
+{
+  "type": "way",
+  "id": 151375402,
+  "center": {
+    "lat": 52.1761481,
+    "lon": 0.1407810
+  },
+  "tags": {
+    "building": "yes",
+    "name": "security hut"
+  }
+},
+{
+  "type": "way",
+  "id": 151375409,
+  "center": {
+    "lat": 52.1741130,
+    "lon": 0.1425810
+  },
+  "tags": {
+    "building": "hospital",
+    "building:levels": "2",
+    "name": "Neurosciences Office"
+  }
+},
+{
+  "type": "way",
+  "id": 151375423,
+  "center": {
+    "lat": 52.1765892,
+    "lon": 0.1392487
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0SG",
+    "addr:street": "Adrian Way",
+    "building": "apartments",
+    "building:levels": "5",
+    "name": "Foxton House",
+    "roof:levels": "0"
+  }
+},
+{
+  "type": "way",
+  "id": 151375428,
+  "center": {
+    "lat": 52.1763188,
+    "lon": 0.1394408
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0SE",
+    "addr:street": "Adrian Way",
+    "building": "apartments",
+    "building:levels": "5",
+    "name": "Duxford House",
+    "roof:levels": "0"
+  }
+},
+{
+  "type": "way",
+  "id": 151375430,
+  "center": {
+    "lat": 52.1761823,
+    "lon": 0.1389388
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0SD",
+    "addr:street": "Adrian Way",
+    "building": "apartments",
+    "building:levels": "5",
+    "name": "Coton House",
+    "roof:levels": "0"
+  }
+},
+{
+  "type": "way",
+  "id": 151375431,
+  "center": {
+    "lat": 52.1763878,
+    "lon": 0.1431090
+  },
+  "tags": {
+    "building": "university",
+    "name": "Clifford Allbutt Lecture Theatre",
+    "occupier": "Haematology, Medicine, Oncology, Medical Research Centre (MRC)",
+    "operator": "University of Cambridge",
+    "ref": "H015.1"
+  }
+},
+{
+  "type": "way",
+  "id": 151375435,
+  "center": {
+    "lat": 52.1764191,
+    "lon": 0.1387098
+  },
+  "tags": {
+    "addr:street": "Adrian Way",
+    "building": "yes",
+    "building:levels": "2",
+    "name": "Acorn House",
+    "roof:levels": "1",
+    "roof:orientation": "across",
+    "roof:shape": "gabled"
+  }
+},
+{
+  "type": "way",
+  "id": 151375436,
+  "center": {
+    "lat": 52.1763849,
+    "lon": 0.1390900
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0SF",
+    "addr:street": "Adrian Way",
+    "building": "apartments",
+    "building:levels": "5",
+    "name": "Elsworth House",
+    "roof:levels": "0"
+  }
+},
+{
+  "type": "way",
+  "id": 151375438,
+  "center": {
+    "lat": 52.1769835,
+    "lon": 0.1421843
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:housename": "Early Cancer Institute",
+    "addr:postcode": "CB2 0XZ",
+    "addr:street": "Adrian Way",
+    "building": "university",
+    "building:levels": "4",
+    "name": "The Early Cancer Institute",
+    "occupier": "The Early Cancer Institute",
+    "operator": "University of Cambridge",
+    "ref": "H024",
+    "smoking": "no",
+    "url": "https://www.earlycancer.cam.ac.uk/"
+  }
+},
+{
+  "type": "way",
+  "id": 151375492,
+  "center": {
+    "lat": 52.1758820,
+    "lon": 0.1383281
+  },
+  "tags": {
+    "building": "yes",
+    "name": "Pemberton House"
+  }
+},
+{
+  "type": "way",
+  "id": 151375501,
+  "center": {
+    "lat": 52.1757152,
+    "lon": 0.1416029
+  },
+  "tags": {
+    "building": "hospital",
+    "building:levels": "3",
+    "name": "ACT (Addenbrooke's Charity);Postgraduate Medical Centre",
+    "nohousenumber": "yes",
+    "roof:levels": "1",
+    "roof:shape": "gabled"
+  }
+},
+{
+  "type": "way",
+  "id": 151375504,
+  "center": {
+    "lat": 52.1763678,
+    "lon": 0.1427283
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0XY",
+    "building": "university",
+    "building:levels": "6",
+    "name": "Clifford Allbutt Building",
+    "occupier": "School of Clinical Medicine",
+    "operator": "University of Cambridge",
+    "ref": "H013"
+  }
+},
+{
+  "type": "way",
+  "id": 151375523,
+  "center": {
+    "lat": 52.1766925,
+    "lon": 0.1388612
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:flats": "23,31-34,41-44,51-54,61-64,71-74,81-84,91-94,101-104,111-114,121-124,131-134,141-144,151-154",
+    "addr:postcode": "CB2 0SQ",
+    "addr:street": "Adrian Way",
+    "building": "apartments",
+    "building:levels": "14",
+    "building:levels:underground": "1",
+    "name": "Grantchester House",
+    "roof:levels": "0"
+  }
+},
+{
+  "type": "way",
+  "id": 151375528,
+  "center": {
+    "lat": 52.1766058,
+    "lon": 0.1423476
+  },
+  "tags": {
+    "building": "university",
+    "name": "Central Biomedical Services (CBS)",
+    "operator": "University of Cambridge",
+    "ref": "H012"
+  }
+},
+{
+  "type": "way",
+  "id": 151513724,
+  "center": {
+    "lat": 52.1747371,
+    "lon": 0.1416664
+  },
+  "tags": {
+    "building": "university",
+    "name": "Radiopharmaceutical Unit",
+    "nohousenumber": "yes",
+    "operator": "University of Cambridge",
+    "ref": "H019.1"
+  }
+},
+{
+  "type": "way",
   "id": 151542103,
   "center": {
     "lat": 52.1873420,
@@ -30954,6 +31730,25 @@
 },
 {
   "type": "way",
+  "id": 288642451,
+  "center": {
+    "lat": 52.1726654,
+    "lon": 0.1372048
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "parking",
+    "building": "yes",
+    "capacity": "1228",
+    "fee": "yes",
+    "name": "Car Park 2",
+    "opening_hours": "Mo-Su 00:00-00:00",
+    "parking": "multi-storey",
+    "source": "observation;streetlevel imagery;aerial imagery"
+  }
+},
+{
+  "type": "way",
   "id": 303804280,
   "center": {
     "lat": 52.2105707,
@@ -31091,6 +31886,24 @@
     "ref": "L4292 5895",
     "ref:university_of_cambridge": "W103",
     "substation": "minor_distribution"
+  }
+},
+{
+  "type": "way",
+  "id": 367357191,
+  "center": {
+    "lat": 52.1737944,
+    "lon": 0.1378982
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0SL",
+    "addr:street": "Robinson Way",
+    "building": "hospital",
+    "building:levels": "5",
+    "name": "Addenbrooke's Treatment Centre",
+    "operator": "Cambridge University Hospitals NHS Foundation Trust",
+    "ref:university_of_cambridge": "yes"
   }
 },
 {
@@ -31342,6 +32155,25 @@
 },
 {
   "type": "way",
+  "id": 485839702,
+  "center": {
+    "lat": 52.1744712,
+    "lon": 0.1382768
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0GG",
+    "alt_name": "Project Gemma",
+    "building": "university",
+    "building:levels": "5",
+    "name": "Experimental Medicine Research Facility",
+    "nohousenumber": "yes",
+    "operator": "University of Cambridge",
+    "ref": "H144"
+  }
+},
+{
+  "type": "way",
   "id": 500707195,
   "center": {
     "lat": 52.2031848,
@@ -31528,6 +32360,40 @@
 },
 {
   "type": "way",
+  "id": 596657338,
+  "center": {
+    "lat": 52.1703127,
+    "lon": 0.1359880
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0AX",
+    "addr:street": "Discovery Drive",
+    "building": "commercial",
+    "building:levels": "4",
+    "name": "Abcam"
+  }
+},
+{
+  "type": "way",
+  "id": 596657346,
+  "center": {
+    "lat": 52.1734826,
+    "lon": 0.1358498
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0AY",
+    "addr:street": "Papworth Road",
+    "building": "hospital",
+    "name": "Royal Papworth Hospital",
+    "nohousenumber": "yes",
+    "ref:university_of_cambridge": "yes",
+    "wikidata": "Q30254132"
+  }
+},
+{
+  "type": "way",
   "id": 614291404,
   "center": {
     "lat": 52.1879580,
@@ -31587,6 +32453,40 @@
     "website": "https://www.woolf.cam.ac.uk/",
     "wikidata": "Q7775764",
     "wikipedia": "en:The Woolf Institute"
+  }
+},
+{
+  "type": "way",
+  "id": 650349217,
+  "center": {
+    "lat": 52.1734100,
+    "lon": 0.1322233
+  },
+  "tags": {
+    "building": "yes",
+    "building:levels": "4",
+    "name": "The Energy Centre (AstraZeneca)",
+    "ref:university_of_cambridge": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 655605048,
+  "center": {
+    "lat": 52.1767814,
+    "lon": 0.1366903
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:housename": "Jeffrey Cheah Biomedical Centre",
+    "addr:postcode": "CB2 0AW",
+    "addr:street": "Puddicombe Way",
+    "building": "university",
+    "building:levels": "6",
+    "name": "Jeffrey Cheah Biomedical Centre",
+    "occupier": "Wellcome Trust - MRC Cambridge Stem Cell Institute;Cambridge Institute of Therapeutic Immunology & Infectious Disease;Milner Therapeutics Institute",
+    "operator": "University of Cambridge",
+    "ref": "H146"
   }
 },
 {
@@ -31889,6 +32789,25 @@
 },
 {
   "type": "way",
+  "id": 778939734,
+  "center": {
+    "lat": 52.1704500,
+    "lon": 0.1328927
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:housenumber": "90",
+    "addr:postcode": "CB2 0BA",
+    "addr:street": "Francis Crick Avenue",
+    "building": "university",
+    "building:levels": "6",
+    "name": "Anne McLaren Building",
+    "operator": "University of Cambridge",
+    "ref": "H145"
+  }
+},
+{
+  "type": "way",
   "id": 780057383,
   "center": {
     "lat": 52.2066554,
@@ -32060,6 +32979,34 @@
 },
 {
   "type": "way",
+  "id": 1030236239,
+  "center": {
+    "lat": 52.1764744,
+    "lon": 0.1394530
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0AG",
+    "addr:street": "Richard Howe Way",
+    "building": "yes",
+    "building:levels": "1",
+    "email": "info@cambridgeelectrictransport.co.uk",
+    "name": "Campus Cycle Hub",
+    "opening_hours": "Mo-Su 08:00-17:00",
+    "operator": "Cambridge Electric Transport",
+    "phone": "+44 7414 113948",
+    "service:bicycle:clothing": "yes",
+    "service:bicycle:ebike": "yes",
+    "service:bicycle:rental": "yes",
+    "service:bicycle:repair": "yes",
+    "service:bicycle:second_hand": "yes",
+    "service:bicycle:service": "yes",
+    "shop": "bicycle",
+    "website": "https://cambridgeelectrictransport.co.uk/campus-cycle-hub/"
+  }
+},
+{
+  "type": "way",
   "id": 1046969660,
   "center": {
     "lat": 52.2148417,
@@ -32155,6 +33102,22 @@
 },
 {
   "type": "way",
+  "id": 1058174612,
+  "center": {
+    "lat": 52.1729632,
+    "lon": 0.1342010
+  },
+  "tags": {
+    "addr:postcode": "CB2 0BB",
+    "alt_name": "Cambridge Heart and Lung Research Institute",
+    "building": "university",
+    "building:levels": "3",
+    "name": "Victor Phillip Dahdaleh Heart and Lung Research Institute",
+    "ref:university_of_cambridge": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 1064052676,
   "center": {
     "lat": 52.2103190,
@@ -32169,6 +33132,37 @@
     "operator": "University of Cambridge",
     "ref": "W152",
     "website": "https://www.westcambridgehub.uk/"
+  }
+},
+{
+  "type": "way",
+  "id": 1074363038,
+  "center": {
+    "lat": 52.1706607,
+    "lon": 0.1344316
+  },
+  "tags": {
+    "building": "office",
+    "building:levels": "1",
+    "name": "Cambridge Biomedical Campus Marketing Suite",
+    "nohousenumber": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1080089833,
+  "center": {
+    "lat": 52.1771245,
+    "lon": 0.1439567
+  },
+  "tags": {
+    "building": "service",
+    "building:levels": "1",
+    "description": "Gas pressure regulation building",
+    "name": "Hills Road Cambridge",
+    "operator": "Cadent",
+    "ref": "194357",
+    "utility": "gas"
   }
 },
 {
@@ -32193,6 +33187,20 @@
 },
 {
   "type": "way",
+  "id": 1088635579,
+  "center": {
+    "lat": 52.1722196,
+    "lon": 0.1384836
+  },
+  "tags": {
+    "building": "hospital",
+    "building:levels": "1",
+    "name": "Cambridge Movement Surgical Hub",
+    "nohousenumber": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 1124327032,
   "center": {
     "lat": 52.2010384,
@@ -32212,6 +33220,39 @@
 },
 {
   "type": "way",
+  "id": 1124769008,
+  "center": {
+    "lat": 52.1701649,
+    "lon": 0.1372695
+  },
+  "tags": {
+    "building": "commercial",
+    "building:levels": "6",
+    "name": "1 Discovery Drive",
+    "note": "new laboratory and office development"
+  }
+},
+{
+  "type": "way",
+  "id": 1132327731,
+  "center": {
+    "lat": 52.1717450,
+    "lon": 0.1328477
+  },
+  "tags": {
+    "access": "private",
+    "addr:housenumber": "70",
+    "addr:postcode": "CB2 0BD",
+    "addr:street": "Francis Crick Avenue",
+    "amenity": "parking",
+    "building": "yes",
+    "building:levels": "7",
+    "name": "AstraZeneca Travel Hub",
+    "parking": "multi-storey"
+  }
+},
+{
+  "type": "way",
   "id": 1154393821,
   "center": {
     "lat": 52.2010911,
@@ -32220,6 +33261,18 @@
   "tags": {
     "building": "yes",
     "name": "Bradfield Court"
+  }
+},
+{
+  "type": "way",
+  "id": 1183798876,
+  "center": {
+    "lat": 52.1721691,
+    "lon": 0.1323788
+  },
+  "tags": {
+    "building": "yes",
+    "name": "The Hub (AstraZeneca)"
   }
 },
 {
@@ -32477,6 +33530,20 @@
 },
 {
   "type": "way",
+  "id": 1256340744,
+  "center": {
+    "lat": 52.1718891,
+    "lon": 0.1328886
+  },
+  "tags": {
+    "amenity": "cafe",
+    "building": "yes",
+    "name": "Astra Zeneca Travel Hub",
+    "outdoor_seating": "no"
+  }
+},
+{
+  "type": "way",
   "id": 1258968756,
   "center": {
     "lat": 52.2030418,
@@ -32583,6 +33650,21 @@
 },
 {
   "type": "way",
+  "id": 1312118613,
+  "center": {
+    "lat": 52.1760806,
+    "lon": 0.1395839
+  },
+  "tags": {
+    "building": "hospital",
+    "building:levels": "1",
+    "name": "Cambridge Infusion Centre",
+    "nohousenumber": "yes",
+    "roof:levels": "0"
+  }
+},
+{
+  "type": "way",
   "id": 1323444998,
   "center": {
     "lat": 52.1879005,
@@ -32665,6 +33747,38 @@
     "layer": "2",
     "name": "Sherlock Library",
     "opening_hours": "24/7"
+  }
+},
+{
+  "type": "way",
+  "id": 1434489885,
+  "center": {
+    "lat": 52.1736918,
+    "lon": 0.1328158
+  },
+  "tags": {
+    "building": "construction",
+    "building:levels": "6",
+    "check_date": "2026-04-17",
+    "fixme": "Outline approximate; re-check when aerials available",
+    "name": "Rosalind Franklin Building",
+    "roof:levels": "0"
+  }
+},
+{
+  "type": "way",
+  "id": 1434489887,
+  "center": {
+    "lat": 52.1708603,
+    "lon": 0.1378123
+  },
+  "tags": {
+    "building": "construction",
+    "building:levels": "6",
+    "check_date": "2026-07-16",
+    "construction": "commercial",
+    "fixme": "Location/size approximate; re-check when aerials available",
+    "name": "2000 Discovery Drive"
   }
 },
 {
@@ -32927,6 +34041,89 @@
 },
 {
   "type": "relation",
+  "id": 2046317,
+  "center": {
+    "lat": 52.1770439,
+    "lon": 0.1391032
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0SJ",
+    "building": "apartments",
+    "building:levels": "5",
+    "name": "Harston House",
+    "nohousenumber": "yes",
+    "roof:levels": "0",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 2046318,
+  "center": {
+    "lat": 52.1746965,
+    "lon": 0.1407129
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0DA",
+    "building": "hospital",
+    "building:levels": "10",
+    "name": "Addenbrooke's Hospital (Main building)",
+    "nohousenumber": "yes",
+    "operator": "Cambridge University Hospitals NHS Foundation Trust",
+    "ref:university_of_cambridge": "yes",
+    "roof:levels": "0",
+    "type": "multipolygon",
+    "wikidata": "Q130282",
+    "wikipedia": "en:Addenbrooke's Hospital"
+  }
+},
+{
+  "type": "relation",
+  "id": 2048372,
+  "center": {
+    "lat": 52.1774383,
+    "lon": 0.1407678
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0PT",
+    "building": "university",
+    "building:levels": "2",
+    "name": "East Anglian Blood Centre",
+    "nohousenumber": "yes",
+    "occupier": "Cambridge Donor Centre;Department of Transfusion Medicine",
+    "operator": "National Blood Service",
+    "ref:university_of_cambridge": "H020",
+    "roof:levels": "0",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 2048373,
+  "center": {
+    "lat": 52.1739625,
+    "lon": 0.1391010
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0SW",
+    "amenity": "hospital",
+    "building": "hospital",
+    "layer": "1",
+    "name": "Rosie Maternity Hospital",
+    "nohousenumber": "yes",
+    "operator": "Cambridge University Hospitals NHS Foundation Trust",
+    "ref:GB:cqc_location": "RGT01",
+    "ref:university_of_cambridge": "yes",
+    "type": "multipolygon",
+    "wikidata": "Q7368893"
+  }
+},
+{
+  "type": "relation",
   "id": 2048824,
   "center": {
     "lat": 52.1866859,
@@ -33126,6 +34323,25 @@
 },
 {
   "type": "relation",
+  "id": 7236200,
+  "center": {
+    "lat": 52.1752519,
+    "lon": 0.1432302
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0ST",
+    "building": "hospital",
+    "building:levels": "3",
+    "name": "Addenbrooke's Hospital (Outpatients Block)",
+    "nohousenumber": "yes",
+    "operator": "Cambridge University Hospitals NHS Foundation Trust",
+    "ref:university_of_cambridge": "yes",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
   "id": 7952616,
   "center": {
     "lat": 52.2016858,
@@ -33227,6 +34443,25 @@
     "operator": "Trinity College (University of Cambridge)",
     "ref": "TRIN015",
     "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 14116240,
+  "center": {
+    "lat": 52.1748482,
+    "lon": 0.1350003
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB2 0AA",
+    "building": "commercial",
+    "layer": "1",
+    "name": "The Discovery Centre (AstraZeneca)",
+    "nohousenumber": "yes",
+    "ref:university_of_cambridge": "yes",
+    "type": "multipolygon",
+    "url": "https://www.astrazeneca.com/our-company/our-locations/cambridge.html"
   }
 },
 {
