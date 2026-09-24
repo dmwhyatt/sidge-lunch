@@ -40,7 +40,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Update walking times"
-          git push origin HEAD:${{ github.ref_name }}
+          # Routing takes several minutes, and the menu scrape often pushes meanwhile.
+          # This job only writes data/walking/, so rebasing onto that push can't conflict.
+          for attempt in 1 2 3 4 5; do
+            git push origin HEAD:${{ github.ref_name }} && break
+            [ "$attempt" = 5 ] && exit 1
+            sleep $((attempt * 5))
+            git pull --rebase origin ${{ github.ref_name }}
+          done
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
   deploy:

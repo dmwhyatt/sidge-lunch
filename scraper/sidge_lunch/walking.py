@@ -100,7 +100,12 @@ def main(argv: list[str] | None = None) -> int:
             continue
         times = site_times(s["buildings"], vendors)
         pairs = sum(len(t) for t in times.values())
-        (out_dir / f"{s['id']}.json").write_text(json.dumps({
+        path = out_dir / f"{s['id']}.json"
+        if path.exists() and json.loads(path.read_text()).get("times") == times:
+            print(f"{s['id']}: unchanged")  # keep the old file so nothing is committed or redeployed
+            time.sleep(PAUSE)
+            continue
+        path.write_text(json.dumps({
             "source": SOURCE,
             "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "times": times,

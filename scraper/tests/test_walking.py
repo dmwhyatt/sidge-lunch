@@ -24,3 +24,22 @@ def test_site_times_batches_and_limits_radius(monkeypatch):
     assert len(calls) == 2  # 150 destinations in batches of 97
     assert times["b0"]["v0"] == [60, 80]
     assert len(times["b2"]) == 150 and "far" not in times["b2"]
+
+
+def test_main_leaves_unchanged_sites_alone(tmp_path, monkeypatch):
+    import json
+
+    (tmp_path / "sites.json").write_text(json.dumps({"sites": [
+        {"id": "same", "buildings": [{"id": "b", "lat": 52.2, "lng": 0.11}]},
+        {"id": "new", "buildings": [{"id": "b", "lat": 52.2, "lng": 0.11}]},
+    ]}))
+    (tmp_path / "vendors.json").write_text(json.dumps({"vendors": []}))
+    (tmp_path / "walking").mkdir()
+    old = '{"generated_at":"2026-01-01T00:00:00+00:00","times":{"b":{"v":[60,80]}}}\n'
+    (tmp_path / "walking" / "same.json").write_text(old)
+    monkeypatch.setattr(walking, "site_times", lambda buildings, vendors: {"b": {"v": [60, 80]}})
+    monkeypatch.setattr(walking, "PAUSE", 0)
+
+    walking.main(["--data-dir", str(tmp_path)])
+    assert (tmp_path / "walking" / "same.json").read_text() == old
+    assert json.loads((tmp_path / "walking" / "new.json").read_text())["times"] == {"b": {"v": [60, 80]}}
