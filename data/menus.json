@@ -1342,11 +1342,446 @@
     },
     "queens": {
       "source_url": "https://www.queens.cam.ac.uk/life-at-queens/catering/dining-hall/weekly-menu/",
-      "status": "error",
-      "error": "ValueError: no 'Week Commencing' date on page",
-      "updated_at": null,
-      "content_hash": null,
-      "days": []
+      "status": "ok",
+      "error": null,
+      "updated_at": "2026-09-24T13:06:59+01:00",
+      "content_hash": "d5af20560b5647b2",
+      "days": [
+        {
+          "date": "2026-09-24",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Soup of the Day",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Mushroom & Aubergine Stroganoff",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Meatless Ball Pasta Bake",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Beef Stroganoff",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Rice",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Broccoli & Cauliflower",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Chocolate Orange Cake with Chocolate Sauce",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            },
+            {
+              "name": "Dinner",
+              "items": [
+                {
+                  "name": "Veg & Rice Noodle Chow Mien",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "BBQ Sticky Thai Chicken Wings",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "halal"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Stir Fried Veg",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Sticky Rice",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Assorted Dessert",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        },
+        {
+          "date": "2026-09-25",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Soup of the Day",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Tempura Battered Tofu, Broccoli & Baby Corn with Sweet Chilli Sauce",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Spinach & Ricotta Cannelloni",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Battered Fish",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Wet Fish",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Lemon & Tartare Sauce",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Chips",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Lemon & Garlic Peas",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Biscoff Sponge with Biscoff Caramel Sauce",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            },
+            {
+              "name": "Dinner",
+              "items": [
+                {
+                  "name": "Carrot Burger with Sweet Chilli Fried Onions & Rocket",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Beef Burger with Cheese, Pickle & Relish",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Skinny Fries",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Garlic Green Beans",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Assorted Desserts",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        },
+        {
+          "date": "2026-09-26",
+          "meals": [
+            {
+              "name": "Dinner",
+              "items": [
+                {
+                  "name": "Butternut & Chickpea Tagine",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Ratatouille with a Feta Crumble",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Lamb Tagine",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Cous Cous",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Roasted Med Veg",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Assorted Desserts",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        },
+        {
+          "date": "2026-09-27",
+          "meals": [
+            {
+              "name": "Dinner",
+              "items": [
+                {
+                  "name": "Roasted Root Veg Wellington with Onion Gravy",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Tortellini Formaggio",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Garlic & Thyme Roasted Chicken Breast with Gravy",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "halal"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Roasted New Potato’s",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Mixed Veg",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Assorted Desserts",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        }
+      ]
     },
     "st-johns": {
       "source_url": "https://menu.joh.cam/today",
