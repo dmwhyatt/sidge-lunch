@@ -4,9 +4,9 @@ on:
   schedule:
     # UTC. GitHub runs scheduled workflows on a best-effort basis and delays or drops
     # many that fall on the hour or half hour, so these use off-peak minutes.
-    # Every 15 min through the morning (05:07–12:52 UTC, i.e. 06:07–13:52 in BST),
+    # Every 30 min through the morning (05:07–12:37 UTC, i.e. 06:07–13:37 in BST),
     # then every 3 h for menus posted in the afternoon or the night before.
-    - cron: "7,22,37,52 5-12 * * *"
+    - cron: "7,37 5-12 * * *"
     - cron: "17 14-23/3 * * *"
   workflow_dispatch:
 
