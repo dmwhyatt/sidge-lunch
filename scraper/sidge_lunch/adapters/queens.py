@@ -6,9 +6,11 @@ headings in <strong>, each followed by a list of dishes. The college's labels
 lead a dish: "(Vegan)", "(V)", "(Halal)". A meal heading with no list after it
 (e.g. "Saturday Brunch") is left out.
 
-The site sits behind SiteGround, which challenges some networks with a CAPTCHA;
-GitHub's runners are served the page normally. If that changes, this adapter
-fails and the site says it couldn't read the menu. Nothing gets round the check.
+The site sits behind SiteGround, which challenges some networks with a CAPTCHA.
+GitHub's runners come from many addresses and some of them are challenged, so
+scrapes succeed on some runs and not others. When challenged, fetch() raises
+BotCheck, the last good menu is kept, and the site says it couldn't read the
+latest menu. Nothing gets round the check; allowlisting by Queens' would fix it.
 """
 
 from __future__ import annotations

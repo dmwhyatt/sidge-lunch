@@ -72,7 +72,7 @@ Each vendor in `menus.json` has a `status`:
 - `unsupported`: no adapter written yet. The site links to the vendor's page.
 
 Menus are only scraped from pages anyone can open: never from intranets or Raven-protected pages, and never
-past a bot check (Wolfson and Pembroke use one; Queens' has one too, but it serves GitHub's servers the page normally) or robots.txt (Downing's Kafoodle menu disallows it). Weekly PDF menus are read where the PDF is public (Trinity);
+past a bot check (Wolfson and Pembroke use one; Queens' uses one that lets some of GitHub's servers through, so its menu updates on some runs and not others) or robots.txt (Downing's Kafoodle menu disallows it). Weekly PDF menus are read where the PDF is public (Trinity);
 Word, image and Canva menus are linked, not read.
 
 Who can eat at each college (`scraper/sidge_lunch/college_access.json`) is paraphrased from Silas S. Brown's
