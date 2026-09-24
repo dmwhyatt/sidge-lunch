@@ -19,7 +19,7 @@ WAIT_MS = 60_000  # overall page load budget
 SETTLE_MS = 3_000  # extra time after the network goes quiet, for late drawing
 
 
-def render(url: str) -> str:
+def _open(url: str, read):
     parts = urlsplit(url)
     if not _robots(f"{parts.scheme}://{parts.netloc}").can_fetch(USER_AGENT, url):
         raise RobotsDisallowed(f"robots.txt disallows {url}")
@@ -31,26 +31,19 @@ def render(url: str) -> str:
             page = browser.new_page(user_agent=USER_AGENT, viewport={"width": 1280, "height": 2000})
             page.goto(url, wait_until="networkidle", timeout=WAIT_MS)
             page.wait_for_timeout(SETTLE_MS)
-            return page.content()
+            return read(page)
         finally:
             browser.close()
+
+
+def render(url: str) -> str:
+    """The page's HTML after its scripts have run."""
+    return _open(url, lambda page: page.content())
 
 
 def rendered_text(url: str) -> str:
-    from playwright.sync_api import sync_playwright
-
-    parts = urlsplit(url)
-    if not _robots(f"{parts.scheme}://{parts.netloc}").can_fetch(USER_AGENT, url):
-        raise RobotsDisallowed(f"robots.txt disallows {url}")
-    with sync_playwright() as p:
-        browser = p.chromium.launch()
-        try:
-            page = browser.new_page(user_agent=USER_AGENT, viewport={"width": 1280, "height": 2000})
-            page.goto(url, wait_until="networkidle", timeout=WAIT_MS)
-            page.wait_for_timeout(SETTLE_MS)
-            return page.inner_text("body")
-        finally:
-            browser.close()
+    """The text a visitor sees."""
+    return _open(url, lambda page: page.inner_text("body"))
 
 
 if __name__ == "__main__":

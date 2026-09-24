@@ -1,5 +1,5 @@
 {
-  "_note": "Hand-curated vendors: anything scraped, University Catering cafés (hours from their pages), and places whose details were checked by hand. They override the generated places.json. type is college, university or commercial; link_only vendors are not scraped; menu \"regular\" marks a standing menu; hours use OpenStreetMap opening_hours syntax; approx marks a position that isn't exact.",
+  "_note": "Hand-curated vendors: anything scraped, University Catering cafés (hours from their pages), and places whose details were checked by hand. They override the generated places.json. type is college, university or commercial; link_only vendors are not scraped; menu \"regular\" marks a standing menu; hours use OpenStreetMap opening_hours syntax; approx marks a position that isn't exact; render marks a menu drawn by JavaScript (fetched by a headless browser in scrape-rendered.yml).",
   "vendors": [
     {
       "id": "selwyn",
@@ -159,6 +159,22 @@
         "checked": 2023
       },
       "link_only": true
+    },
+    {
+      "id": "clare-hall",
+      "name": "Clare Hall",
+      "type": "college",
+      "about": "Dining Hall. Weekly menu from the college's Microsoft Sway.",
+      "menu_url": "https://sway.cloud.microsoft/b7Zz74Q2g96EIhE9",
+      "fetch_url": "https://sway.cloud.microsoft/s/b7Zz74Q2g96EIhE9/embed",
+      "render": true,
+      "lat": 52.20402,
+      "lng": 0.104246,
+      "access": {
+        "level": "members",
+        "note": "college members only",
+        "checked": 2022
+      }
     },
     {
       "id": "arc-cafe",

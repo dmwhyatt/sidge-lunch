@@ -80,6 +80,9 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--data-dir", type=Path, default=Path(__file__).resolve().parents[2] / "data")
     ap.add_argument("--only", action="append", help="vendor id(s) to update")
+    ap.add_argument("--rendered", action="store_true",
+                    help='update only vendors marked "render" (they need a headless browser); '
+                         "without this flag they are skipped")
     args = ap.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -93,11 +96,14 @@ def main(argv: list[str] | None = None) -> int:
         if v.get("link_only"):
             continue  # never fetched; the site links to the vendor's page
         prev = menus["vendors"].get(v["id"])
-        if args.only and v["id"] not in args.only:
+        if (args.only and v["id"] not in args.only) or bool(v.get("render")) != args.rendered:
             if prev is not None:
                 out["vendors"][v["id"]] = prev
             continue
-        out["vendors"][v["id"]] = update_vendor(v, prev, now.date(), now)
+        fetcher = fetch
+        if v.get("render"):  # drawn by JavaScript: fetch through a headless browser
+            from .render import rendered_text as fetcher  # Playwright is only needed for these
+        out["vendors"][v["id"]] = update_vendor(v, prev, now.date(), now, fetcher)
         log.info("%s: %s", v["id"], out["vendors"][v["id"]]["status"])
 
     if out != menus:

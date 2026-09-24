@@ -12,6 +12,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
+render = ["playwright>=1.45"]  # only for vendors drawn by JavaScript (scrape-rendered.yml)
 
 [tool.setuptools]
 packages = ["sidge_lunch", "sidge_lunch.adapters"]

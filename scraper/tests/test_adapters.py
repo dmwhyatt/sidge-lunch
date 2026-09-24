@@ -146,6 +146,32 @@ def test_corpus():
     assert breakfast["Variety of hot breads"]["price"] is None  # "£0.00": not a real price
 
 
+def test_clare_hall():
+    from sidge_lunch.adapters.clare_hall import parse as parse_text
+
+    days = [d.to_json() for d in parse_text((FIXTURES / "clare-hall.txt").read_text(), TODAY)]
+    by_date = {d["date"]: d for d in days}
+    assert list(by_date) == ["2026-09-21", "2026-09-22", "2026-09-23", "2026-09-24", "2026-09-25"]
+    assert [m["name"] for m in by_date["2026-09-23"]["meals"]] == ["Lunch"]  # dinner "CLOSED FOR FORMAL HALL"
+    thu = {i["name"]: i for i in by_date["2026-09-24"]["meals"][0]["items"]}
+    assert list(thu) == [
+        "Borscht Soup",
+        "Lemon & Rosemary Roast Chicken, Pollenta Crusted Potatoes, Root Vegetable & Red Onion Gravy",
+        "Seeded Tofu & Red Pepper Roast, Pollenta Crusted Potatoes, Root Vegetable & Red Onion Gravy",
+        "Rum Baba",
+    ]
+    assert thu["Borscht Soup"]["dietary"] == ["gluten-free", "vegan", "vegetarian"]
+    assert thu["Rum Baba"]["dietary"] == []
+    tue = {i["name"]: i for i in by_date["2026-09-22"]["meals"][0]["items"]}
+    croquettes = tue["Thai Sweet Potato & Cauliflower Croquettes, Sesame Soy & Ginger Dipping Sauce, "
+                     "Crunchy Vegetable Slaw & Rice Crackers"]
+    assert croquettes["dietary"] == ["vegan", "vegetarian"]  # "PB, GF available on request": not gluten-free
+    assert croquettes["description"] == "GF available on request"
+    fri_dinner = {i["name"]: i for i in by_date["2026-09-25"]["meals"][1]["items"]}
+    assert fri_dinner["Chicken Fajitas, Sweet Potato Fries, Sour Cream, Shredded Cabbage & Coriander Slaw"][
+        "dietary"] == ["halal"]
+
+
 def test_trinity():
     from sidge_lunch.adapters.trinity import _pdf_link, parse_pdf
 

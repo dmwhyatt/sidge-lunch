@@ -53,6 +53,8 @@ GitHub Actions (cron)                        GitHub Pages
   of the hour; run it by hand from the Actions tab if a menu looks stale. If
   `menus.json` changed it commits and redeploys. Menu pages don't say when they change, so the scraper
   compares a hash of the parsed menu instead.
+- **Scrape rendered menus** (`scrape-rendered.yml`) handles menus drawn by JavaScript (vendors marked
+  `"render": true`, currently Clare Hall's Sway) with a headless browser, a few times a day.
 - **OpenStreetMap snapshot** (`osm.yml`) runs one Overpass query when `scraper/osm/cambridge.overpassql`
   changes or on demand, rebuilds `sites.json` and `places.json`, then runs walking times.
 - **Walking times** (`walking.yml`) recomputes routes when sites or places change, or on demand. It only

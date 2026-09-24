@@ -32,21 +32,6 @@
    "menu_url": "https://www.clare.cam.ac.uk/"
   },
   {
-   "id": "college-clare-hall",
-   "name": "Clare Hall",
-   "type": "college",
-   "about": "College hall and buttery. Check who it's open to before going.",
-   "lat": 52.20402,
-   "lng": 0.104246,
-   "link_only": true,
-   "access": {
-    "level": "members",
-    "note": "college members only",
-    "checked": 2022
-   },
-   "menu_url": "https://www.clarehall.cam.ac.uk/"
-  },
-  {
    "id": "college-emmanuel-college",
    "name": "Emmanuel College",
    "type": "college",
