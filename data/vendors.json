@@ -48,11 +48,10 @@
       "id": "queens",
       "name": "Queens' College",
       "type": "college",
-      "about": "Dining hall",
+      "about": "Dining Hall. Weekly menu from the college's website.",
       "menu_url": "https://www.queens.cam.ac.uk/life-at-queens/catering/dining-hall/weekly-menu/",
       "lat": 52.201663,
       "lng": 0.114874,
-      "link_only": true,
       "access": {
         "level": "open",
         "note": "welcome, about 30% extra, card only",

@@ -172,6 +172,22 @@ def test_clare_hall():
         "dietary"] == ["halal"]
 
 
+def test_queens():
+    days = parse("queens")
+    by_date = {d["date"]: d for d in days}
+    assert list(by_date) == ["2026-09-21", "2026-09-22", "2026-09-23", "2026-09-26"]
+    wed = by_date["2026-09-23"]
+    assert [m["name"] for m in wed["meals"]] == ["Lunch", "Dinner"]
+    lunch = {i["name"]: i for i in wed["meals"][0]["items"]}
+    pasta = lunch["Garlic Roasted Courgette & Tomato Gluten Free-Pasta"]
+    assert pasta["dietary"] == ["vegan", "vegetarian"]  # "(Vegan)"; "Gluten Free" in a name isn't a label
+    assert lunch["Spinach, Feta & Potato Frittata"]["dietary"] == ["vegetarian"]
+    assert lunch["Roast Turkey with Gravy & Cranberry Sauce"]["dietary"] == []
+    dinner = {i["name"]: i for i in wed["meals"][1]["items"]}
+    assert dinner["Buttermilk Chicken Burger with Slaw"]["dietary"] == ["halal"]
+    assert [m["name"] for m in by_date["2026-09-26"]["meals"]] == ["Dinner"]  # empty "Saturday Brunch" left out
+
+
 def test_trinity():
     from sidge_lunch.adapters.trinity import _pdf_link, parse_pdf
 
@@ -213,7 +229,7 @@ def test_document_adapter_fetches_the_linked_pdf(monkeypatch):
     assert entry["status"] == "ok" and entry["days"][0]["date"] == "2026-09-16"
 
 
-@pytest.mark.parametrize("vendor", ["newnham", "selwyn", "darwin", "the-mill", "st-johns", "robinson", "corpus", "churchill"])
+@pytest.mark.parametrize("vendor", ["newnham", "selwyn", "darwin", "the-mill", "st-johns", "robinson", "corpus", "churchill", "queens"])
 def test_rejects_unrelated_page(vendor):
     with pytest.raises(ValueError):
         ADAPTERS[vendor]("<html><body><p>Page not found</p></body></html>", TODAY)

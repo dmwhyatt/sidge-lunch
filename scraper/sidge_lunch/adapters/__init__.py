@@ -1,7 +1,6 @@
 """One parser per vendor, keyed by vendor id (see data/vendors.json).
 
-Vendors marked ``link_only`` in vendors.json (e.g. Queens', whose page is behind
-a bot check) have no adapter and are never fetched.
+Vendors marked ``link_only`` in vendors.json have no adapter and are never fetched.
 
 An adapter takes the fetched HTML and today's date (Europe/London) and returns
 the days it could parse. Raise ``NotImplementedError`` until the adapter is
@@ -14,7 +13,7 @@ from collections.abc import Callable
 from datetime import date
 
 from ..schema import Day
-from . import churchill, clare_hall, corpus, darwin, newnham, robinson, selwyn, st_johns, the_mill, trinity
+from . import churchill, clare_hall, corpus, darwin, newnham, queens, robinson, selwyn, st_johns, the_mill, trinity
 
 Adapter = Callable[[str, date], list[Day]]
 # Adapters that follow a link from the page to a document (e.g. a weekly PDF) and so
@@ -30,7 +29,8 @@ ADAPTERS: dict[str, Adapter] = {
     "robinson": robinson.parse,
     "churchill": churchill.parse,
     "corpus": corpus.parse,
-    "clare-hall": clare_hall.parse,  # reads rendered text: "render": true in vendors.json
+    "clare-hall": clare_hall.parse,
+    "queens": queens.parse,  # reads rendered text: "render": true in vendors.json
 }
 
 DOCUMENT_ADAPTERS: dict[str, DocumentAdapter] = {
