@@ -9,6 +9,11 @@ on:
     - cron: "7,37 5-12 * * *"
     - cron: "17 14-23/3 * * *"
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Re-scrape places that already have today's menu"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -29,7 +34,7 @@ jobs:
           cache: pip
           cache-dependency-path: scraper/pyproject.toml
       - run: pip install ./scraper
-      - run: python -m sidge_lunch.run --data-dir data
+      - run: python -m sidge_lunch.run --data-dir data ${{ inputs.force && '--force' || '' }}
       - id: commit
         name: Commit if menus changed
         run: |

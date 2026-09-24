@@ -76,6 +76,11 @@ def update_vendor(
     return entry | {"content_hash": h, "days": days}
 
 
+def has_todays_menu(prev: dict | None, today: date) -> bool:
+    """Whether the last scrape succeeded and already holds a menu for today, so another fetch can wait."""
+    return bool(prev) and prev.get("status") == "ok" and any(d["date"] == today.isoformat() for d in prev["days"])
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--data-dir", type=Path, default=Path(__file__).resolve().parents[2] / "data")
@@ -83,6 +88,8 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--rendered", action="store_true",
                     help='update only vendors marked "render" (they need a headless browser); '
                          "without this flag they are skipped")
+    ap.add_argument("--force", action="store_true",
+                    help="scrape even vendors that already have today's menu (normally they wait until tomorrow)")
     args = ap.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -99,6 +106,12 @@ def main(argv: list[str] | None = None) -> int:
         if (args.only and v["id"] not in args.only) or bool(v.get("render")) != args.rendered:
             if prev is not None:
                 out["vendors"][v["id"]] = prev
+            continue
+        # Once a vendor's menu for today is in, leave it alone until tomorrow: fewer requests to the
+        # colleges. Naming a vendor with --only, or --force, scrapes it anyway.
+        if not (args.force or args.only) and has_todays_menu(prev, now.date()):
+            out["vendors"][v["id"]] = prev
+            log.info("%s: already have today's menu, skipped", v["id"])
             continue
         fetcher = fetch
         if v.get("render"):  # drawn by JavaScript: fetch through a headless browser

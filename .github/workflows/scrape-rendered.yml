@@ -8,6 +8,11 @@ on:
   schedule:
     - cron: "43 5,8,10 * * *"
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Re-scrape places that already have today's menu"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -35,7 +40,7 @@ jobs:
           for attempt in 1 2 3; do
             git fetch origin ${{ github.ref_name }}
             git reset --hard origin/${{ github.ref_name }}
-            python -m sidge_lunch.run --data-dir data --rendered
+            python -m sidge_lunch.run --data-dir data --rendered ${{ inputs.force && '--force' || '' }}
             if git diff --quiet -- data/menus.json; then
               echo "changed=false" >> "$GITHUB_OUTPUT"
               exit 0

@@ -110,3 +110,37 @@ def test_fetch_url_gets_todays_date(register):
     vendor = {"id": "test", "menu_url": "https://example.org/menu", "fetch_url": "https://example.org/m?date={date}"}
     run.update_vendor(vendor, None, TODAY, NOW, lambda url: seen.append(url) or "")
     assert seen == ["https://example.org/m?date=2026-09-23"]
+
+
+def _menus_dir(tmp_path, prev):
+    import json
+
+    (tmp_path / "vendors.json").write_text(json.dumps({"vendors": [
+        {"id": "test", "name": "T", "menu_url": "https://example.org/menu", "lat": 0, "lng": 0},
+    ]}))
+    (tmp_path / "menus.json").write_text(json.dumps({"vendors": {"test": prev} if prev else {}}))
+
+
+def _today_entry(status="ok", day=None):
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+
+    day = day or datetime.now(ZoneInfo("Europe/London")).date().isoformat()
+    return {"source_url": "u", "status": status, "error": None, "updated_at": None, "content_hash": "h",
+            "days": [{"date": day, "meals": []}]}
+
+
+@pytest.mark.parametrize("prev, argv, fetched", [
+    (_today_entry(), [], False),                        # today's menu already in: skipped
+    (_today_entry(), ["--force"], True),                # --force scrapes anyway
+    (_today_entry(), ["--only", "test"], True),         # naming the vendor scrapes it
+    (_today_entry(status="error"), [], True),           # last scrape failed: try again
+    (_today_entry(day="2000-01-01"), [], True),         # only an old menu: try again
+    (None, [], True),                                   # never scraped
+])
+def test_skips_vendors_that_already_have_todays_menu(tmp_path, monkeypatch, prev, argv, fetched):
+    _menus_dir(tmp_path, prev)
+    calls = []
+    monkeypatch.setattr(run, "update_vendor", lambda v, p, *a, **k: calls.append(v["id"]) or (p or {"status": "ok"}))
+    run.main(["--data-dir", str(tmp_path), *argv])
+    assert (calls == ["test"]) is fetched
