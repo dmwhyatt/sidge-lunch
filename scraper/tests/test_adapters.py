@@ -252,3 +252,25 @@ def test_wolfson():
     breakfast = items(days[0], "Breakfast")
     assert breakfast["Grilled Sausage"]["category"] is None
     assert breakfast["Vegan Croissant"]["dietary"] == ["vegan", "vegetarian"]
+
+
+def test_west_hub():
+    days = parse("west-hub")
+    assert [d["date"] for d in days] == ["2026-09-21", "2026-09-22", "2026-09-23", "2026-09-24", "2026-09-25"]
+    thursday = items(days[3])
+    assert list(thursday) == [
+        "Moussaka, garlic & herb slice",
+        "Veggie meatball biryani",
+        "Chicken with rosemary & parmesan crumb, roasted tomato & watercress",
+        "Lemongrass & sticky onion pork burger",
+    ]
+    assert all(i["price"] is None and i["allergens"] == [] for i in thursday.values())
+    assert items(days[1])["Vegan empanadas, green goddess sauce"]["dietary"] == ["vegan", "vegetarian"]
+
+
+def test_greenwich_house_cafe():
+    days = parse("greenwich-house-cafe")
+    assert len(days) == 5 and days[0]["date"] == "2026-09-21"
+    sides = items(days[1])["Sides"]
+    assert sides["category"] == "Sides"
+    assert sides["description"] == "Citrus slaw with pickled cranberries, Sweet potato fried & cheesy leeks"

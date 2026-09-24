@@ -232,12 +232,11 @@
       "name": "West Hub Canteen & Coffee Bar",
       "type": "university",
       "about": "Canteen until 14:30; coffee bar until 16:00. JJ Thomson Avenue",
-      "menu_url": "https://www.catering.admin.cam.ac.uk/food-and-drink/places-eat/out-university-centre/west-hub-canteen",
+      "menu_url": "https://www.catering.admin.cam.ac.uk/cafes/west-hub-canteen",
       "osm": "node/9772842304",
       "lat": 52.210323,
       "lng": 0.09014,
-      "hours": "Mo-Fr 08:00-16:00",
-      "link_only": true
+      "hours": "Mo-Fr 08:00-16:00"
     },
     {
       "id": "scholars-brew",
@@ -289,11 +288,10 @@
       "name": "Greenwich House Café",
       "type": "university",
       "about": "Café, Greenwich House, Madingley Rise",
-      "menu_url": "https://www.catering.admin.cam.ac.uk/food-and-drink/places-eat/out-university-centre/greenwich-house-cafe",
+      "menu_url": "https://www.catering.admin.cam.ac.uk/cafes/greenwich-house-cafe",
       "lat": 52.215241,
       "lng": 0.095754,
-      "hours": "Mo-Th 08:00-15:00; Fr 08:00-14:30",
-      "link_only": true
+      "hours": "Mo-Th 08:00-15:00; Fr 08:00-14:30"
     },
     {
       "id": "whale-cafe",
