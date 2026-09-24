@@ -1,0 +1,35 @@
+name: Render probe (temporary)
+
+# One-off: render Clare Hall's Sway embed and print what a visitor sees, so its
+# adapter can be written. Delete once the adapter exists.
+on:
+  push:
+    branches: ["claude/**"]
+    paths: [".github/workflows/render-probe.yml"]
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install ./scraper playwright
+      - run: python -m playwright install --with-deps chromium
+      - name: Rendered text
+        run: python -m sidge_lunch.render "https://sway.cloud.microsoft/s/b7Zz74Q2g96EIhE9/embed"
+      - name: Rendered HTML (structure)
+        run: |
+          python - <<'PY'
+          from sidge_lunch.render import render
+          html = render("https://sway.cloud.microsoft/s/b7Zz74Q2g96EIhE9/embed")
+          import re
+          from bs4 import BeautifulSoup
+          s = BeautifulSoup(html, "lxml")
+          for t in s(["script", "style", "noscript", "svg"]): t.decompose()
+          body = s.body.prettify()
+          i = body.find("Monday") if "Monday" in body else body.find("Lunch")
+          print(len(html), "bytes")
+          print(re.sub(r"\n\s*\n+", "\n", body[max(0, i - 3000): i + 6000]))
+          PY
