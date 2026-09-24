@@ -1340,6 +1340,14 @@
         }
       ]
     },
+    "queens": {
+      "source_url": "https://www.queens.cam.ac.uk/life-at-queens/catering/dining-hall/weekly-menu/",
+      "status": "error",
+      "error": "ValueError: no 'Week Commencing' date on page",
+      "updated_at": null,
+      "content_hash": null,
+      "days": []
+    },
     "st-johns": {
       "source_url": "https://menu.joh.cam/today",
       "status": "ok",
@@ -1601,8 +1609,8 @@
       "source_url": "https://www.corpus.cam.ac.uk/foodmenu/",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-09-24T10:56:03+01:00",
-      "content_hash": "f56b1da4be869b70",
+      "updated_at": "2026-09-24T12:58:24+01:00",
+      "content_hash": "480413421154fc87",
       "days": [
         {
           "date": "2026-09-24",
@@ -1660,10 +1668,10 @@
                   "description": null,
                   "category": "Dessert",
                   "price": {
-                    "amount": 1.55,
+                    "amount": 1.65,
                     "currency": "GBP"
                   },
-                  "price_text": "£1.55",
+                  "price_text": "£1.65",
                   "dietary": [],
                   "allergens": [
                     "eggs",
@@ -1677,10 +1685,10 @@
                   "description": null,
                   "category": "Dessert",
                   "price": {
-                    "amount": 1.55,
+                    "amount": 1.65,
                     "currency": "GBP"
                   },
-                  "price_text": "£1.55",
+                  "price_text": "£1.65",
                   "dietary": [],
                   "allergens": [
                     "eggs",
