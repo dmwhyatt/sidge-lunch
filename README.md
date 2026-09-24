@@ -48,7 +48,9 @@ GitHub Actions (cron)                        GitHub Pages
 
 ### Workflows
 
-- **Scrape menus** (`scrape.yml`) runs every 30 minutes through the morning and every 3 hours otherwise. If
+- **Scrape menus** (`scrape.yml`) runs every 15 minutes through the morning and every 3 hours otherwise.
+  GitHub treats schedules as best-effort (runs can be late or skipped), so the times avoid the busy top
+  of the hour; run it by hand from the Actions tab if a menu looks stale. If
   `menus.json` changed it commits and redeploys. Menu pages don't say when they change, so the scraper
   compares a hash of the parsed menu instead.
 - **OpenStreetMap snapshot** (`osm.yml`) runs one Overpass query when `scraper/osm/cambridge.overpassql`
