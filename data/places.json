@@ -256,21 +256,6 @@
    "menu_url": "https://www.trinhall.cam.ac.uk/"
   },
   {
-   "id": "college-wolfson-college",
-   "name": "Wolfson College",
-   "type": "college",
-   "about": "College hall and buttery. Check who it's open to before going.",
-   "lat": 52.198245,
-   "lng": 0.100809,
-   "link_only": true,
-   "access": {
-    "level": "members",
-    "note": "college card required",
-    "checked": 2015
-   },
-   "menu_url": "https://www.wolfson.cam.ac.uk/"
-  },
-  {
    "id": "osm-n20458787",
    "name": "Earl of Beaconsfield",
    "type": "commercial",

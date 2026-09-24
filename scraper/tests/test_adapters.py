@@ -233,3 +233,22 @@ def test_document_adapter_fetches_the_linked_pdf(monkeypatch):
 def test_rejects_unrelated_page(vendor):
     with pytest.raises(ValueError):
         ADAPTERS[vendor]("<html><body><p>Page not found</p></body></html>", TODAY)
+
+
+def test_wolfson():
+    days = parse("wolfson")
+    assert [d["date"] for d in days] == ["2026-09-24", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28"]
+    assert [m["name"] for m in days[0]["meals"]] == ["Breakfast", "Lunch", "Dinner"]
+    assert [m["name"] for m in days[2]["meals"]] == ["Breakfast", "Dinner"]  # no lunch on Saturdays
+    lunch = items(days[0])
+    soup = lunch["Sustainable Soup"]
+    assert soup["category"] == "Soup of the Day"
+    assert soup["allergens"] == ["celery", "sulphites"]
+    assert soup["price"] == {"amount": 1.7, "currency": "GBP"}
+    assert soup["description"] == "£1.30 for students"
+    assert lunch["Key Lime Pie"]["allergens"] == ["gluten", "milk", "sulphites"]
+    chilli = lunch["Slow-cooked Beef Chilli con Carne with Dark Chocolate & Spices"]
+    assert chilli["category"] == "Main Course" and chilli["allergens"] == []
+    breakfast = items(days[0], "Breakfast")
+    assert breakfast["Grilled Sausage"]["category"] is None
+    assert breakfast["Vegan Croissant"]["dietary"] == ["vegan", "vegetarian"]

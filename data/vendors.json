@@ -59,6 +59,20 @@
       }
     },
     {
+      "id": "wolfson",
+      "name": "Wolfson College",
+      "type": "college",
+      "about": "Cafeteria. Menus for the next few days from the college's website; student and other prices.",
+      "menu_url": "https://www.wolfson.cam.ac.uk/food/cafeteria-menus",
+      "lat": 52.198245,
+      "lng": 0.100809,
+      "access": {
+        "level": "members",
+        "note": "college card required",
+        "checked": 2015
+      }
+    },
+    {
       "id": "st-johns",
       "name": "St John's College",
       "type": "college",
