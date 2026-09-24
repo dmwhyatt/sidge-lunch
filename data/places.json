@@ -246,21 +246,6 @@
    "menu_url": "https://www.sid.cam.ac.uk/"
   },
   {
-   "id": "college-st-catharines-college",
-   "name": "St Catharine's College",
-   "type": "college",
-   "about": "College hall and buttery. Check who it's open to before going.",
-   "lat": 52.202896,
-   "lng": 0.116956,
-   "link_only": true,
-   "access": {
-    "level": "open",
-    "note": "welcome, about 50% extra, card only",
-    "checked": 2023
-   },
-   "menu_url": "https://www.caths.cam.ac.uk/"
-  },
-  {
    "id": "college-st-edmunds-college",
    "name": "St Edmund's College",
    "type": "college",
@@ -269,21 +254,6 @@
    "lng": 0.108867,
    "link_only": true,
    "menu_url": "https://www.st-edmunds.cam.ac.uk/"
-  },
-  {
-   "id": "college-trinity-college",
-   "name": "Trinity College",
-   "type": "college",
-   "about": "College hall and buttery. Check who it's open to before going.",
-   "lat": 52.206902,
-   "lng": 0.114914,
-   "link_only": true,
-   "access": {
-    "level": "with-member",
-    "note": "non-member prices shown, but you need to be with a Trinity member",
-    "checked": 2024
-   },
-   "menu_url": "https://www.trin.cam.ac.uk/"
   },
   {
    "id": "college-trinity-hall",

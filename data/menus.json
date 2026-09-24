@@ -1870,6 +1870,14 @@
         }
       ]
     },
+    "trinity": {
+      "source_url": "https://www.trin.cam.ac.uk/download/hall-menu-this-week/",
+      "status": "ok",
+      "error": null,
+      "updated_at": "2026-09-24T11:26:22+01:00",
+      "content_hash": "4f53cda18c2baa0c",
+      "days": []
+    },
     "the-mill": {
       "source_url": "https://www.themillpubcambridge.com/food-and-drink",
       "status": "ok",

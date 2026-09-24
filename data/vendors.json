@@ -132,6 +132,35 @@
       "link_only": true
     },
     {
+      "id": "trinity",
+      "name": "Trinity College",
+      "type": "college",
+      "about": "Servery in Hall. Menus come from the weekly PDF; long dish names can occasionally be split in two.",
+      "menu_url": "https://www.trin.cam.ac.uk/download/hall-menu-this-week/",
+      "lat": 52.206902,
+      "lng": 0.114914,
+      "access": {
+        "level": "with-member",
+        "note": "non-member prices shown, but you need to be with a Trinity member",
+        "checked": 2024
+      }
+    },
+    {
+      "id": "st-catharines",
+      "name": "St Catharine's College",
+      "type": "college",
+      "about": "Cafeteria. Daily menus are sent by email to a University mailing list, so they aren't shown here.",
+      "menu_url": "https://www.caths.cam.ac.uk/students/college-operations/hall-and-dining",
+      "lat": 52.202896,
+      "lng": 0.116956,
+      "access": {
+        "level": "open",
+        "note": "welcome, about 50% extra, card only",
+        "checked": 2023
+      },
+      "link_only": true
+    },
+    {
       "id": "arc-cafe",
       "name": "ARC Café",
       "type": "university",

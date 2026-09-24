@@ -146,6 +146,47 @@ def test_corpus():
     assert breakfast["Variety of hot breads"]["price"] is None  # "£0.00": not a real price
 
 
+def test_trinity():
+    from sidge_lunch.adapters.trinity import _pdf_link, parse_pdf
+
+    days = [d.to_json() for d in parse_pdf((FIXTURES / "trinity.pdf").read_bytes(), date(2026, 9, 16))]
+    by_date = {d["date"]: d for d in days}
+    assert "2026-09-19" not in by_date  # "NO LUNCH", "NO DINNER"
+    assert [m["name"] for m in by_date["2026-09-20"]["meals"]] == ["Brunch"]
+    tue = by_date["2026-09-15"]
+    assert [m["name"] for m in tue["meals"]] == ["Lunch"]  # "NO DINNER": the dinner block is skipped
+    items = {i["name"]: i for i in tue["meals"][0]["items"]}
+    assert items["Soup: Thai Spiced Lentil"]["dietary"] == ["vegetarian"]
+    assert "Pan-Fried Pork Loin Steak – Honey & Garlic Sauce" in items  # wrapped line joined
+    assert "Wholewheat Pasta with Pepperonata" in items
+    assert items["Mediterranean Vegetable Quiche"]["dietary"] == ["vegetarian"]  # "(v)" on its own line
+    assert items["Pan-Fried Pork Loin Steak"]["dietary"] == ["dairy-free"]  # "(wf/df)"
+    assert items["Pan-Fried Pork Loin Steak"]["category"] == "Mains"
+    wed = {i["name"] for i in by_date["2026-09-16"]["meals"][0]["items"]}
+    assert "Sesame Grilled Salmon, Miso Sauce" in wed
+    assert "Vegetable Fried Ginger Noodles" in wed and "Sautéed Pak Choi with Garlic & Bean Sprouts" in wed
+
+    page = '<a href="/download/hall-menu-this-week/?wpdmdl=30107&filename=Hall-menu-200926.pdf">Download</a>'
+    assert _pdf_link(page).endswith("Hall-menu-200926.pdf")
+
+
+def test_document_adapter_fetches_the_linked_pdf(monkeypatch):
+    from sidge_lunch import run
+
+    page = '<a href="https://example.org/x?wpdmdl=1&filename=menu.pdf">Download</a>'
+    fetched = []
+
+    def get_bytes(url):
+        fetched.append(url)
+        return (FIXTURES / "trinity.pdf").read_bytes()
+
+    vendor = {"id": "trinity", "menu_url": "https://example.org/menu"}
+    entry = run.update_vendor(vendor, None, date(2026, 9, 16), __import__("datetime").datetime(2026, 9, 16, 9),
+                              fetcher=lambda url: page, byte_fetcher=get_bytes)
+    assert fetched == ["https://example.org/x?wpdmdl=1&filename=menu.pdf"]
+    assert entry["status"] == "ok" and entry["days"][0]["date"] == "2026-09-16"
+
+
 @pytest.mark.parametrize("vendor", ["newnham", "selwyn", "darwin", "the-mill", "st-johns", "robinson", "corpus", "churchill"])
 def test_rejects_unrelated_page(vendor):
     with pytest.raises(ValueError):

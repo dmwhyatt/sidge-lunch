@@ -30,10 +30,14 @@ def _robots(origin: str) -> urllib.robotparser.RobotFileParser:
     return rp
 
 
-def fetch(url: str) -> str:
+def fetch_bytes(url: str) -> bytes:
     parts = urlsplit(url)
     if not _robots(f"{parts.scheme}://{parts.netloc}").can_fetch(USER_AGENT, url):
         raise RobotsDisallowed(f"robots.txt disallows {url}")
     r = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT)
     r.raise_for_status()
-    return r.text
+    return r.content
+
+
+def fetch(url: str) -> str:
+    return fetch_bytes(url).decode("utf-8", errors="replace")

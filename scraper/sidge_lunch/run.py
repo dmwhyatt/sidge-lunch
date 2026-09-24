@@ -18,8 +18,8 @@ from datetime import date, datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from .adapters import ADAPTERS
-from .fetch import fetch
+from .adapters import ADAPTERS, DOCUMENT_ADAPTERS
+from .fetch import fetch, fetch_bytes
 
 LONDON = ZoneInfo("Europe/London")
 log = logging.getLogger("sidge_lunch")
@@ -39,6 +39,7 @@ def update_vendor(
     today: date,
     now: datetime,
     fetcher: Callable[[str], str] = fetch,
+    byte_fetcher: Callable[[str], bytes] = fetch_bytes,
 ) -> dict:
     prev = prev or {}
     entry = {
@@ -49,7 +50,11 @@ def update_vendor(
         "content_hash": prev.get("content_hash"),
         "days": current_days(prev.get("days", []), today),
     }
-    adapter = ADAPTERS.get(vendor["id"])
+    if vendor["id"] in DOCUMENT_ADAPTERS:
+        doc_adapter = DOCUMENT_ADAPTERS[vendor["id"]]
+        adapter = lambda html, day: doc_adapter(html, day, byte_fetcher)  # noqa: E731
+    else:
+        adapter = ADAPTERS.get(vendor["id"])
     if adapter is None:
         return entry | {"status": "unsupported", "error": "no adapter registered"}
 
