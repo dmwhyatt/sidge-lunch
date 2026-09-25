@@ -1,0 +1,38 @@
+name: Newnham probe (temporary)
+on:
+  push:
+    branches: [claude/hopeful-maxwell-iawkwe]
+    paths: [".github/workflows/newnham-probe.yml"]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install ./scraper
+      - run: |
+          python - <<'PY'
+          import requests
+          from bs4 import BeautifulSoup
+          from sidge_lunch.fetch import USER_AGENT, _check_for_bot_check
+          url = "https://newn.cam.ac.uk/todays-menu"
+          for label, u in (("plain", url), ("query", url + "?nocache=probe")):
+              r = requests.get(u, headers={"User-Agent": USER_AGENT}, timeout=30)
+              print("=====", label, r.status_code)
+              for h in ("date", "age", "cache-control", "x-sucuri-cache", "x-sucuri-id", "x-cache", "last-modified", "x-drupal-cache", "x-drupal-dynamic-cache"):
+                  if h in r.headers:
+                      print(f"  {h}: {r.headers[h]}")
+              try:
+                  _check_for_bot_check(u, r.content)
+              except Exception as e:
+                  print("  BOT CHECK:", e)
+                  continue
+              s = BeautifulSoup(r.text, "lxml")
+              for c in s.select(".menu-day-container"):
+                  h1 = c.select_one(".menu-day-header h1")
+                  t = c.select_one("time")
+                  print("  container:", h1 and h1.get_text(strip=True), "|", t and t.get("datetime"), "|", t and t.get_text(strip=True))
+                  print("    items:", [i.get_text(" ", strip=True)[:50] for i in c.select(".item-description h2")][:6])
+          PY
