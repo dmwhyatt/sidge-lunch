@@ -112,6 +112,14 @@ def test_fetch_url_gets_todays_date(register):
     assert seen == ["https://example.org/m?date=2026-09-23"]
 
 
+def test_fetch_url_gets_time_of_run(register):
+    register(adapter_returning([Day(TODAY, [lunch("Soup")])]))
+    seen = []
+    vendor = {"id": "test", "menu_url": "https://example.org/menu", "fetch_url": "https://example.org/menu?t={now}"}
+    run.update_vendor(vendor, None, TODAY, NOW, lambda url: seen.append(url) or "")
+    assert seen == [f"https://example.org/menu?t={NOW:%Y%m%d%H%M}"]
+
+
 def _menus_dir(tmp_path, prev):
     import json
 

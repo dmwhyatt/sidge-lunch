@@ -60,8 +60,10 @@ def update_vendor(
 
     try:
         # fetch_url, if set, is the page the adapter reads (it may differ from the page people are sent to);
-        # "{date}" in it becomes today's date.
-        url = vendor.get("fetch_url", vendor["menu_url"]).replace("{date}", today.isoformat())
+        # "{date}" in it becomes today's date, and "{now}" the time of this run, for pages whose cache
+        # (e.g. Sucuri's) would otherwise hand the scraper a copy from a previous day.
+        url = (vendor.get("fetch_url", vendor["menu_url"])
+               .replace("{date}", today.isoformat()).replace("{now}", now.strftime("%Y%m%d%H%M")))
         days = [d.to_json() for d in adapter(fetcher(url), today)]
     except NotImplementedError as e:
         return entry | {"status": "unsupported", "error": str(e) or "adapter not written yet"}

@@ -21,6 +21,7 @@
       "type": "college",
       "about": "Buttery",
       "menu_url": "https://newn.cam.ac.uk/todays-menu",
+      "fetch_url": "https://newn.cam.ac.uk/todays-menu?t={now}",
       "lat": 52.200354,
       "lng": 0.107331,
       "access": {
