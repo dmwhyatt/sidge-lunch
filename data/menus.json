@@ -4217,9 +4217,63 @@
       "source_url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/lunch-and-dinner-menu/",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-09-25T00:11:56+01:00",
-      "content_hash": "4f53cda18c2baa0c",
-      "days": []
+      "updated_at": "2026-09-25T11:00:54+01:00",
+      "content_hash": "0bbf43b90a02d3ef",
+      "days": [
+        {
+          "date": "2026-09-25",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Vegetable Shepherd’s Pie",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Chicken Tinga",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "halal"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Roasted Beef with Gravy",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Selection of Vegetables",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": "12:00–14:00",
+              "note": null
+            }
+          ]
+        }
+      ]
     },
     "corpus": {
       "source_url": "https://www.corpus.cam.ac.uk/foodmenu/",
