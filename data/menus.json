@@ -4,11 +4,11 @@
       "source_url": "https://www.sel.cam.ac.uk/current-members/hall-menu",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-09-26T00:17:43+01:00",
-      "content_hash": "2400e37503c802cc",
+      "updated_at": "2026-09-27T02:25:08+01:00",
+      "content_hash": "a1ebca403923f169",
       "days": [
         {
-          "date": "2026-09-26",
+          "date": "2026-09-27",
           "meals": [
             {
               "name": "Lunch",
@@ -24,7 +24,16 @@
                 },
                 {
                   "name": "Sides",
-                  "description": "Lunch",
+                  "description": "Brunch 11am – 1pm",
+                  "category": "Sides",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Sides",
+                  "description": "Sausages, bacon, fried eggs, hash browns, mushrooms, baked beans, tomatoes, croissants, roll, veggie sausages, vegan bacon",
                   "category": "Sides",
                   "price": null,
                   "price_text": null,
@@ -33,13 +42,13 @@
                 }
               ],
               "service": null,
-              "note": null
+              "note": "Halal option available"
             },
             {
               "name": "Dinner",
               "items": [
                 {
-                  "name": "Veggie mince chilli",
+                  "name": "Chickpea and vegetable stroganoff",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -51,7 +60,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Beef chilli",
+                  "name": "Chicken and mushroom Pie",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -62,8 +71,17 @@
                   "allergens": []
                 },
                 {
+                  "name": "Roast Pork with stuffing and gravy, apple sauce",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
                   "name": "Sides",
-                  "description": "Fries, rice, spicy roast new potatoes, roasted Mediterranean vegetables, sweetcorn",
+                  "description": "Fries, sweet potato wedges, jasmine rice, mushy peas, carrots",
                   "category": "Sides",
                   "price": null,
                   "price_text": null,
@@ -82,88 +100,9 @@
       "source_url": "https://newn.cam.ac.uk/todays-menu",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-09-26T15:25:43+01:00",
-      "content_hash": "60f230791abf0c45",
-      "days": [
-        {
-          "date": "2026-09-26",
-          "meals": [
-            {
-              "name": "Dinner",
-              "items": [
-                {
-                  "name": "Cauliflower, Chickpea & Coconut Curry",
-                  "description": "£3.60 with a Newnham card",
-                  "category": null,
-                  "price": {
-                    "amount": 4.79,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£4.79",
-                  "dietary": [
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": [
-                    "mustard"
-                  ]
-                },
-                {
-                  "name": "Turkey Korma",
-                  "description": "£4.00 with a Newnham card",
-                  "category": null,
-                  "price": {
-                    "amount": 5.32,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£5.32",
-                  "dietary": [],
-                  "allergens": [
-                    "mustard"
-                  ]
-                },
-                {
-                  "name": "Thai Red Fish Curry",
-                  "description": "£4.00 with a Newnham card",
-                  "category": null,
-                  "price": {
-                    "amount": 5.32,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£5.32",
-                  "dietary": [],
-                  "allergens": [
-                    "fish"
-                  ]
-                },
-                {
-                  "name": "Assorted Desserts",
-                  "description": "See Label for Allergens; £1.90 with a Newnham card",
-                  "category": null,
-                  "price": {
-                    "amount": 2.53,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£2.53",
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Hot Meal Deal",
-                  "description": "Vegan/Vegetarian + 1 Side £4.50 (Non-Members £6.00); Meat/Fish + 1 Side £4.90 (Non-Members £6.52); Extra Side £0.75 (Non-Members £1.00)",
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                }
-              ],
-              "service": null,
-              "note": null
-            }
-          ]
-        }
-      ]
+      "updated_at": "2026-09-27T02:25:08+01:00",
+      "content_hash": "4f53cda18c2baa0c",
+      "days": []
     },
     "darwin": {
       "source_url": "https://www.darwin.cam.ac.uk/dine/weekly-menu/",
@@ -3676,23 +3615,115 @@
       "source_url": "https://menu.joh.cam/today",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-09-26T00:17:43+01:00",
-      "content_hash": "fd0af3f779f76167",
+      "updated_at": "2026-09-27T02:25:08+01:00",
+      "content_hash": "f094b89629580854",
       "days": [
         {
-          "date": "2026-09-26",
+          "date": "2026-09-27",
           "meals": [
             {
-              "name": "Brunch",
+              "name": "Lunch",
               "items": [
                 {
-                  "name": "Brunch: Sausage, Bacon, Baked Beans, Hash Browns, Mushrooms, Fried Eggs, grilled tomato, black pudding, scrambled egg, veggie sausages and veggie grills",
+                  "name": "Sweet potato soup with speckled lentils",
                   "description": null,
                   "category": "Starter",
                   "price": null,
                   "price_text": null,
                   "dietary": [],
+                  "allergens": [
+                    "celery",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Pearl barley and Provencal vegetable and basil wellington, tomato and olive sauce",
+                  "description": null,
+                  "category": "Mains",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "celery",
+                    "gluten",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Macaroni cheese with crispy onions",
+                  "description": null,
+                  "category": "Mains",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "gluten",
+                    "milk",
+                    "mustard",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Roast chicken breast 1/4, honey and cranberry stuffing, chicken gravy",
+                  "description": null,
+                  "category": "Mains",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "halal"
+                  ],
+                  "allergens": [
+                    "celery",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Roast potatoes",
+                  "description": null,
+                  "category": "Sides",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": [
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Medley of vegetables",
+                  "description": null,
+                  "category": "Sides",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
                   "allergens": []
+                },
+                {
+                  "name": "cauliflower and broccoli gratin",
+                  "description": null,
+                  "category": "Sides",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": [
+                    "milk"
+                  ]
+                },
+                {
+                  "name": "Summer fruit crumble with creme anglaise",
+                  "description": null,
+                  "category": "Dessert",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": [
+                    "gluten",
+                    "milk"
+                  ]
                 }
               ],
               "service": null,
@@ -3722,11 +3753,11 @@
       "source_url": "https://www.corpus.cam.ac.uk/foodmenu/",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-09-26T00:17:43+01:00",
-      "content_hash": "aee93038fd560fd0",
+      "updated_at": "2026-09-27T02:25:08+01:00",
+      "content_hash": "39d6bbfa27a886c7",
       "days": [
         {
-          "date": "2026-09-26",
+          "date": "2026-09-27",
           "meals": [
             {
               "name": "Breakfast",
@@ -3867,11 +3898,11 @@
       "source_url": "https://www.themillpubcambridge.com/food-and-drink",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-09-26T00:17:43+01:00",
-      "content_hash": "833086afe62d38a7",
+      "updated_at": "2026-09-27T02:25:08+01:00",
+      "content_hash": "41a60af246c35a2e",
       "days": [
         {
-          "date": "2026-09-26",
+          "date": "2026-09-27",
           "meals": [
             {
               "name": "Menu",
