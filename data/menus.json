@@ -121,9 +121,90 @@
       "source_url": "https://newn.cam.ac.uk/todays-menu",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-09-30T00:41:46+01:00",
-      "content_hash": "4f53cda18c2baa0c",
-      "days": []
+      "updated_at": "2026-09-30T10:30:37+01:00",
+      "content_hash": "be9644dc5623fd56",
+      "days": [
+        {
+          "date": "2026-09-30",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Louisiana Stir-Fried Rice with Vegetables",
+                  "description": "£3.60 with a Newnham card",
+                  "category": null,
+                  "price": {
+                    "amount": 4.79,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£4.79",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Broccoli Pasta with Stilton & Pine Nuts",
+                  "description": "£3.60 with a Newnham card",
+                  "category": null,
+                  "price": {
+                    "amount": 4.79,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£4.79",
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "gluten",
+                    "milk"
+                  ]
+                },
+                {
+                  "name": "Roast Beef Brisket",
+                  "description": "£4.00 with a Newnham card",
+                  "category": null,
+                  "price": {
+                    "amount": 5.32,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£5.32",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Coconut & Jam Cake",
+                  "description": "£1.90 with a Newnham card",
+                  "category": null,
+                  "price": {
+                    "amount": 2.53,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£2.53",
+                  "dietary": [],
+                  "allergens": [
+                    "eggs",
+                    "gluten"
+                  ]
+                },
+                {
+                  "name": "Hot Meal Deal",
+                  "description": "Vegan/Vegetarian + 1 Side £4.50 (Non-Members £6.00); Meat/Fish + 1 Side £4.90 (Non-Members £6.52); Extra Side £0.75 (Non-Members £1.00)",
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        }
+      ]
     },
     "darwin": {
       "source_url": "https://www.darwin.cam.ac.uk/dine/weekly-menu/",
@@ -4564,9 +4645,103 @@
       "source_url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/lunch-and-dinner-menu/",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-09-30T00:41:46+01:00",
-      "content_hash": "4f53cda18c2baa0c",
-      "days": []
+      "updated_at": "2026-09-30T10:30:37+01:00",
+      "content_hash": "22226d1cf8c1d3c5",
+      "days": [
+        {
+          "date": "2026-09-30",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Today’s Special: Soft Serve Ice Cream",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Mushroom Gnocchi",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Bean Chilli",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Aubergine Parmigiana",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Red Thai Chicken Curry",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "halal"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Bacon Tartiflette",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "White Fish with Mediterranean Dressing",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Selection of Vegetables",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": "12:00–14:00",
+              "note": null
+            }
+          ]
+        }
+      ]
     },
     "corpus": {
       "source_url": "https://www.corpus.cam.ac.uk/foodmenu/",
