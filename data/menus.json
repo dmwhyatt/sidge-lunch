@@ -108,10 +108,10 @@
     },
     "newnham": {
       "source_url": "https://newn.cam.ac.uk/todays-menu",
-      "status": "error",
-      "error": "ValueError: no .menu-day-container on page",
-      "updated_at": "2026-09-30T10:30:37+01:00",
-      "content_hash": "be9644dc5623fd56",
+      "status": "ok",
+      "error": null,
+      "updated_at": "2026-10-01T06:00:50+01:00",
+      "content_hash": "4f53cda18c2baa0c",
       "days": []
     },
     "darwin": {
@@ -4473,19 +4473,261 @@
     },
     "churchill": {
       "source_url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/lunch-and-dinner-menu/",
-      "status": "ok",
-      "error": null,
+      "status": "error",
+      "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://www.chu.cam.ac.uk/about/campus/dining-at-college/lunch-and-dinner-menu/",
       "updated_at": "2026-10-01T00:46:36+01:00",
       "content_hash": "4f53cda18c2baa0c",
       "days": []
     },
     "corpus": {
       "source_url": "https://www.corpus.cam.ac.uk/foodmenu/",
-      "status": "error",
-      "error": "ValueError: no menu date on page",
-      "updated_at": "2026-09-30T00:41:46+01:00",
-      "content_hash": "f7e5ebc00cda6332",
-      "days": []
+      "status": "ok",
+      "error": null,
+      "updated_at": "2026-10-01T06:00:50+01:00",
+      "content_hash": "b4a196186dbfcc5d",
+      "days": [
+        {
+          "date": "2026-10-01",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Vegetable noodles stir fry with tofu, baby corn, sugar snaps, mushrooms and peppers",
+                  "description": null,
+                  "category": "Plant Based",
+                  "price": {
+                    "amount": 2.9,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£2.90",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "sesame",
+                    "soya",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Cannelloni pasta with ricotta and spinach",
+                  "description": null,
+                  "category": "Vegetarian",
+                  "price": {
+                    "amount": 3.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£3.00",
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "celery",
+                    "gluten",
+                    "milk",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Pork noodles stir fry with peppers, sugar snaps, mushrooms and baby corn",
+                  "description": null,
+                  "category": "Meat/Fish",
+                  "price": {
+                    "amount": 3.6,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£3.60",
+                  "dietary": [],
+                  "allergens": [
+                    "eggs",
+                    "sesame",
+                    "soya",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Roasted broccoli florets",
+                  "description": null,
+                  "category": "Side dish",
+                  "price": {
+                    "amount": 0.95,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.95",
+                  "dietary": [],
+                  "allergens": [
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Green beans with garlic dressing",
+                  "description": null,
+                  "category": "Side dish",
+                  "price": {
+                    "amount": 0.95,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.95",
+                  "dietary": [],
+                  "allergens": [
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Roasted chicory and bok choy",
+                  "description": null,
+                  "category": "Side dish",
+                  "price": {
+                    "amount": 0.95,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.95",
+                  "dietary": [],
+                  "allergens": [
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Upside-down sticky pear and walnut cake",
+                  "description": null,
+                  "category": "Hot dessert",
+                  "price": {
+                    "amount": 1.55,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.55",
+                  "dietary": [],
+                  "allergens": [
+                    "eggs",
+                    "gluten",
+                    "milk",
+                    "nuts"
+                  ]
+                }
+              ],
+              "service": null,
+              "note": null
+            },
+            {
+              "name": "Dinner",
+              "items": [
+                {
+                  "name": "Aubergine steak with tomato sauce, olives, sundried tomatoes and chickpeas",
+                  "description": null,
+                  "category": "Plant Based",
+                  "price": {
+                    "amount": 2.9,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£2.90",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "celery",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Breaded turkey and parmesan escalope",
+                  "description": null,
+                  "category": "Meat/Fish",
+                  "price": {
+                    "amount": 3.6,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£3.60",
+                  "dietary": [],
+                  "allergens": [
+                    "eggs",
+                    "gluten",
+                    "milk",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Roasted cherry tomatoes, herb pesto and bocconcini pasta(contains pinenuts)",
+                  "description": null,
+                  "category": "Pasta",
+                  "price": {
+                    "amount": 2.2,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£2.20",
+                  "dietary": [],
+                  "allergens": [
+                    "celery",
+                    "gluten",
+                    "milk",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Roasted broccoli florets",
+                  "description": null,
+                  "category": "Side dish",
+                  "price": {
+                    "amount": 0.95,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.95",
+                  "dietary": [],
+                  "allergens": [
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Roasted new potatoes",
+                  "description": null,
+                  "category": "Side dish",
+                  "price": {
+                    "amount": 0.95,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.95",
+                  "dietary": [],
+                  "allergens": [
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Garlic bread",
+                  "description": null,
+                  "category": "Side dish",
+                  "price": {
+                    "amount": 0.2,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.20",
+                  "dietary": [],
+                  "allergens": [
+                    "gluten"
+                  ]
+                },
+                {
+                  "name": "Green beans with garlic and dill dressing",
+                  "description": null,
+                  "category": "Side dish",
+                  "price": {
+                    "amount": 0.95,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.95",
+                  "dietary": [],
+                  "allergens": [
+                    "sulphites"
+                  ]
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        }
+      ]
     },
     "trinity": {
       "source_url": "https://www.trin.cam.ac.uk/download/hall-menu-this-week/",
