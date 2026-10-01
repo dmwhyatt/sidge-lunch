@@ -108,8 +108,8 @@
     },
     "newnham": {
       "source_url": "https://newn.cam.ac.uk/todays-menu",
-      "status": "error",
-      "error": "ValueError: no .menu-day-container on page",
+      "status": "ok",
+      "error": null,
       "updated_at": "2026-10-01T06:00:50+01:00",
       "content_hash": "4f53cda18c2baa0c",
       "days": []
