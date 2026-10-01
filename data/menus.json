@@ -4473,8 +4473,8 @@
     },
     "churchill": {
       "source_url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/lunch-and-dinner-menu/",
-      "status": "error",
-      "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://www.chu.cam.ac.uk/about/campus/dining-at-college/lunch-and-dinner-menu/",
+      "status": "ok",
+      "error": null,
       "updated_at": "2026-10-01T00:46:36+01:00",
       "content_hash": "4f53cda18c2baa0c",
       "days": []
