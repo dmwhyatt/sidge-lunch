@@ -4594,11 +4594,82 @@
     },
     "robinson": {
       "source_url": "https://www.robinson.cam.ac.uk/college-life/garden-restaurant-menu",
-      "status": "error",
-      "error": "ValueError: no menu columns on page",
-      "updated_at": "2026-09-30T00:41:46+01:00",
-      "content_hash": "f455ca77d9f5bb1f",
-      "days": []
+      "status": "ok",
+      "error": null,
+      "updated_at": "2026-10-02T20:16:39+01:00",
+      "content_hash": "1a912fc40d3e875e",
+      "days": [
+        {
+          "date": "2026-10-03",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Brunch 12.00-13.30pm 6 items Croissant or toast and juice or hot beverage £5.57 / £7.51",
+                  "description": null,
+                  "category": "Main Courses",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            },
+            {
+              "name": "Dinner",
+              "items": [
+                {
+                  "name": "Sweet potato and chick pea tagine with a red onion and herb cous cous £3.41 / £4.46",
+                  "description": null,
+                  "category": "Main Courses",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "celery",
+                    "gluten",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Chicken tikka jalfrezi with mushroom rice pilau £3.78 / £4.83",
+                  "description": null,
+                  "category": "Main Courses",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": [
+                    "celery",
+                    "mustard"
+                  ]
+                },
+                {
+                  "name": "Roast fillet of Salmon with a rocket and tomato salad and a duglere sauce *CONTAINS ALCOHOL* £3.78 / £4.83",
+                  "description": null,
+                  "category": "Main Courses",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": [
+                    "celery",
+                    "fish",
+                    "milk",
+                    "sulphites"
+                  ]
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        }
+      ]
     },
     "churchill": {
       "source_url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/lunch-and-dinner-menu/",
