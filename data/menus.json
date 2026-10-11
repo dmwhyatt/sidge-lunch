@@ -97,8 +97,8 @@
     },
     "darwin": {
       "source_url": "https://www.darwin.cam.ac.uk/dine/weekly-menu/",
-      "status": "error",
-      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.darwin.cam.ac.uk', port=443): Max retries exceeded with url: /dine/weekly-menu/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.darwin.cam.ac.uk', port=443) at 0x7f4eb7d10d40>, 'Connection to www.darwin.cam.ac.uk timed out. (connect timeout=20)'))",
+      "status": "ok",
+      "error": null,
       "updated_at": "2026-10-10T01:02:06+01:00",
       "content_hash": "5478630d98ed7fc8",
       "days": [
