@@ -5649,8 +5649,8 @@
     },
     "clare-hall": {
       "source_url": "https://sway.cloud.microsoft/b7Zz74Q2g96EIhE9",
-      "status": "error",
-      "error": "TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://sway.cloud.microsoft/s/b7Zz74Q2g96EIhE9/embed\", waiting until \"networkidle\"\n",
+      "status": "ok",
+      "error": null,
       "updated_at": "2026-10-10T12:22:12+01:00",
       "content_hash": "73ab7e8f3aea8e27",
       "days": [
