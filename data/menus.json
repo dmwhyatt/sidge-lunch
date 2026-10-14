@@ -4,17 +4,17 @@
       "source_url": "https://www.sel.cam.ac.uk/current-members/hall-menu",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-10-14T00:43:59+01:00",
-      "content_hash": "42bd98d1b1e441c2",
+      "updated_at": "2026-10-15T00:12:07+01:00",
+      "content_hash": "c4f3cf52142b4983",
       "days": [
         {
-          "date": "2026-10-14",
+          "date": "2026-10-15",
           "meals": [
             {
               "name": "Lunch",
               "items": [
                 {
-                  "name": "Indian vegetable tofu biryani",
+                  "name": "Falafel served with flatbread, houmous, salad and vegan sriracha mayo",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -26,16 +26,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Topped flatbread with cheese and vegetables",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Crispy chicken and vegetable stir fry with egg noodles",
+                  "name": "Lemon and rosemary roasted chicken with gravy, stuffing, cranberry sauce",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -46,7 +37,16 @@
                   "allergens": []
                 },
                 {
-                  "name": "Cajun marinated pork ribeye steaks with herb butter",
+                  "name": "Gaeng Hunglae (Northern Thai Pork Curry)",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Borek with cheese",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -56,7 +56,7 @@
                 },
                 {
                   "name": "Sides",
-                  "description": "Chips, roast potatoes, chips, curried cauliflower, peas",
+                  "description": "Turmeric rice, roast potatoes, roasted root vegetables, new potato, broccoli, fries",
                   "category": "Sides",
                   "price": null,
                   "price_text": null,
@@ -71,7 +71,16 @@
               "name": "Dinner",
               "items": [
                 {
-                  "name": "Vegetarian burgers, toasted baps, salad and relish",
+                  "name": "Pork ribeye steak with creamy mushroom and bacon sauce",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Tofu and mushroom stroganoff",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -83,16 +92,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Pork, chorizo and chilli burger with toasted baps, salad and relish",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Chicken à la King",
+                  "name": "Turkey gumbo",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -104,7 +104,7 @@
                 },
                 {
                   "name": "Sides",
-                  "description": "Mashed potatoes, chips, julienne carrots, red cabbage",
+                  "description": "Fries, rice, roasted cauliflower, carrots, new potato",
                   "category": "Sides",
                   "price": null,
                   "price_text": null,
@@ -123,127 +123,9 @@
       "source_url": "https://newn.cam.ac.uk/todays-menu",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-10-14T11:30:43+01:00",
-      "content_hash": "a1e692ef3a3e238c",
-      "days": [
-        {
-          "date": "2026-10-14",
-          "meals": [
-            {
-              "name": "Lunch",
-              "items": [
-                {
-                  "name": "Carrot & Sweet Potato Soup",
-                  "description": "£1.50 with a Newnham card",
-                  "category": null,
-                  "price": {
-                    "amount": 2.0,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£2.00",
-                  "dietary": [
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": [
-                    "sulphites"
-                  ]
-                },
-                {
-                  "name": "Louisiana Stir-Fried Rice & Vegetables",
-                  "description": "£3.60 with a Newnham card",
-                  "category": null,
-                  "price": {
-                    "amount": 4.79,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£4.79",
-                  "dietary": [
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Broccoli Pasta with Stilton & Pine Nuts",
-                  "description": "£3.60 with a Newnham card",
-                  "category": null,
-                  "price": {
-                    "amount": 4.79,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£4.79",
-                  "dietary": [
-                    "vegetarian"
-                  ],
-                  "allergens": [
-                    "gluten",
-                    "milk"
-                  ]
-                },
-                {
-                  "name": "Roast Brisket of Beef ( Non-Halal )",
-                  "description": "£4.00 with a Newnham card",
-                  "category": null,
-                  "price": {
-                    "amount": 5.32,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£5.32",
-                  "dietary": [],
-                  "allergens": [
-                    "gluten"
-                  ]
-                },
-                {
-                  "name": "Baked Fish with Confit Cherry Tomato & Rosemary",
-                  "description": "£4.00 with a Newnham card",
-                  "category": null,
-                  "price": {
-                    "amount": 5.32,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£5.32",
-                  "dietary": [],
-                  "allergens": [
-                    "fish"
-                  ]
-                },
-                {
-                  "name": "Cookies",
-                  "description": "£1.90 with a Newnham card",
-                  "category": null,
-                  "price": {
-                    "amount": 2.53,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£2.53",
-                  "dietary": [
-                    "vegetarian"
-                  ],
-                  "allergens": [
-                    "eggs",
-                    "gluten",
-                    "milk",
-                    "soya"
-                  ]
-                },
-                {
-                  "name": "Hot Meal Deal",
-                  "description": "Vegan/Vegetarian + 1 Side £4.50 (Non-Members £6.00); Meat/Fish + 1 Side £4.90 (Non-Members £6.52); Extra Side £0.75 (Non-Members £1.00)",
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                }
-              ],
-              "service": null,
-              "note": null
-            }
-          ]
-        }
-      ]
+      "updated_at": "2026-10-15T00:12:07+01:00",
+      "content_hash": "4f53cda18c2baa0c",
+      "days": []
     },
     "darwin": {
       "source_url": "https://www.darwin.cam.ac.uk/dine/weekly-menu/",
@@ -1973,11 +1855,11 @@
       "source_url": "https://www.wolfson.cam.ac.uk/food/cafeteria-menus",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-10-12T00:38:31+01:00",
-      "content_hash": "94a0bd33049d6977",
+      "updated_at": "2026-10-15T00:12:07+01:00",
+      "content_hash": "22aa50003e817577",
       "days": [
         {
-          "date": "2026-10-12",
+          "date": "2026-10-15",
           "meals": [
             {
               "name": "Breakfast",
@@ -2139,33 +2021,6 @@
                   "allergens": []
                 },
                 {
-                  "name": "Watermelon (x2 slices)",
-                  "description": "£0.85 for students",
-                  "category": null,
-                  "price": {
-                    "amount": 1.15,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£1.15",
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Overnight Oats",
-                  "description": "£1.00 for students",
-                  "category": null,
-                  "price": {
-                    "amount": 1.2,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£1.20",
-                  "dietary": [],
-                  "allergens": [
-                    "gluten",
-                    "milk"
-                  ]
-                },
-                {
                   "name": "Chocolate Croissant",
                   "description": "£1.75 for students",
                   "category": null,
@@ -2305,12 +2160,11 @@
                   "dietary": [],
                   "allergens": [
                     "celery",
-                    "mustard",
                     "sulphites"
                   ]
                 },
                 {
-                  "name": "Hungarian Pork Goulash, Smoked Paprika & Sour Cream",
+                  "name": "Slow-cooked Beef Chilli con Carne with Dark Chocolate & Spices",
                   "description": "£4.20 for students",
                   "category": "Main Course",
                   "price": {
@@ -2322,7 +2176,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Homemade Pizza Traybake",
+                  "name": "Roasted Vegetable & Goat Cheese Galette",
                   "description": "£4.20 for students",
                   "category": "Dish of the Day",
                   "price": {
@@ -2334,7 +2188,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Smoked Tofu & Butter Bean Goulash",
+                  "name": "Ancho-Spiced Black Bean & Charred Corn Cakes with Mango & Lime Pico de Gallo",
                   "description": "£4.20 for students",
                   "category": "Main Course",
                   "price": {
@@ -2346,7 +2200,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Rice",
+                  "name": "Potato Wedges",
                   "description": "£1.00 for students",
                   "category": "Side Dishes",
                   "price": {
@@ -2358,7 +2212,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Roasted Carrots",
+                  "name": "Corn on the Cob",
                   "description": "£1.00 for students",
                   "category": "Side Dishes",
                   "price": {
@@ -2370,7 +2224,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Buttered Cabbage",
+                  "name": "Roasted Peppers",
                   "description": "£1.00 for students",
                   "category": "Side Dishes",
                   "price": {
@@ -2382,7 +2236,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Spiced Apple Crumble & Custard",
+                  "name": "Warm Poached Pear & Dark Chocolate Sauce",
                   "description": "£1.45 for students",
                   "category": "Dessert",
                   "price": {
@@ -2394,7 +2248,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Dark Chocolate Pot & Biscotti",
+                  "name": "Key Lime Pie",
                   "description": "£1.45 for students",
                   "category": "Dessert",
                   "price": {
@@ -2424,9 +2278,92 @@
                   "dietary": [],
                   "allergens": [
                     "celery",
-                    "mustard",
                     "sulphites"
                   ]
+                },
+                {
+                  "name": "Za'atar & Garlic Baked Cod, Tomato, Kalamata Olive & Caper Relish",
+                  "description": "£4.20 for students",
+                  "category": "Main Course",
+                  "price": {
+                    "amount": 5.5,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£5.50",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Roasted Vegetable & Goat Cheese Galette",
+                  "description": "£4.20 for students",
+                  "category": "Dish of the Day",
+                  "price": {
+                    "amount": 5.5,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£5.50",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Falafel & Quinoa Bowl & Lemon Tahini Dressing",
+                  "description": "£4.20 for students",
+                  "category": "Main Course",
+                  "price": {
+                    "amount": 5.5,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£5.50",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Pomegranate Couscous",
+                  "description": "£1.00 for students",
+                  "category": "Side Dishes",
+                  "price": {
+                    "amount": 1.3,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.30",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Roasted Broccoli",
+                  "description": "£1.00 for students",
+                  "category": "Side Dishes",
+                  "price": {
+                    "amount": 1.3,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.30",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Sautéed Cabbage & Leeks",
+                  "description": "£1.00 for students",
+                  "category": "Side DIshes",
+                  "price": {
+                    "amount": 1.3,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.30",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Apple & Cinnamon Bread Pudding",
+                  "description": "£1.45 for students",
+                  "category": "Dessert",
+                  "price": {
+                    "amount": 1.9,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.90",
+                  "dietary": [],
+                  "allergens": []
                 }
               ],
               "service": null,
@@ -2435,7 +2372,7 @@
           ]
         },
         {
-          "date": "2026-10-13",
+          "date": "2026-10-16",
           "meals": [
             {
               "name": "Breakfast",
@@ -2597,33 +2534,6 @@
                   "allergens": []
                 },
                 {
-                  "name": "Watermelon (x2 slices)",
-                  "description": "£0.85 for students",
-                  "category": null,
-                  "price": {
-                    "amount": 1.15,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£1.15",
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Overnight Oats",
-                  "description": "£1.00 for students",
-                  "category": null,
-                  "price": {
-                    "amount": 1.2,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£1.20",
-                  "dietary": [],
-                  "allergens": [
-                    "gluten",
-                    "milk"
-                  ]
-                },
-                {
                   "name": "Chocolate Croissant",
                   "description": "£1.75 for students",
                   "category": null,
@@ -2763,12 +2673,11 @@
                   "dietary": [],
                   "allergens": [
                     "celery",
-                    "mustard",
                     "sulphites"
                   ]
                 },
                 {
-                  "name": "Fish with Creamy Leek & Wholegrain Mustard Sauce",
+                  "name": "Beer Battered Fish of the Day with Tartar Sauce",
                   "description": "£4.20 for students",
                   "category": "Main Course",
                   "price": {
@@ -2780,22 +2689,21 @@
                   "allergens": []
                 },
                 {
-                  "name": "Vegan Smoked Applewood, Mushroom & Spinach Pasty",
+                  "name": "Beef Rump Steak & Peppercorn Butter",
                   "description": "£4.20 for students",
-                  "category": "Main Course",
+                  "category": "Dish of the Day",
                   "price": {
                     "amount": 5.5,
                     "currency": "GBP"
                   },
                   "price_text": "£5.50",
                   "dietary": [
-                    "vegan",
-                    "vegetarian"
+                    "halal"
                   ],
                   "allergens": []
                 },
                 {
-                  "name": "Creamy Leek & Wholegrain Mustard Polenta Bake, Grana Padano",
+                  "name": "Winter Vegetable Risotto & Parsley Oil",
                   "description": "£4.20 for students",
                   "category": "Main Course",
                   "price": {
@@ -2807,21 +2715,19 @@
                   "allergens": []
                 },
                 {
-                  "name": "Sautéed Potatoes",
+                  "name": "Baked Beans (Side dish)",
                   "description": "£1.00 for students",
-                  "category": "Side Dishes",
+                  "category": "Side Dish",
                   "price": {
                     "amount": 1.3,
                     "currency": "GBP"
                   },
                   "price_text": "£1.30",
                   "dietary": [],
-                  "allergens": [
-                    "sulphites"
-                  ]
+                  "allergens": []
                 },
                 {
-                  "name": "Roasted Fennel with Lemon and Oregano",
+                  "name": "Mushy Peas",
                   "description": "£1.00 for students",
                   "category": "Side Dishes",
                   "price": {
@@ -2833,7 +2739,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Broccoli with Garlic",
+                  "name": "Peas",
                   "description": "£1.00 for students",
                   "category": "Side Dishes",
                   "price": {
@@ -2845,7 +2751,19 @@
                   "allergens": []
                 },
                 {
-                  "name": "Jam Roly Poly",
+                  "name": "Chips",
+                  "description": "£1.00 for students",
+                  "category": "Side Dish",
+                  "price": {
+                    "amount": 1.3,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.30",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Warm White Chocolate Brownie & Berry Compote",
                   "description": "£1.45 for students",
                   "category": "Dessert",
                   "price": {
@@ -2857,7 +2775,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Classic Fruit Trifle",
+                  "name": "Glazed Lemon Tart",
                   "description": "£1.45 for students",
                   "category": "Dessert",
                   "price": {
@@ -2887,12 +2805,11 @@
                   "dietary": [],
                   "allergens": [
                     "celery",
-                    "mustard",
                     "sulphites"
                   ]
                 },
                 {
-                  "name": "Tuscan Fennel Sausage, Mushroom & Rosemary Farfalle Ragu",
+                  "name": "Chicken Chasseur with Mushroom, Shallot, White Wine & Tarragon",
                   "description": "£4.20 for students",
                   "category": "Main Course",
                   "price": {
@@ -2904,7 +2821,21 @@
                   "allergens": []
                 },
                 {
-                  "name": "Roasted Red Pepper, Sun-dried Tomato & Almond Romesco Farfalle",
+                  "name": "Beef Rump Steak & Peppercorn Butter",
+                  "description": "£4.20 for students",
+                  "category": "Dish of the Day",
+                  "price": {
+                    "amount": 5.5,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£5.50",
+                  "dietary": [
+                    "halal"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "French Green Puy Lentil & Pearl Onion Bourguignon",
                   "description": "£4.20 for students",
                   "category": "Main Course",
                   "price": {
@@ -2916,19 +2847,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Creamy Mushroom & Pistachio Farfalle",
-                  "description": "£4.20 for students",
-                  "category": "Main Course",
-                  "price": {
-                    "amount": 5.5,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£5.50",
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Homemade Focaccia",
+                  "name": "Potato Lyonnaise",
                   "description": "£1.00 for students",
                   "category": "Side Dishes",
                   "price": {
@@ -2940,21 +2859,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Garden Salad",
-                  "description": "£1.00 for students",
-                  "category": "Side Dishes",
-                  "price": {
-                    "amount": 1.3,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£1.30",
-                  "dietary": [],
-                  "allergens": [
-                    "sulphites"
-                  ]
-                },
-                {
-                  "name": "Roasted Peppers & Onions",
+                  "name": "Green Beans & Toasted Almonds",
                   "description": "£1.00 for students",
                   "category": "Side Dishes",
                   "price": {
@@ -2966,7 +2871,19 @@
                   "allergens": []
                 },
                 {
-                  "name": "Vanilla Panna Cotta & Berry Compote",
+                  "name": "Mediterranean-style Courgettes",
+                  "description": "£1.00 for students",
+                  "category": "Side Dishes",
+                  "price": {
+                    "amount": 1.3,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.30",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Mango & Coconut Fool",
                   "description": "£1.45 for students",
                   "category": "Dessert",
                   "price": {
@@ -2984,10 +2901,10 @@
           ]
         },
         {
-          "date": "2026-10-14",
+          "date": "2026-10-17",
           "meals": [
             {
-              "name": "Breakfast",
+              "name": "Brunch",
               "items": [
                 {
                   "name": "Grilled Sausage",
@@ -3146,19 +3063,336 @@
                   "allergens": []
                 },
                 {
-                  "name": "Watermelon (x2 slices)",
-                  "description": "£0.85 for students",
+                  "name": "Chocolate Croissant",
+                  "description": "£1.75 for students",
                   "category": null,
                   "price": {
-                    "amount": 1.15,
+                    "amount": 2.3,
                     "currency": "GBP"
                   },
-                  "price_text": "£1.15",
+                  "price_text": "£2.30",
+                  "dietary": [],
+                  "allergens": [
+                    "eggs",
+                    "gluten",
+                    "milk",
+                    "soya",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Vegan Croissant",
+                  "description": "£1.00 for students",
+                  "category": null,
+                  "price": {
+                    "amount": 1.35,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.35",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "gluten",
+                    "soya",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Blueberry Muffin",
+                  "description": "£1.40 for students",
+                  "category": null,
+                  "price": {
+                    "amount": 1.85,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.85",
+                  "dietary": [],
+                  "allergens": [
+                    "eggs",
+                    "gluten",
+                    "milk"
+                  ]
+                },
+                {
+                  "name": "Breakfast Cereal",
+                  "description": "£0.95 for students",
+                  "category": null,
+                  "price": {
+                    "amount": 1.25,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.25",
+                  "dietary": [],
+                  "allergens": [
+                    "gluten",
+                    "nuts"
+                  ]
+                },
+                {
+                  "name": "Granola",
+                  "description": "£0.95 for students",
+                  "category": null,
+                  "price": {
+                    "amount": 1.25,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.25",
+                  "dietary": [],
+                  "allergens": [
+                    "gluten",
+                    "nuts"
+                  ]
+                },
+                {
+                  "name": "Natural Yogurt",
+                  "description": "£1.30 for students",
+                  "category": null,
+                  "price": {
+                    "amount": 1.7,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.70",
+                  "dietary": [],
+                  "allergens": [
+                    "milk"
+                  ]
+                },
+                {
+                  "name": "Bread (per slice; refer to packaging for allergens)",
+                  "description": "£0.20 for students",
+                  "category": null,
+                  "price": {
+                    "amount": 0.25,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.25",
                   "dietary": [],
                   "allergens": []
                 },
                 {
-                  "name": "Overnight Oats",
+                  "name": "Butter, Flora, Jam, Honey (refer to packaging for allergens)",
+                  "description": "£0.30 for students",
+                  "category": null,
+                  "price": {
+                    "amount": 0.4,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.40",
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            },
+            {
+              "name": "Dinner",
+              "items": [
+                {
+                  "name": "Pan Fried Fish & Kerala Meen Moilee Sauce",
+                  "description": "£4.20 for students",
+                  "category": "Main Course",
+                  "price": {
+                    "amount": 5.5,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£5.50",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Roasted Butternut Squash, Spinach & Red Lentil Dhal",
+                  "description": "£4.20 for students",
+                  "category": "Main Course",
+                  "price": {
+                    "amount": 5.5,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£5.50",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Lemon & Mustard Seed Basmati Rice",
+                  "description": "£1.00 for students",
+                  "category": "Side Dishes",
+                  "price": {
+                    "amount": 1.3,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.30",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Roasted Carrots with Cumin",
+                  "description": "£1.00 for students",
+                  "category": "Side Dishes",
+                  "price": {
+                    "amount": 1.3,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.30",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Garam Masala Roasted Cauliflower",
+                  "description": "£1.00 for students",
+                  "category": "Side Dishes",
+                  "price": {
+                    "amount": 1.3,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.30",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Fresh Cream Victoria Slice",
+                  "description": "£1.45 for students",
+                  "category": "Dessert",
+                  "price": {
+                    "amount": 1.9,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.90",
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        },
+        {
+          "date": "2026-10-18",
+          "meals": [
+            {
+              "name": "Brunch",
+              "items": [
+                {
+                  "name": "Grilled Sausage",
+                  "description": "£0.70 for students",
+                  "category": null,
+                  "price": {
+                    "amount": 0.95,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.95",
+                  "dietary": [],
+                  "allergens": [
+                    "gluten",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Grilled Bacon",
+                  "description": "£0.50 for students",
+                  "category": null,
+                  "price": {
+                    "amount": 0.65,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.65",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Plant Based Lincolnshire Sausage",
+                  "description": "£0.90 for students",
+                  "category": null,
+                  "price": {
+                    "amount": 1.2,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.20",
+                  "dietary": [],
+                  "allergens": [
+                    "soya"
+                  ]
+                },
+                {
+                  "name": "Fried Free-range Egg",
+                  "description": "£0.55 for students",
+                  "category": null,
+                  "price": {
+                    "amount": 0.75,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.75",
+                  "dietary": [],
+                  "allergens": [
+                    "eggs"
+                  ]
+                },
+                {
+                  "name": "Boiled Egg",
+                  "description": "£0.55 for students",
+                  "category": null,
+                  "price": {
+                    "amount": 0.75,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.75",
+                  "dietary": [],
+                  "allergens": [
+                    "eggs"
+                  ]
+                },
+                {
+                  "name": "Grilled Tomato Half",
+                  "description": "£0.55 for students",
+                  "category": null,
+                  "price": {
+                    "amount": 0.75,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.75",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Sautéed Mushrooms",
+                  "description": "£1.25 for students",
+                  "category": null,
+                  "price": {
+                    "amount": 1.7,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.70",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Hash Browns (2)",
+                  "description": "£0.45 for students",
+                  "category": null,
+                  "price": {
+                    "amount": 0.6,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.60",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Baked Beans (Breakfast/Brunch)",
+                  "description": "£0.60 for students",
+                  "category": null,
+                  "price": {
+                    "amount": 0.8,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.80",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Porridge & Toppings",
                   "description": "£1.00 for students",
                   "category": null,
                   "price": {
@@ -3171,6 +3405,30 @@
                     "gluten",
                     "milk"
                   ]
+                },
+                {
+                  "name": "Orange Segments",
+                  "description": "£0.81 for students",
+                  "category": null,
+                  "price": {
+                    "amount": 1.08,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.08",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Grapefruit Segments",
+                  "description": "£0.85 for students",
+                  "category": null,
+                  "price": {
+                    "amount": 1.15,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£1.15",
+                  "dietary": [],
+                  "allergens": []
                 },
                 {
                   "name": "Chocolate Croissant",
@@ -3298,26 +3556,10 @@
               "note": null
             },
             {
-              "name": "Lunch",
+              "name": "Dinner",
               "items": [
                 {
-                  "name": "Sustainable Soup",
-                  "description": "£1.30 for students",
-                  "category": "Soup of the Day",
-                  "price": {
-                    "amount": 1.7,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£1.70",
-                  "dietary": [],
-                  "allergens": [
-                    "celery",
-                    "mustard",
-                    "sulphites"
-                  ]
-                },
-                {
-                  "name": "Chicken Wings with Sticky Honey Sichuan Glaze",
+                  "name": "Roasted Turkey & Gravy",
                   "description": "£4.20 for students",
                   "category": "Main Course",
                   "price": {
@@ -3331,7 +3573,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Miso-glazed Roasted Butternut Squash Wedge with Sticky Black Rice",
+                  "name": "Root Vegetable Börek & Shallot Jus",
                   "description": "£4.20 for students",
                   "category": "Main Course",
                   "price": {
@@ -3343,19 +3585,16 @@
                   "allergens": []
                 },
                 {
-                  "name": "Yeung Chow-style Prawn Fried Rice",
-                  "description": "£4.20 for students",
-                  "category": "Main Course",
-                  "price": {
-                    "amount": 5.5,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£5.50",
+                  "name": "Yorkshire Pudding",
+                  "description": null,
+                  "category": "Side Dish",
+                  "price": null,
+                  "price_text": null,
                   "dietary": [],
                   "allergens": []
                 },
                 {
-                  "name": "Sesame Wheat Noodles",
+                  "name": "Roast Potatoes",
                   "description": "£1.00 for students",
                   "category": "Side Dishes",
                   "price": {
@@ -3367,7 +3606,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Roasted Courgette with Chili",
+                  "name": "Roasted Root Vegetables",
                   "description": "£1.00 for students",
                   "category": "Side Dishes",
                   "price": {
@@ -3379,7 +3618,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Green Beans",
+                  "name": "Seasonal Vegetables",
                   "description": "£1.00 for students",
                   "category": "Side Dishes",
                   "price": {
@@ -3391,126 +3630,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Cardamom & Pistachio Bread Pudding & Saffron Custard",
-                  "description": "£1.45 for students",
-                  "category": "Dessert",
-                  "price": {
-                    "amount": 1.9,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£1.90",
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Mango Sticky Rice Pots",
-                  "description": "£1.45 for students",
-                  "category": "Dessert",
-                  "price": {
-                    "amount": 1.9,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£1.90",
-                  "dietary": [],
-                  "allergens": []
-                }
-              ],
-              "service": null,
-              "note": null
-            },
-            {
-              "name": "Dinner",
-              "items": [
-                {
-                  "name": "Sustainable Soup",
-                  "description": "£1.30 for students",
-                  "category": "Soup of the Day",
-                  "price": {
-                    "amount": 1.7,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£1.70",
-                  "dietary": [],
-                  "allergens": [
-                    "celery",
-                    "mustard",
-                    "sulphites"
-                  ]
-                },
-                {
-                  "name": "Crispy Pork Belly, Star Anise & Plum Glaze",
-                  "description": "£4.20 for students",
-                  "category": "Main Course",
-                  "price": {
-                    "amount": 5.5,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£5.50",
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Crispy Tofu Steak, Star Anise & Plum Glaze",
-                  "description": "£4.20 for students",
-                  "category": "Main Course",
-                  "price": {
-                    "amount": 5.5,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£5.50",
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Yeung Chow-style Prawn Fried Rice",
-                  "description": "£4.20 for students",
-                  "category": "Main Course",
-                  "price": {
-                    "amount": 5.5,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£5.50",
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Ginger-Glazed Carrots",
-                  "description": "£1.00 for students",
-                  "category": "Side Dishes",
-                  "price": {
-                    "amount": 1.3,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£1.30",
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Steamed Rice",
-                  "description": "£1.00 for students",
-                  "category": "Side Dishes",
-                  "price": {
-                    "amount": 1.3,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£1.30",
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Steamed Choi Sum",
-                  "description": "£1.00 for students",
-                  "category": "Side Dishes",
-                  "price": {
-                    "amount": 1.3,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£1.30",
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Baked Rice Pudding, Cinnamon & Nutmeg",
+                  "name": "Apple Tarte Tatin & Cream",
                   "description": "£1.45 for students",
                   "category": "Dessert",
                   "price": {
@@ -3533,17 +3653,17 @@
       "source_url": "https://menu.joh.cam/today",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-10-14T00:43:59+01:00",
-      "content_hash": "1ed579eac9d43091",
+      "updated_at": "2026-10-15T00:12:07+01:00",
+      "content_hash": "0492eb9d59539d1b",
       "days": [
         {
-          "date": "2026-10-14",
+          "date": "2026-10-15",
           "meals": [
             {
               "name": "Lunch",
               "items": [
                 {
-                  "name": "Sweetcorn and potato chowder, smoked paprika and curly kale",
+                  "name": "Fakes, Greek style lentil and tomato soup",
                   "description": null,
                   "category": "Starter",
                   "price": null,
@@ -3552,13 +3672,10 @@
                     "vegan",
                     "vegetarian"
                   ],
-                  "allergens": [
-                    "celery",
-                    "sulphites"
-                  ]
+                  "allergens": []
                 },
                 {
-                  "name": "Pearl barley, pumpkin and walnut loaf charred button onions and gravy",
+                  "name": "Breaded spiced bean burger, pickled carrot, cabbage and cucumber, sweetcorn relish",
                   "description": null,
                   "category": "Mains",
                   "price": null,
@@ -3570,12 +3687,14 @@
                   "allergens": [
                     "celery",
                     "gluten",
-                    "nuts",
+                    "mustard",
+                    "sesame",
+                    "soya",
                     "sulphites"
                   ]
                 },
                 {
-                  "name": "Bombay potato, panner and green pepper frittata, lime pickle, carrot and red onion salad",
+                  "name": "Squash, feta and spinach seeded crumble with onion gravy",
                   "description": null,
                   "category": "Mains",
                   "price": null,
@@ -3584,52 +3703,36 @@
                     "vegetarian"
                   ],
                   "allergens": [
-                    "eggs",
+                    "gluten",
                     "milk",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Cuban mojo roast pork loin with citrus fruit, mint and cumin, mango and sweetcorn salsa",
+                  "description": null,
+                  "category": "Mains",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": [
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Patates riganates, lemon and oregano baked potato wedges",
+                  "description": null,
+                  "category": "Sides",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": [
                     "mustard",
                     "sulphites"
                   ]
                 },
                 {
-                  "name": "Slow roast silverside of beef, Yorkshire pudding, red onion gravy",
-                  "description": null,
-                  "category": "Mains",
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "halal"
-                  ],
-                  "allergens": [
-                    "celery",
-                    "eggs",
-                    "gluten",
-                    "milk"
-                  ]
-                },
-                {
-                  "name": "Roast potatoes",
-                  "description": null,
-                  "category": "Sides",
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": [
-                    "sulphites"
-                  ]
-                },
-                {
-                  "name": "Cauliflower cheese",
-                  "description": null,
-                  "category": "Sides",
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": [
-                    "milk"
-                  ]
-                },
-                {
-                  "name": "Roast root veg",
+                  "name": "Green beans and baton carrots",
                   "description": null,
                   "category": "Sides",
                   "price": null,
@@ -3638,7 +3741,32 @@
                   "allergens": []
                 },
                 {
-                  "name": "Cranberry, white chocolate and matcha swiss roll",
+                  "name": "Roasted aubergine and courgette in tomato sauce",
+                  "description": null,
+                  "category": "Sides",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": [
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Silken tofu and chocolate mousse, topped with cherries",
+                  "description": null,
+                  "category": "Dessert",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "soya"
+                  ]
+                },
+                {
+                  "name": "Galaktobureko- Greek custard pie",
                   "description": null,
                   "category": "Dessert",
                   "price": null,
@@ -3647,9 +3775,7 @@
                   "allergens": [
                     "eggs",
                     "gluten",
-                    "milk",
-                    "soya",
-                    "sulphites"
+                    "milk"
                   ]
                 }
               ],
@@ -3664,32 +3790,31 @@
       "source_url": "https://www.robinson.cam.ac.uk/college-life/garden-restaurant-menu",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-10-14T00:43:59+01:00",
-      "content_hash": "adf3cdc3f7fec202",
+      "updated_at": "2026-10-15T00:12:07+01:00",
+      "content_hash": "b9855132252c36e6",
       "days": [
         {
-          "date": "2026-10-14",
+          "date": "2026-10-15",
           "meals": [
             {
               "name": "Lunch",
               "items": [
                 {
-                  "name": "Lentil and paneer dahl with naan bread and mushroom rice £3.41 / £4.46",
+                  "name": "Aubergine and pepper Parmigiano with mozzarella and parmesan £3.41 / £4.46",
                   "description": null,
                   "category": "Main Courses",
                   "price": null,
                   "price_text": null,
                   "dietary": [
-                    "vegan",
                     "vegetarian"
                   ],
                   "allergens": [
                     "celery",
-                    "mustard"
+                    "milk"
                   ]
                 },
                 {
-                  "name": "Herb and garlic breaded halal chicken butterfly with winter slaw and coronation mayonnaise £3.88 / £4.93",
+                  "name": "British gourmet beef burger in a floured white bap with homemade burger sauce, baby gem and tomato £3.78 / £4.83",
                   "description": null,
                   "category": "Main Courses",
                   "price": null,
@@ -3698,23 +3823,18 @@
                   "allergens": [
                     "eggs",
                     "gluten",
-                    "milk",
                     "mustard",
                     "sulphites"
                   ]
                 },
                 {
-                  "name": "Thai beef and basil massaman curry with coconut jasmine rice £3.78 / £4.83",
+                  "name": "Halal turkey and wild mushroom fricassee with spinach rice £3.88 / £4.93",
                   "description": null,
                   "category": "Main Courses",
                   "price": null,
                   "price_text": null,
                   "dietary": [],
-                  "allergens": [
-                    "celery",
-                    "sesame",
-                    "soya"
-                  ]
+                  "allergens": []
                 }
               ],
               "service": null,
@@ -3724,44 +3844,41 @@
               "name": "Dinner",
               "items": [
                 {
-                  "name": "Cauliflower, squash and tomato tikka masala with naan bread and basmati rice £3.41 / £4.46",
+                  "name": "Mediterranean vegetable lasagne with sweet potato and vegan cheese sauce £3.41 / £4.46",
                   "description": null,
                   "category": "Main Courses",
                   "price": null,
                   "price_text": null,
                   "dietary": [
+                    "vegan",
                     "vegetarian"
                   ],
                   "allergens": [
-                    "celery",
                     "gluten",
-                    "milk"
+                    "mustard"
                   ]
                 },
                 {
-                  "name": "Spanish style chicken thighs with a chorizo and pepper bravas sauce £3.78 / £4.83",
+                  "name": "Chargrilled balsamic, mustard and garlic bacon chop with a fried egg £3.78 / £4.83",
                   "description": null,
                   "category": "Main Courses",
                   "price": null,
                   "price_text": null,
                   "dietary": [],
                   "allergens": [
-                    "celery",
-                    "milk"
+                    "eggs",
+                    "mustard",
+                    "sulphites"
                   ]
                 },
                 {
-                  "name": "Roast supreme of salmon with a creamy tomato and dill sauce £3.78 / £4.83",
+                  "name": "Harissa and honey spiced chicken leg with roasted egg plant, courgettes and peppers £3.78 / £4.83",
                   "description": null,
                   "category": "Main Courses",
                   "price": null,
                   "price_text": null,
                   "dietary": [],
-                  "allergens": [
-                    "celery",
-                    "fish",
-                    "milk"
-                  ]
+                  "allergens": []
                 }
               ],
               "service": null,
@@ -3775,115 +3892,9 @@
       "source_url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/lunch-and-dinner-menu/",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-10-14T10:30:45+01:00",
-      "content_hash": "2db5fe17869de8b6",
+      "updated_at": "2026-10-15T00:12:07+01:00",
+      "content_hash": "854f8a151d4f5092",
       "days": [
-        {
-          "date": "2026-10-14",
-          "meals": [
-            {
-              "name": "Lunch",
-              "items": [
-                {
-                  "name": "Today’s Special: Churchill Doughnuts",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Roasted Courgette Soup / Chicken & Sweetcorn Broth",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Mediterranean Vegetable with Butter Beans",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Aloo Gobi (Vegetable Curry)",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Creamy Leek & Peas Pasta",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Chicken Leg with Oriental Glaze",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "halal"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Roast Beef & Gravy",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Tuna with Citrus Salsa",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Selection of Vegetables",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                }
-              ],
-              "service": "12:00–14:00",
-              "note": null
-            }
-          ]
-        },
         {
           "date": "2026-10-17",
           "meals": [
@@ -3911,17 +3922,197 @@
       "source_url": "https://www.corpus.cam.ac.uk/foodmenu/",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-10-14T00:43:59+01:00",
-      "content_hash": "c7c8868616dda571",
+      "updated_at": "2026-10-15T00:12:07+01:00",
+      "content_hash": "1938a3014399b774",
       "days": [
         {
-          "date": "2026-10-14",
+          "date": "2026-10-15",
           "meals": [
+            {
+              "name": "Breakfast",
+              "items": [
+                {
+                  "name": "Roasted tomato.",
+                  "description": null,
+                  "category": "Plant Based",
+                  "price": {
+                    "amount": 0.29,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.29",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Roasted mushroom",
+                  "description": null,
+                  "category": "Plant Based",
+                  "price": {
+                    "amount": 0.57,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.57",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Vegan sausage",
+                  "description": null,
+                  "category": "Plant Based",
+                  "price": {
+                    "amount": 0.68,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.68",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "gluten",
+                    "soya",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Hash browns (Breakfast /Brunch)",
+                  "description": null,
+                  "category": "Vegetarian",
+                  "price": {
+                    "amount": 0.38,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.38",
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "gluten"
+                  ]
+                },
+                {
+                  "name": "Fried egg",
+                  "description": null,
+                  "category": "Vegetarian",
+                  "price": {
+                    "amount": 0.57,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.57",
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "eggs"
+                  ]
+                },
+                {
+                  "name": "Scrambled eggs",
+                  "description": null,
+                  "category": "Vegetarian",
+                  "price": {
+                    "amount": 0.57,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.57",
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "eggs",
+                    "milk"
+                  ]
+                },
+                {
+                  "name": "Halal chicken sausage",
+                  "description": null,
+                  "category": "Meat/Fish",
+                  "price": {
+                    "amount": 0.73,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.73",
+                  "dietary": [],
+                  "allergens": [
+                    "gluten",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Breakfast sausage",
+                  "description": null,
+                  "category": "Meat/Fish",
+                  "price": {
+                    "amount": 0.68,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.68",
+                  "dietary": [],
+                  "allergens": [
+                    "gluten"
+                  ]
+                },
+                {
+                  "name": "Smoked back bacon",
+                  "description": null,
+                  "category": "Meat/Fish",
+                  "price": {
+                    "amount": 0.68,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.68",
+                  "dietary": [],
+                  "allergens": [
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Black pudding",
+                  "description": null,
+                  "category": "Meat/Fish",
+                  "price": {
+                    "amount": 0.68,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.68",
+                  "dietary": [],
+                  "allergens": [
+                    "gluten"
+                  ]
+                },
+                {
+                  "name": "Baked beans",
+                  "description": null,
+                  "category": "Side dish",
+                  "price": {
+                    "amount": 0.57,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.57",
+                  "dietary": [],
+                  "allergens": [
+                    "sulphites"
+                  ]
+                }
+              ],
+              "service": null,
+              "note": null
+            },
             {
               "name": "Lunch",
               "items": [
                 {
-                  "name": "Wild mushroom and herb stroganoff",
+                  "name": "Autumn mushrooms bourguignon",
                   "description": null,
                   "category": "Plant Based",
                   "price": {
@@ -3935,12 +4126,11 @@
                   ],
                   "allergens": [
                     "celery",
-                    "mustard",
                     "sulphites"
                   ]
                 },
                 {
-                  "name": "Autumn vegetable and goat cheese tart",
+                  "name": "Butternut squash, kale and chickpea bake",
                   "description": null,
                   "category": "Vegetarian",
                   "price": {
@@ -3953,13 +4143,12 @@
                   ],
                   "allergens": [
                     "celery",
-                    "gluten",
                     "milk",
                     "sulphites"
                   ]
                 },
                 {
-                  "name": "Sea reared trout supreme with sea herbs and white wine velouté",
+                  "name": "Grilled peri-peri chicken legs with coleslaw salad",
                   "description": null,
                   "category": "Meat/Fish",
                   "price": {
@@ -3970,13 +4159,13 @@
                   "dietary": [],
                   "allergens": [
                     "celery",
-                    "fish",
-                    "milk",
+                    "eggs",
+                    "mustard",
                     "sulphites"
                   ]
                 },
                 {
-                  "name": "Roasted new potatoes with garlic dressing",
+                  "name": "Roasted carrots with maple syrup",
                   "description": null,
                   "category": "Side dish",
                   "price": {
@@ -3990,7 +4179,7 @@
                   ]
                 },
                 {
-                  "name": "Honey and garlic glazed roasted parsnips and celeriac",
+                  "name": "Creamy mash potato",
                   "description": null,
                   "category": "Side dish",
                   "price": {
@@ -4000,12 +4189,11 @@
                   "price_text": "£0.95",
                   "dietary": [],
                   "allergens": [
-                    "celery",
-                    "sulphites"
+                    "milk"
                   ]
                 },
                 {
-                  "name": "Steamed green beans with lemon dressing",
+                  "name": "Slightly steamed broccoli florets with house dressing",
                   "description": null,
                   "category": "Side dish",
                   "price": {
@@ -4019,7 +4207,7 @@
                   ]
                 },
                 {
-                  "name": "Oreo chocolate cake with whipped cream",
+                  "name": "Apple and blackberry crumble slice with custard sauce",
                   "description": null,
                   "category": "Hot dessert",
                   "price": {
@@ -4031,8 +4219,7 @@
                   "allergens": [
                     "eggs",
                     "gluten",
-                    "milk",
-                    "soya"
+                    "milk"
                   ]
                 }
               ],
@@ -4043,7 +4230,7 @@
               "name": "Dinner",
               "items": [
                 {
-                  "name": "Plant based hot dogs with gherkins vegan mayo and mustard",
+                  "name": "Plant base burger with burger garnish, caramelised red onion",
                   "description": null,
                   "category": "Plant Based",
                   "price": {
@@ -4057,59 +4244,48 @@
                   ],
                   "allergens": [
                     "gluten",
-                    "mustard"
-                  ]
-                },
-                {
-                  "name": "Cheese and beer chicken burgers on pretzel buns burger sauce, tomato, gherkins",
-                  "description": null,
-                  "category": "Meat/Fish",
-                  "price": {
-                    "amount": 3.6,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£3.60",
-                  "dietary": [],
-                  "allergens": [
-                    "celery",
-                    "eggs",
-                    "gluten",
-                    "milk",
-                    "mustard"
-                  ]
-                },
-                {
-                  "name": "Bratwurst sausage and sauerkraut",
-                  "description": null,
-                  "category": "Meat/Fish",
-                  "price": {
-                    "amount": 3.6,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£3.60",
-                  "dietary": [],
-                  "allergens": [
-                    "eggs",
-                    "gluten",
-                    "milk"
-                  ]
-                },
-                {
-                  "name": "Roasted broccoli",
-                  "description": null,
-                  "category": "Side dish",
-                  "price": {
-                    "amount": 0.95,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£0.95",
-                  "dietary": [],
-                  "allergens": [
+                    "mustard",
+                    "soya",
                     "sulphites"
                   ]
                 },
                 {
-                  "name": "Skinny chips",
+                  "name": "Beef burger with British mature cheddar, streaky bacon, caramelised red onion and burger sauce",
+                  "description": null,
+                  "category": "Meat/Fish",
+                  "price": {
+                    "amount": 3.6,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£3.60",
+                  "dietary": [],
+                  "allergens": [
+                    "eggs",
+                    "gluten",
+                    "milk",
+                    "mustard",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Mushroom Alfredo pasta",
+                  "description": null,
+                  "category": "Pasta",
+                  "price": {
+                    "amount": 2.2,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£2.20",
+                  "dietary": [],
+                  "allergens": [
+                    "celery",
+                    "gluten",
+                    "milk",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Skinny fries",
                   "description": null,
                   "category": "Side dish",
                   "price": {
@@ -4123,7 +4299,36 @@
                   ]
                 },
                 {
-                  "name": "Braised red cabbage and apples",
+                  "name": "Battered onion rings",
+                  "description": null,
+                  "category": "Side dish",
+                  "price": {
+                    "amount": 0.95,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.95",
+                  "dietary": [],
+                  "allergens": [
+                    "gluten",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Garlic bread",
+                  "description": null,
+                  "category": "Side dish",
+                  "price": {
+                    "amount": 0.2,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.20",
+                  "dietary": [],
+                  "allergens": [
+                    "gluten"
+                  ]
+                },
+                {
+                  "name": "Rainbow chard and cavolo nero",
                   "description": null,
                   "category": "Side dish",
                   "price": {
