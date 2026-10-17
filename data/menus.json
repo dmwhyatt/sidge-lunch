@@ -5610,64 +5610,17 @@
       "source_url": "https://sway.cloud.microsoft/b7Zz74Q2g96EIhE9",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-10-10T12:22:12+01:00",
-      "content_hash": "73ab7e8f3aea8e27",
+      "updated_at": "2026-10-17T10:40:22+01:00",
+      "content_hash": "6462a277dd772923",
       "days": [
         {
-          "date": "2026-10-12",
+          "date": "2026-10-19",
           "meals": [
-            {
-              "name": "Lunch",
-              "items": [
-                {
-                  "name": "Shredded Cabbage & Gochujang Soup- PB, GF",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Italian Three Bean & Sausage Cassarole, Mashed Potatoes & Season Greens",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Italian Three Bean Cassarole, Mashed Potatoes & Season Greens",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "gluten-free",
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Chocolate Brownies, Whipped Miso Cream",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                }
-              ],
-              "service": null,
-              "note": null
-            },
             {
               "name": "Dinner",
               "items": [
                 {
-                  "name": "Shredded Cabbage & Gochujang Soup",
+                  "name": "Roasted Butternut, Cumin & Coriander Soup",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -5680,31 +5633,25 @@
                   "allergens": []
                 },
                 {
-                  "name": "Tuscan Chicken, Sundried Tomato & Spinach, Mashed Potato & Roasted Red Onion & Carrot",
+                  "name": "TBC",
                   "description": null,
                   "category": null,
                   "price": null,
                   "price_text": null,
-                  "dietary": [
-                    "gluten-free"
-                  ],
+                  "dietary": [],
                   "allergens": []
                 },
                 {
-                  "name": "Tuscan Tofu & Butterbean, Sundried Tomato & Spinach, Mashed Potato & Roasted Red Onion & Carrot",
+                  "name": "TBC",
                   "description": null,
                   "category": null,
                   "price": null,
                   "price_text": null,
-                  "dietary": [
-                    "gluten-free",
-                    "vegan",
-                    "vegetarian"
-                  ],
+                  "dietary": [],
                   "allergens": []
                 },
                 {
-                  "name": "Chocolate Brownies, Whipped Miso Cream",
+                  "name": "Apple & Pear Crumble, Vanilla Custard",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -5719,13 +5666,13 @@
           ]
         },
         {
-          "date": "2026-10-13",
+          "date": "2026-10-20",
           "meals": [
             {
               "name": "Lunch",
               "items": [
                 {
-                  "name": "Italian Bean & Vegetable Soup",
+                  "name": "Roasted Tomato & Red Pepper Soup",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -5738,37 +5685,36 @@
                   "allergens": []
                 },
                 {
-                  "name": "Halloumi Shakshuka, Hummus, Egg, Pickled Red Onion & Pita Bread",
-                  "description": "GF Available",
+                  "name": "Roast Chicken, Mixed Grain Salad, Vegetable Gratin & Onion Gravy",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "gluten-free"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Roast Chickpea & Butternut Seed Roast, Mixed Grain Salad, Vegetable Gratin & Onion Gravy",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "gluten-free",
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Chocolate Cake, Roasted Bananas & Cream",
+                  "description": null,
                   "category": null,
                   "price": null,
                   "price_text": null,
                   "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Vegan Chourizo Shakshuka, Hummus, Egg, Pickled Red Onion & Pita Bread",
-                  "description": "GF Available",
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Roasted Plum & Vanilla Pannacotta",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "gluten-free",
-                    "vegan",
-                    "vegetarian"
-                  ],
                   "allergens": []
                 }
               ],
@@ -5792,93 +5738,25 @@
                   "allergens": []
                 },
                 {
-                  "name": "Red Thai Prawn Curry, Steamed Rice, Bok Choy, Crunchy Onions & Pickled Ginger",
+                  "name": "Smoked Tofu Laksa, Coconut Rice, Steamed Pak Choi, Crunchy Onions & Herb Salad",
                   "description": null,
                   "category": null,
                   "price": null,
                   "price_text": null,
-                  "dietary": [
-                    "gluten-free"
-                  ],
+                  "dietary": [],
                   "allergens": []
                 },
                 {
-                  "name": "Red Thai Smoked Tempeh Curry, Steamed Rice, Bok Choy, Crunchy Onions & Pickled Ginger",
+                  "name": "Cauliflower Laksa, Coconut Rice, Steamed Pak Choi. Crunchy Onions & Herb Salad",
                   "description": null,
                   "category": null,
                   "price": null,
                   "price_text": null,
-                  "dietary": [
-                    "gluten-free",
-                    "vegan",
-                    "vegetarian"
-                  ],
+                  "dietary": [],
                   "allergens": []
                 },
                 {
-                  "name": "Red Velvet Cake, Cream Cheese Frosting",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "gluten-free",
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                }
-              ],
-              "service": null,
-              "note": null
-            }
-          ]
-        },
-        {
-          "date": "2026-10-14",
-          "meals": [
-            {
-              "name": "Lunch",
-              "items": [
-                {
-                  "name": "Leek & Potato Soup",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "gluten-free",
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Beef Chilli Con Carne, Baked Potato, Tomato Salsa, Sour Cream, Green Salad",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "gluten-free"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Bean Chilli Con Carne, Baked Potato, Tomato Salsa, Sour Cream, Green Salad",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "gluten-free",
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Scones, Cream, & Strawberry Jam",
+                  "name": "Chocolate Cake, Roasted Bananas & Cream",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -5893,13 +5771,13 @@
           ]
         },
         {
-          "date": "2026-10-15",
+          "date": "2026-10-21",
           "meals": [
             {
               "name": "Lunch",
               "items": [
                 {
-                  "name": "Roasted Cauliflower & Cumin Soup",
+                  "name": "Courgette & Baby Spinach Soup",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -5912,18 +5790,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Pork & Butterbean Ragout, Lemon Polenta, Roasted Carrot & Red Onion",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "gluten-free"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Seitan & Butterbean Ragout, Lemon Polenta, Roasted Carrot & Red Onion- PB",
+                  "name": "Cumberland Sausage, Mustard Mash, Braised Cabbage & Red Onion Gravy",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -5932,25 +5799,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Coffee & Banana Cake , Mascapone Cream",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "gluten-free"
-                  ],
-                  "allergens": []
-                }
-              ],
-              "service": null,
-              "note": null
-            },
-            {
-              "name": "Dinner",
-              "items": [
-                {
-                  "name": "Roasted Cauliflower & Cumin Soup",
+                  "name": "Carrot & Coriander Sausage, Mustard Mash, Braised Cabbage & Red Onion Gravy",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -5963,35 +5812,12 @@
                   "allergens": []
                 },
                 {
-                  "name": "Moroccan Chicken, Butternut & Chickpea Tagine, Bulgar Wheat & Orange Roasted Carrots",
+                  "name": "Millionairs Shortbread",
                   "description": null,
                   "category": null,
                   "price": null,
                   "price_text": null,
                   "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Moroccan Butternut & Chickpeas Tagine, Bulgar Wheat & Orange Roasted Carrots",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Coffee & Banana Cake , Mascapone Cream",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "gluten-free"
-                  ],
                   "allergens": []
                 }
               ],
@@ -6001,27 +5827,26 @@
           ]
         },
         {
-          "date": "2026-10-16",
+          "date": "2026-10-22",
           "meals": [
             {
               "name": "Lunch",
               "items": [
                 {
-                  "name": "Roasted Carrot, Ginger & Coriander Soup",
+                  "name": "Miso Soba Noodle Broth",
                   "description": null,
                   "category": null,
                   "price": null,
                   "price_text": null,
                   "dietary": [
-                    "gluten-free",
                     "vegan",
                     "vegetarian"
                   ],
                   "allergens": []
                 },
                 {
-                  "name": "Caribbean Fried Fish Tacos, Chips, Pineapple Black Bean Salsa, Cabbage Street Slaw & Lime Coriander Dressing",
-                  "description": "GF Available",
+                  "name": "Chicken Schnitzel, Crushed Baby Potatoes, Cheesey Broccoli & Salad Greens",
+                  "description": null,
                   "category": null,
                   "price": null,
                   "price_text": null,
@@ -6029,7 +5854,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Pulled Aubergine Tacos, Chips, Pineapple Black Bean Salsa, Cabbage Street Slaw & Lime Coriander Dressing",
+                  "name": "Aubergine Schnitzel, Crushed Baby Potatoes, Cheesey Broccoli & Salad Greens",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -6041,58 +5866,58 @@
                   "allergens": []
                 },
                 {
-                  "name": "Coconut & White Chocolate Cake",
+                  "name": "Japanese Cheesecake",
                   "description": null,
                   "category": null,
                   "price": null,
                   "price_text": null,
                   "dietary": [],
                   "allergens": []
-                }
-              ],
-              "service": null,
-              "note": null
-            },
-            {
-              "name": "Dinner",
-              "items": [
+                },
                 {
-                  "name": "Roasted Carrot, Ginger & Coriander Soup",
+                  "name": "DINNER - TOKYO CANTEEN",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Miso Soba Noodle Broth",
                   "description": null,
                   "category": null,
                   "price": null,
                   "price_text": null,
                   "dietary": [
-                    "gluten-free",
                     "vegan",
                     "vegetarian"
                   ],
                   "allergens": []
                 },
                 {
-                  "name": "Matar Chicken Handi, Steamed Rice, Chapati & Raita",
+                  "name": "Pork Belly Ramen, Boiled Egg, Shredded Vegetables & Spring Onion",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Shitake Mushroom & Smoked Tofu Ramen,Shredded Vegetables & Spring Onion",
                   "description": null,
                   "category": null,
                   "price": null,
                   "price_text": null,
                   "dietary": [
-                    "halal"
+                    "vegan",
+                    "vegetarian"
                   ],
                   "allergens": []
                 },
                 {
-                  "name": "Matar Paneer, Steamed Rice, Roti & Raita",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "gluten-free"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Coconut & White Chocolate Cake",
+                  "name": "Japanese Cheesecake",
                   "description": null,
                   "category": null,
                   "price": null,
