@@ -4,11 +4,11 @@
       "source_url": "https://www.sel.cam.ac.uk/current-members/hall-menu",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-10-17T02:17:29+01:00",
-      "content_hash": "310bcc9a80b58fc4",
+      "updated_at": "2026-10-18T02:00:27+01:00",
+      "content_hash": "f56bae1c71b8d3ce",
       "days": [
         {
-          "date": "2026-10-17",
+          "date": "2026-10-18",
           "meals": [
             {
               "name": "Lunch",
@@ -24,7 +24,7 @@
                 },
                 {
                   "name": "Sides",
-                  "description": "Sausages, bacon, fried eggs, hash browns, mushrooms, baked beans, tomatoes, croissants, rolls, vegan Danish pastries, veggie sausages, vegan bacon, halal sausages, waffles",
+                  "description": "Sausages, bacon, fried eggs, hash browns, mushrooms, baked beans, tomatoes, black pudding, Danish pastries, croissants, rolls, pancakes, porridge, vegan Danish pastries, veggie sausages, vegan bacon, halal sausages",
                   "category": "Sides",
                   "price": null,
                   "price_text": null,
@@ -33,7 +33,7 @@
                 },
                 {
                   "name": "Sides",
-                  "description": "Special: Potato hash with fried onions, red peppers, sun-dried tomatoes and two fried eggs",
+                  "description": "Special: American pancakes",
                   "category": "Sides",
                   "price": null,
                   "price_text": null,
@@ -48,27 +48,7 @@
               "name": "Dinner",
               "items": [
                 {
-                  "name": "Pork and leek sausage rings with onion gravy",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Red Thai coconut chicken curry",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "halal"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Tofu and coconut vegetable yellow Thai curry",
+                  "name": "Vegetarian mince shepherdess pie",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -80,8 +60,28 @@
                   "allergens": []
                 },
                 {
+                  "name": "Roast pork with stuffing, gravy, apple sauce",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Lamb shepherd’s pie",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "halal"
+                  ],
+                  "allergens": []
+                },
+                {
                   "name": "Sides",
-                  "description": "Herby potato wedges, rice, sweetcorn, carrots",
+                  "description": "Chips, rice, roast vegetables, roast potatoes, broccoli",
                   "category": "Sides",
                   "price": null,
                   "price_text": null,
@@ -100,93 +100,9 @@
       "source_url": "https://newn.cam.ac.uk/todays-menu",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-10-17T18:08:07+01:00",
-      "content_hash": "b331102bdbdf43f5",
-      "days": [
-        {
-          "date": "2026-10-17",
-          "meals": [
-            {
-              "name": "Dinner",
-              "items": [
-                {
-                  "name": "Plant Base Burger",
-                  "description": "£3.60 with a Newnham card",
-                  "category": null,
-                  "price": {
-                    "amount": 4.79,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£4.79",
-                  "dietary": [
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": [
-                    "soya"
-                  ]
-                },
-                {
-                  "name": "Cajun Spiced Chicken Burger",
-                  "description": "£3.60 with a Newnham card",
-                  "category": null,
-                  "price": {
-                    "amount": 4.79,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£4.79",
-                  "dietary": [],
-                  "allergens": [
-                    "eggs"
-                  ]
-                },
-                {
-                  "name": "Halal Beef Burger with Tomato, Salad & Cheese",
-                  "description": "£3.99 with a Newnham card",
-                  "category": null,
-                  "price": {
-                    "amount": 5.32,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£5.32",
-                  "dietary": [
-                    "halal"
-                  ],
-                  "allergens": [
-                    "gluten",
-                    "milk",
-                    "soya",
-                    "sulphites"
-                  ]
-                },
-                {
-                  "name": "Assorted Desserts",
-                  "description": "See Label for Allergens; £1.90 with a Newnham card",
-                  "category": null,
-                  "price": {
-                    "amount": 2.53,
-                    "currency": "GBP"
-                  },
-                  "price_text": "£2.53",
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Hot Meal Deal",
-                  "description": "Vegan/Vegetarian + 1 Side £4.50 (Non-Members £6.00); Meat/Fish + 1 Side £4.90 (Non-Members £6.52); Extra Side £0.75 (Non-Members £1.00)",
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                }
-              ],
-              "service": null,
-              "note": null
-            }
-          ]
-        }
-      ]
+      "updated_at": "2026-10-18T02:00:27+01:00",
+      "content_hash": "4f53cda18c2baa0c",
+      "days": []
     },
     "darwin": {
       "source_url": "https://www.darwin.cam.ac.uk/dine/weekly-menu/",
@@ -3719,32 +3635,116 @@
       "source_url": "https://menu.joh.cam/today",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-10-17T02:17:29+01:00",
-      "content_hash": "f36ad8a8325993c9",
+      "updated_at": "2026-10-18T02:00:27+01:00",
+      "content_hash": "fc8951eb2a7ae85e",
       "days": [
         {
-          "date": "2026-10-17",
+          "date": "2026-10-18",
           "meals": [
             {
-              "name": "Brunch",
+              "name": "Lunch",
               "items": [
                 {
-                  "name": "Pancake and Waffles Station with a Selection of Toppings and Sauces",
+                  "name": "Sweet potato, coconut and chilli soup",
+                  "description": null,
+                  "category": "Starter",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "celery",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Sweet and sour tofu with noodles and peppers",
                   "description": null,
                   "category": "Mains",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "celery",
+                    "gluten",
+                    "soya",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Feta wrapped in filo pastry with sesame and hot honey glaze",
+                  "description": null,
+                  "category": "Mains",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "gluten",
+                    "milk",
+                    "sesame"
+                  ]
+                },
+                {
+                  "name": "Twice baked belly pork and gravy",
+                  "description": null,
+                  "category": "Mains",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": [
+                    "celery",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Roast potatoes",
+                  "description": null,
+                  "category": "Sides",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": [
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Medley of veg",
+                  "description": null,
+                  "category": "Sides",
                   "price": null,
                   "price_text": null,
                   "dietary": [],
                   "allergens": []
                 },
                 {
-                  "name": "Full English Breakfast Sausage, Bacon, Baked Beans, Hash Browns, Mushrooms, Fried Eggs, grilled tomato, black pudding, scrambled egg, veggie grill",
+                  "name": "Cauliflower and leek cheese",
                   "description": null,
-                  "category": "Mains",
+                  "category": "Sides",
                   "price": null,
                   "price_text": null,
                   "dietary": [],
-                  "allergens": []
+                  "allergens": [
+                    "milk"
+                  ]
+                },
+                {
+                  "name": "Apple and sultana crumble with custard",
+                  "description": null,
+                  "category": "Dessert",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": [
+                    "gluten",
+                    "milk"
+                  ]
                 }
               ],
               "service": null,
@@ -3758,11 +3758,11 @@
       "source_url": "https://www.robinson.cam.ac.uk/college-life/garden-restaurant-menu",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-10-17T02:17:29+01:00",
-      "content_hash": "d082c5318713570a",
+      "updated_at": "2026-10-18T02:00:27+01:00",
+      "content_hash": "17ed9b5558484c9a",
       "days": [
         {
-          "date": "2026-10-17",
+          "date": "2026-10-18",
           "meals": [
             {
               "name": "Lunch",
@@ -3793,37 +3793,34 @@
                   "allergens": []
                 },
                 {
-                  "name": "Cajun spiced breaded aubergine and halloumi with Pico de Gallo and guacamole",
+                  "name": "Texan style Quorn and vegetable chilli",
                   "description": null,
                   "category": "Main Courses",
                   "price": null,
                   "price_text": null,
                   "dietary": [
+                    "vegan",
                     "vegetarian"
                   ],
                   "allergens": [
-                    "eggs",
-                    "gluten",
-                    "milk",
-                    "sulphites"
+                    "celery",
+                    "soya"
                   ]
                 },
                 {
-                  "name": "Cajun spiced breaded chicken butterfly with Pico de Gallo and guacamole",
+                  "name": "Texan style beef and vegetable chilli",
                   "description": null,
                   "category": "Main Courses",
                   "price": null,
                   "price_text": null,
                   "dietary": [],
                   "allergens": [
-                    "eggs",
-                    "gluten",
-                    "milk",
-                    "sulphites"
+                    "celery",
+                    "gluten"
                   ]
                 },
                 {
-                  "name": "Both served with curly fries £5.10 / £5.65",
+                  "name": "Both served with rice, BBQ beans, jacket potato and cheese £5.10 / £5.65",
                   "description": null,
                   "category": "Main Courses",
                   "price": null,
@@ -3832,7 +3829,7 @@
                     "vegetarian"
                   ],
                   "allergens": [
-                    "gluten"
+                    "milk"
                   ]
                 }
               ],
@@ -3847,81 +3844,17 @@
       "source_url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/lunch-and-dinner-menu/",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-10-16T10:01:01+01:00",
-      "content_hash": "b220a3bc4dcedc87",
+      "updated_at": "2026-10-18T02:00:27+01:00",
+      "content_hash": "2a3a055f6f9a4983",
       "days": [
         {
-          "date": "2026-10-16",
+          "date": "2026-10-18",
           "meals": [
             {
               "name": "Lunch",
               "items": [
                 {
-                  "name": "Today’s Special: Soft Serve Ice Cream",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Tomato & Basil Soup",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Butternut Squash Massaman Curry",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Aubergine Parmigiana",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Spanish Omelette",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Battered Haddock",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Selection of Vegetables",
+                  "name": "Sunday Roast",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -3932,17 +3865,12 @@
               ],
               "service": "12:00–14:00",
               "note": null
-            }
-          ]
-        },
-        {
-          "date": "2026-10-17",
-          "meals": [
+            },
             {
-              "name": "Lunch",
+              "name": "Dinner",
               "items": [
                 {
-                  "name": "Brunch",
+                  "name": "Fajita Night",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -3951,7 +3879,7 @@
                   "allergens": []
                 }
               ],
-              "service": "12:00–14:00",
+              "service": null,
               "note": null
             }
           ]
@@ -3962,11 +3890,11 @@
       "source_url": "https://www.corpus.cam.ac.uk/foodmenu/",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-10-17T02:17:29+01:00",
-      "content_hash": "fbe17d246fd15f6c",
+      "updated_at": "2026-10-18T02:00:27+01:00",
+      "content_hash": "42952b78a5bf60b8",
       "days": [
         {
-          "date": "2026-10-17",
+          "date": "2026-10-18",
           "meals": [
             {
               "name": "Lunch",
@@ -4142,6 +4070,139 @@
                   "dietary": [],
                   "allergens": [
                     "sulphites"
+                  ]
+                }
+              ],
+              "service": null,
+              "note": null
+            },
+            {
+              "name": "Dinner",
+              "items": [
+                {
+                  "name": "Mushroom, leek and thyme pie",
+                  "description": null,
+                  "category": "Plant Based",
+                  "price": {
+                    "amount": 2.9,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£2.90",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "celery",
+                    "gluten",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Classic Mac & Cheese",
+                  "description": null,
+                  "category": "Vegetarian",
+                  "price": {
+                    "amount": 3.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£3.00",
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "eggs",
+                    "gluten",
+                    "milk",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Roasted pork loin with gravy on the side",
+                  "description": null,
+                  "category": "Meat/Fish",
+                  "price": {
+                    "amount": 3.6,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£3.60",
+                  "dietary": [],
+                  "allergens": [
+                    "celery",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Garden peas with house dressing",
+                  "description": null,
+                  "category": "Side dish",
+                  "price": {
+                    "amount": 0.95,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.95",
+                  "dietary": [],
+                  "allergens": [
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Roasted carrots and parsnips",
+                  "description": null,
+                  "category": "Side dish",
+                  "price": {
+                    "amount": 0.95,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.95",
+                  "dietary": [],
+                  "allergens": [
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Yorkshire puddings",
+                  "description": null,
+                  "category": "Side dish",
+                  "price": {
+                    "amount": 0.95,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.95",
+                  "dietary": [],
+                  "allergens": [
+                    "eggs",
+                    "gluten",
+                    "milk",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Roasted potatoes with thyme & rosemary",
+                  "description": null,
+                  "category": "Side dish",
+                  "price": {
+                    "amount": 0.95,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.95",
+                  "dietary": [],
+                  "allergens": [
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Garlic bread",
+                  "description": null,
+                  "category": "Side dish",
+                  "price": {
+                    "amount": 0.2,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£0.20",
+                  "dietary": [],
+                  "allergens": [
+                    "gluten"
                   ]
                 }
               ],
