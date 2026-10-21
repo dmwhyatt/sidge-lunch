@@ -121,9 +121,114 @@
       "source_url": "https://newn.cam.ac.uk/todays-menu",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-10-21T00:10:10+01:00",
-      "content_hash": "4f53cda18c2baa0c",
-      "days": []
+      "updated_at": "2026-10-21T10:01:00+01:00",
+      "content_hash": "f23cf82eff5b099a",
+      "days": [
+        {
+          "date": "2026-10-21",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Lentil Coconut Soup",
+                  "description": "£1.50 with a Newnham card",
+                  "category": null,
+                  "price": {
+                    "amount": 2.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£2.00",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "soya",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Mushroom, Cauliflower & Vegetable Biryani",
+                  "description": "£3.60 with a Newnham card",
+                  "category": null,
+                  "price": {
+                    "amount": 4.79,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£4.79",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "mustard"
+                  ]
+                },
+                {
+                  "name": "Sweet Potato, Leek & Cheese Pie",
+                  "description": "£3.60 with a Newnham card",
+                  "category": null,
+                  "price": {
+                    "amount": 4.79,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£4.79",
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "gluten",
+                    "milk"
+                  ]
+                },
+                {
+                  "name": "Roast Turkey Breast with Cranberry Sauce",
+                  "description": "£4.00 with a Newnham card",
+                  "category": null,
+                  "price": {
+                    "amount": 5.32,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£5.32",
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Lemon Cheesecake Swiss Roll",
+                  "description": "£1.90 with a Newnham card",
+                  "category": null,
+                  "price": {
+                    "amount": 2.53,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£2.53",
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "eggs",
+                    "gluten",
+                    "milk",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Hot Meal Deal",
+                  "description": "Vegan/Vegetarian + 1 Side £4.50 (Non-Members £6.00); Meat/Fish + 1 Side £4.90 (Non-Members £6.52); Extra Side £0.75 (Non-Members £1.00)",
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        }
+      ]
     },
     "darwin": {
       "source_url": "https://www.darwin.cam.ac.uk/dine/weekly-menu/",
@@ -6412,9 +6517,127 @@
       "source_url": "https://www.catering.admin.cam.ac.uk/cafes/greenwich-house-cafe",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-10-17T02:17:29+01:00",
-      "content_hash": "4f53cda18c2baa0c",
-      "days": []
+      "updated_at": "2026-10-21T10:01:00+01:00",
+      "content_hash": "97c4f140c1afd654",
+      "days": [
+        {
+          "date": "2026-10-21",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Shepherd-less pie",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Braised pork belly in a chickpea korma sauce",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Sides",
+                  "description": "Mint, onion & tomato salad, Macho peas & champ mash with truffle",
+                  "category": "Sides",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        },
+        {
+          "date": "2026-10-22",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Sticky glazed tofu with egg fried rice",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Roast chicken in a garlic & spinach cream sauce",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Sides",
+                  "description": "Roasted red pepper, green bean & fregola salad, Gochujang cauliflower & parmentier potatoes",
+                  "category": "Sides",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        },
+        {
+          "date": "2026-10-23",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Tempeh & black bean loaded nachos",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Dukkha crusted chicken with celeriac tabbouleh",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Sides",
+                  "description": "Lentil, carrot & date salad with tahini dressing, Triple cooked chips & Garden peas",
+                  "category": "Sides",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        }
+      ]
     },
     "the-mill": {
       "source_url": "https://www.themillpubcambridge.com/food-and-drink",
