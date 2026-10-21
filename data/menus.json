@@ -4189,9 +4189,114 @@
       "source_url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/lunch-and-dinner-menu/",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-10-21T00:10:10+01:00",
-      "content_hash": "5d2fde89e9908da4",
+      "updated_at": "2026-10-21T11:00:58+01:00",
+      "content_hash": "6360fcf183f33a52",
       "days": [
+        {
+          "date": "2026-10-21",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Today’s Special:",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Churchill Ice Cream",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Leek & Potato Soup",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Coconut & Red Lentil Dhal",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Vegetable & Lentil Bourguignon",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Wild Mushroom & Spinach Gnocchi",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Sea Bass with a Tomato & Caper Compote",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Marinated Chicken Breast",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "halal"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Selection of Vegetables",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": "12:00–14:00",
+              "note": null
+            }
+          ]
+        },
         {
           "date": "2026-10-24",
           "meals": [
