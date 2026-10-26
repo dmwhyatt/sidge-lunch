@@ -276,9 +276,25 @@ def test_greenwich_house_cafe():
     assert sides["description"] == "Citrus slaw with pickled cranberries, Sweet potato fried & cheesy leeks"
 
 
+
+def _jesus(lunch="jesus.html", dinner="jesus-dinner.html", day=date(2026, 10, 26)):
+    from sidge_lunch.adapters import DOCUMENT_ADAPTERS
+
+    fetched = []
+
+    def get_bytes(url):
+        fetched.append(url)
+        return (FIXTURES / dinner).read_bytes()
+
+    days = DOCUMENT_ADAPTERS["jesus"]((FIXTURES / lunch).read_text(), day, get_bytes)
+    assert fetched == [f"https://apps.jesus.cam.ac.uk/foodmenuview/digiboard.php?event_id=2&date={day.isoformat()}"]
+    return [d.to_json() for d in days]
+
+
 def test_jesus():
-    [day] = [d.to_json() for d in ADAPTERS["jesus"]((FIXTURES / "jesus.html").read_text(), date(2026, 10, 26))]
+    [day] = _jesus()
     assert day["date"] == "2026-10-26"
+    assert [m["name"] for m in day["meals"]] == ["Lunch", "Dinner"]
     lunch = items(day)
     assert len(lunch) == 10
     curry = lunch["Chicken Tikka Masala with mango chutney and papadum"]
@@ -288,14 +304,23 @@ def test_jesus():
     assert curry["allergens"] == ["celery", "milk", "mustard", "sulphites"]
     assert lunch["Margherita Pizza"]["dietary"] == ["halal", "vegetarian"]
     assert lunch["Steamed rice"]["allergens"] == [] and lunch["Steamed rice"]["description"] is None
+    dinner = items(day, "Dinner")
+    assert len(dinner) == 9
+    assert dinner["Vegan mince chilli"]["allergens"] == ["celery", "mustard", "soya", "sulphites"]
 
 
 def test_jesus_no_menu():
-    assert ADAPTERS["jesus"]((FIXTURES / "jesus-no-menu.html").read_text(), date(2026, 10, 31)) == []
+    assert _jesus("jesus-no-menu.html", "jesus-no-menu.html", date(2026, 10, 31)) == []
+
+
+def test_jesus_dinner_only():
+    [day] = _jesus(lunch="jesus-no-menu.html")
+    assert [m["name"] for m in day["meals"]] == ["Dinner"]
 
 
 def test_jesus_unknown_allergen_is_kept_in_words():
+    from sidge_lunch.adapters.jesus import parse_board
+
     html = (FIXTURES / "jesus.html").read_text().replace('title="Gluten"><span', 'title="Wasabi"><span', 1)
-    [day] = ADAPTERS["jesus"](html, date(2026, 10, 26))
-    roll = day.meals[0].items[0]
-    assert roll.allergens == [] and roll.description == "Also contains: Wasabi"
+    _, meal = parse_board(html, date(2026, 10, 26))
+    assert meal.items[0].allergens == [] and meal.items[0].description == "Also contains: Wasabi"

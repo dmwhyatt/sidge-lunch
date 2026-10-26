@@ -34,9 +34,9 @@ ADAPTERS: dict[str, Adapter] = {
     "wolfson": wolfson.parse,
     "west-hub": catering.parse,
     "greenwich-house-cafe": catering.parse,  # hot dishes from the West Hub kitchen
-    "jesus": jesus.parse,
 }
 
 DOCUMENT_ADAPTERS: dict[str, DocumentAdapter] = {
     "trinity": trinity.parse,
+    "jesus": jesus.parse,  # also fetches the dinner board
 }

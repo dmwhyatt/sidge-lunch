@@ -1,11 +1,13 @@
-"""Jesus College Cafeteria lunch: the college's menu board for one day.
+"""Jesus College Cafeteria: the college's lunch and dinner menu boards for one day.
 
-The cafeteria page embeds apps.jesus.cam.ac.uk/foodmenuview/, whose script loads
-digiboard.php?event_id=1&date=YYYY-MM-DD; vendors.json fetches that directly.
-The board is a table: "Cafeteria Lunch" and "Monday 26th October" in <h2>s, a
-course in each <h4> row, then one tr.fm-item per dish with its price, the
-college's dietary labels (.fm-requirement) and allergens (.fm-allergen). Days
-without a menu say "No menu available for the selected date".
+The cafeteria lunch and dinner pages embed apps.jesus.cam.ac.uk/foodmenuview/,
+whose script loads digiboard.php?event_id=<board>&date=YYYY-MM-DD: board 1 is
+lunch, board 2 dinner. vendors.json fetches the lunch board; this adapter
+fetches the dinner board for the same day. Each board is a table: "Cafeteria
+Lunch" and "Monday 26th October" in <h2>s, a course in each <h4> row, then one
+tr.fm-item per dish with its price, the college's dietary labels
+(.fm-requirement) and allergens (.fm-allergen). Days without a menu say "No
+menu available for the selected date". Both boards are published weeks ahead.
 
 The traffic-light health dots are left out. Dishes marked sold out are kept:
 a place is only scraped until its menu for the day is in.
@@ -14,6 +16,7 @@ a place is only scraped until its menu for the day is in.
 from __future__ import annotations
 
 import re
+from collections.abc import Callable
 from datetime import date, datetime
 
 from bs4 import BeautifulSoup
@@ -21,6 +24,7 @@ from bs4 import BeautifulSoup
 from ..schema import DIETARY_TAGS, Day, Meal, MenuItem
 from ._common import allergen, clean, parse_price
 
+DINNER = "https://apps.jesus.cam.ac.uk/foodmenuview/digiboard.php?event_id=2&date={date}"
 _DAY = re.compile(r"^[A-Za-z]+day\s+(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]+)$")
 
 
@@ -36,12 +40,13 @@ def _date(text: str, today: date) -> date:
     return d
 
 
-def parse(html: str, today: date) -> list[Day]:
+def parse_board(html: str, today: date) -> tuple[date, Meal] | None:
+    """One board: its day and meal, or None when it says there's no menu that day."""
     soup = BeautifulSoup(html, "lxml")
     table = soup.select_one("table.fm-menu-courses")
     if table is None:
         if "No menu available" in soup.get_text():
-            return []
+            return None
         raise ValueError("no menu table on page")
 
     headings = [clean(h.get_text()) for h in table.find_all("h2")]
@@ -76,4 +81,13 @@ def parse(html: str, today: date) -> list[Day]:
         ))
     if not items:
         raise ValueError("no dishes on the menu board")
-    return [Day(day, [Meal(meal_name, items)])]
+    return day, Meal(meal_name, items)
+
+
+def parse(html: str, today: date, get_bytes: Callable[[str], bytes]) -> list[Day]:
+    dinner = get_bytes(DINNER.format(date=today.isoformat())).decode("utf-8", errors="replace")
+    days: dict[date, list[Meal]] = {}
+    for board in (parse_board(html, today), parse_board(dinner, today)):
+        if board:
+            days.setdefault(board[0], []).append(board[1])
+    return [Day(d, meals) for d, meals in sorted(days.items())]

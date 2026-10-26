@@ -77,7 +77,7 @@
       "id": "jesus",
       "name": "Jesus College",
       "type": "college",
-      "about": "Cafeteria. Lunch menu from the college's menu board, with prices, dietary labels and allergens.",
+      "about": "Cafeteria. Lunch and dinner menus from the college's menu boards, with prices, dietary labels and allergens.",
       "menu_url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/cafeteria-lunch-menu",
       "fetch_url": "https://apps.jesus.cam.ac.uk/foodmenuview/digiboard.php?event_id=1&date={date}",
       "lat": 52.209578,
