@@ -116,21 +116,6 @@
    }
   },
   {
-   "id": "college-jesus-college",
-   "name": "Jesus College",
-   "type": "college",
-   "about": "College hall and buttery. Check who it's open to before going.",
-   "lat": 52.209578,
-   "lng": 0.123627,
-   "link_only": true,
-   "access": {
-    "level": "members",
-    "note": "college cards only",
-    "checked": 2015
-   },
-   "menu_url": "https://www.jesus.cam.ac.uk/"
-  },
-  {
    "id": "college-kings-college",
    "name": "King's College",
    "type": "college",

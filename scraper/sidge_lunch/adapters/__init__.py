@@ -13,7 +13,7 @@ from collections.abc import Callable
 from datetime import date
 
 from ..schema import Day
-from . import catering, churchill, clare_hall, corpus, darwin, newnham, queens, robinson, selwyn, st_johns, the_mill, trinity, wolfson
+from . import catering, churchill, clare_hall, corpus, darwin, jesus, newnham, queens, robinson, selwyn, st_johns, the_mill, trinity, wolfson
 
 Adapter = Callable[[str, date], list[Day]]
 # Adapters that follow a link from the page to a document (e.g. a weekly PDF) and so
@@ -34,6 +34,7 @@ ADAPTERS: dict[str, Adapter] = {
     "wolfson": wolfson.parse,
     "west-hub": catering.parse,
     "greenwich-house-cafe": catering.parse,  # hot dishes from the West Hub kitchen
+    "jesus": jesus.parse,
 }
 
 DOCUMENT_ADAPTERS: dict[str, DocumentAdapter] = {

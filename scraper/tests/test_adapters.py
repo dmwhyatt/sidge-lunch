@@ -274,3 +274,28 @@ def test_greenwich_house_cafe():
     sides = items(days[1])["Sides"]
     assert sides["category"] == "Sides"
     assert sides["description"] == "Citrus slaw with pickled cranberries, Sweet potato fried & cheesy leeks"
+
+
+def test_jesus():
+    [day] = [d.to_json() for d in ADAPTERS["jesus"]((FIXTURES / "jesus.html").read_text(), date(2026, 10, 26))]
+    assert day["date"] == "2026-10-26"
+    lunch = items(day)
+    assert len(lunch) == 10
+    curry = lunch["Chicken Tikka Masala with mango chutney and papadum"]
+    assert curry["category"] == "Main course"
+    assert curry["price"] == {"amount": 4.0, "currency": "GBP"}
+    assert curry["dietary"] == ["gluten-free", "halal"]
+    assert curry["allergens"] == ["celery", "milk", "mustard", "sulphites"]
+    assert lunch["Margherita Pizza"]["dietary"] == ["halal", "vegetarian"]
+    assert lunch["Steamed rice"]["allergens"] == [] and lunch["Steamed rice"]["description"] is None
+
+
+def test_jesus_no_menu():
+    assert ADAPTERS["jesus"]((FIXTURES / "jesus-no-menu.html").read_text(), date(2026, 10, 31)) == []
+
+
+def test_jesus_unknown_allergen_is_kept_in_words():
+    html = (FIXTURES / "jesus.html").read_text().replace('title="Gluten"><span', 'title="Wasabi"><span', 1)
+    [day] = ADAPTERS["jesus"](html, date(2026, 10, 26))
+    roll = day.meals[0].items[0]
+    assert roll.allergens == [] and roll.description == "Also contains: Wasabi"

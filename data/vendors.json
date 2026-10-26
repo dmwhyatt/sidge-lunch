@@ -74,6 +74,21 @@
       }
     },
     {
+      "id": "jesus",
+      "name": "Jesus College",
+      "type": "college",
+      "about": "Cafeteria. Lunch menu from the college's menu board, with prices, dietary labels and allergens.",
+      "menu_url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/cafeteria-lunch-menu",
+      "fetch_url": "https://apps.jesus.cam.ac.uk/foodmenuview/digiboard.php?event_id=1&date={date}",
+      "lat": 52.209578,
+      "lng": 0.123627,
+      "access": {
+        "level": "members",
+        "note": "college cards only",
+        "checked": 2015
+      }
+    },
+    {
       "id": "st-johns",
       "name": "St John's College",
       "type": "college",
