@@ -8127,7 +8127,7 @@
     "the-mill": {
       "source_url": "https://www.themillpubcambridge.com/food-and-drink",
       "status": "error",
-      "error": "ValueError: Main Menu tab has no items",
+      "error": "ChunkedEncodingError: Response ended prematurely",
       "updated_at": "2026-10-13T04:31:58+01:00",
       "content_hash": "af7bb13546c8a373",
       "days": []
