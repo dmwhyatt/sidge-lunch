@@ -120,9 +120,117 @@
       "source_url": "https://newn.cam.ac.uk/todays-menu",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-10-29T06:01:00+00:00",
-      "content_hash": "4f53cda18c2baa0c",
-      "days": []
+      "updated_at": "2026-10-29T10:01:00+00:00",
+      "content_hash": "4c18251c538cf0cd",
+      "days": [
+        {
+          "date": "2026-10-29",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Autumn Vegetable Soup",
+                  "description": "£1.50 with a Newnham card",
+                  "category": null,
+                  "price": {
+                    "amount": 2.0,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£2.00",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "celery"
+                  ]
+                },
+                {
+                  "name": "Lentil Chilli",
+                  "description": "£3.60 with a Newnham card",
+                  "category": null,
+                  "price": {
+                    "amount": 4.79,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£4.79",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Vegetable Cottage Pie",
+                  "description": "£3.60 with a Newnham card",
+                  "category": null,
+                  "price": {
+                    "amount": 4.79,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£4.79",
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "celery",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Shepheard's Pie",
+                  "description": "£4.00 with a Newnham card",
+                  "category": null,
+                  "price": {
+                    "amount": 5.32,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£5.32",
+                  "dietary": [
+                    "halal"
+                  ],
+                  "allergens": [
+                    "celery",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Lemon Drizzle Cake",
+                  "description": "£1.90 with a Newnham card",
+                  "category": null,
+                  "price": {
+                    "amount": 2.53,
+                    "currency": "GBP"
+                  },
+                  "price_text": "£2.53",
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "eggs",
+                    "gluten",
+                    "soya",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Hot Meal Deal",
+                  "description": "Vegan/Vegetarian + 1 Side £4.50 (Non-Members £6.00); Meat/Fish + 1 Side £4.90 (Non-Members £6.52); Extra Side £0.75 (Non-Members £1.00)",
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        }
+      ]
     },
     "darwin": {
       "source_url": "https://www.darwin.cam.ac.uk/dine/weekly-menu/",
@@ -5110,9 +5218,104 @@
       "source_url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/lunch-and-dinner-menu/",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-10-29T06:01:00+00:00",
-      "content_hash": "669647739106d143",
+      "updated_at": "2026-10-29T10:01:00+00:00",
+      "content_hash": "5c94437447df8b3f",
       "days": [
+        {
+          "date": "2026-10-29",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Spiced Butternut Squash Soup",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Lentil Casserole",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Roasted vegetable Lasagne",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Soya & Bean Enchiladas",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Lamb Keema",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Garlic & Herb Chicken",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Sea Bream with Harissa Glaze",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Selection of Vegetables",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": "12:00–14:00",
+              "note": null
+            }
+          ]
+        },
         {
           "date": "2026-10-31",
           "meals": [
