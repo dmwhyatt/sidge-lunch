@@ -930,10 +930,10 @@
     },
     "queens": {
       "source_url": "https://www.queens.cam.ac.uk/life-at-queens/catering/dining-hall/weekly-menu/",
-      "status": "error",
-      "error": "BotCheck: SiteGround CAPTCHA served instead of https://www.queens.cam.ac.uk/life-at-queens/catering/dining-hall/weekly-menu/; not worked around",
-      "updated_at": "2026-10-26T09:30:46+00:00",
-      "content_hash": "8a63ac4984079ea5",
+      "status": "ok",
+      "error": null,
+      "updated_at": "2026-11-02T06:30:46+00:00",
+      "content_hash": "4f53cda18c2baa0c",
       "days": []
     },
     "wolfson": {
