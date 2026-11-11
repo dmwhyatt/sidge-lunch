@@ -4900,9 +4900,98 @@
       "source_url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/lunch-and-dinner-menu/",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-11-11T02:45:37+00:00",
-      "content_hash": "07370454aee2aa59",
+      "updated_at": "2026-11-11T09:30:42+00:00",
+      "content_hash": "2a69b07ae075e08e",
       "days": [
+        {
+          "date": "2026-11-11",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "French Onion Soup",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Lentil Dhal",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Moroccan Vegetable Tagine",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Vegetable Stir Fry with Tofu",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Roast Chicken with Gravy",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "halal"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Beef Stew",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Selection of Vegetables",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": "12:00–14:00",
+              "note": null
+            }
+          ]
+        },
         {
           "date": "2026-11-14",
           "meals": [
