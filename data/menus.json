@@ -873,8 +873,8 @@
     },
     "queens": {
       "source_url": "https://www.queens.cam.ac.uk/life-at-queens/catering/dining-hall/weekly-menu/",
-      "status": "error",
-      "error": "BotCheck: SiteGround CAPTCHA served instead of https://www.queens.cam.ac.uk/life-at-queens/catering/dining-hall/weekly-menu/; not worked around",
+      "status": "ok",
+      "error": null,
       "updated_at": "2026-11-16T06:30:46+00:00",
       "content_hash": "4f53cda18c2baa0c",
       "days": []
@@ -4234,25 +4234,17 @@
       "source_url": "https://www.catering.admin.cam.ac.uk/cafes/west-hub-canteen",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-11-14T03:11:25+00:00",
-      "content_hash": "4f53cda18c2baa0c",
-      "days": []
-    },
-    "greenwich-house-cafe": {
-      "source_url": "https://www.catering.admin.cam.ac.uk/cafes/greenwich-house-cafe",
-      "status": "ok",
-      "error": null,
-      "updated_at": "2026-11-14T03:11:25+00:00",
-      "content_hash": "bc6327580849da46",
+      "updated_at": "2026-11-16T09:00:58+00:00",
+      "content_hash": "fc5e7e19bae113fb",
       "days": [
         {
-          "date": "2026-11-17",
+          "date": "2026-11-16",
           "meals": [
             {
               "name": "Lunch",
               "items": [
                 {
-                  "name": "Aubergine katsu curry with sticky rice",
+                  "name": "Vegetable massaman curry served with sticky rice",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -4261,7 +4253,256 @@
                   "allergens": []
                 },
                 {
-                  "name": "Cheddar cheese & green pepper Bacalaito with chipotle mayo",
+                  "name": "Porcini bolognaise with truffle butter & pasta",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Chilli chicken rendang",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Bangers & sweet potato mash with onion gravy",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        },
+        {
+          "date": "2026-11-17",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Baked celeriac with wild mushrooms & coconut relish",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Cavatelli with ricotta sauce & pangritata",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Chicken parmesan with tomato, chilli pasta",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Pork belly with buttermilk cabbage & croutons",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        },
+        {
+          "date": "2026-11-18",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Tempura pumpkin with Japanese dipping sauce served with noodles",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Vegetable Dhansak style bake",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "One pot chicken & tarragon fricassee",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Arabiata pork meatballs with pasta",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        },
+        {
+          "date": "2026-11-19",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Baba ghanoush, grilled aubergine with lentils & aubergine fritters",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Griddled vegetables & halloumi with cous cous",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Street food fried chicken, raisin chutney & coronation sauce",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Cuban pork shoulder with fennel salad",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        },
+        {
+          "date": "2026-11-20",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Cajun spiced cauliflower with collard green sauce",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Vegetable moussaka",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Chicken bao buns, salad & sticky tamarind sauce",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Homemade battered catch of the day, tartare sauce and lemon wedge",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        }
+      ]
+    },
+    "greenwich-house-cafe": {
+      "source_url": "https://www.catering.admin.cam.ac.uk/cafes/greenwich-house-cafe",
+      "status": "ok",
+      "error": null,
+      "updated_at": "2026-11-16T09:00:58+00:00",
+      "content_hash": "ac2a6d65ce05d95f",
+      "days": [
+        {
+          "date": "2026-11-16",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Vegetable massaman curry served with sticky rice",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Bangers & sweet potato mash with onion gravy",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -4271,7 +4512,46 @@
                 },
                 {
                   "name": "Sides",
-                  "description": "Mixed bean & sweetcorn salad, Sauteed sugar snaps & bell peppers & roasted potatoes with paprika",
+                  "description": "Curried coleslaw, Spiced chips & Indian five spice stir fry",
+                  "category": "Sides",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        },
+        {
+          "date": "2026-11-17",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Baked celeriac with wild mushrooms & coconut relish",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Chicken parmesan with tomato, chilli pasta",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Sides",
+                  "description": "Antipasto chickpea salad, Parmesan pesto roasted baby potatoes & grilled hispi cabbage with romesco sauce",
                   "category": "Sides",
                   "price": null,
                   "price_text": null,
@@ -4291,7 +4571,7 @@
               "name": "Lunch",
               "items": [
                 {
-                  "name": "Mushroom stroganoff with fried gnocchi",
+                  "name": "Vegetable Dhansak style bake",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -4300,7 +4580,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Cajun chicken wrap with Monterey Jack & gherkin slaw",
+                  "name": "One pot chicken & tarragon fricassee",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -4310,7 +4590,7 @@
                 },
                 {
                   "name": "Sides",
-                  "description": "Black olive Caesar salad, Parmentier potatoes & pomegranate glazed baby vegetables",
+                  "description": "Zesty pomegranate salad with tomatoes & zaatar, Broad bean & dill rice & Garlic green beans",
                   "category": "Sides",
                   "price": null,
                   "price_text": null,
@@ -4330,7 +4610,7 @@
               "name": "Lunch",
               "items": [
                 {
-                  "name": "Roasted garlic squash, red pepper & Jack cheese quesadilla",
+                  "name": "Griddled vegetables & halloumi with cous cous",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -4339,7 +4619,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Chorizo & pork cottage pie",
+                  "name": "Cuban pork shoulder with fennel salad",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -4349,7 +4629,7 @@
                 },
                 {
                   "name": "Sides",
-                  "description": "Quinoa salad, Leek gratin with crispy leek topping & creamed corn Tex Mex",
+                  "description": "Mediterranean cucumber salad, Roasted sautéed potatoes with thyme & Braised red cabbage",
                   "category": "Sides",
                   "price": null,
                   "price_text": null,
@@ -4369,7 +4649,7 @@
               "name": "Lunch",
               "items": [
                 {
-                  "name": "Hot dog, fried onions & mustard",
+                  "name": "Vegetable moussaka",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -4378,7 +4658,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Buttermilk chicken with BBQ beans",
+                  "name": "Chicken bao buns, salad and sticky tamarind sauce",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -4388,7 +4668,7 @@
                 },
                 {
                   "name": "Sides",
-                  "description": "West Hub, Triple cooked chips & mozzarella sticks",
+                  "description": "Creamy slaw, triple cooked chips & peas and green beans",
                   "category": "Sides",
                   "price": null,
                   "price_text": null,
