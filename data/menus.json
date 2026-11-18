@@ -7053,17 +7053,30 @@
       "source_url": "https://sway.cloud.microsoft/b7Zz74Q2g96EIhE9",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-11-14T12:30:00+00:00",
-      "content_hash": "d4c2c46959c4f01c",
+      "updated_at": "2026-11-18T14:32:59+00:00",
+      "content_hash": "5d917f527cc0430b",
       "days": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-19",
           "meals": [
             {
               "name": "Lunch",
               "items": [
                 {
-                  "name": "Miso Parsnip Soup PB-GF",
+                  "name": "Minestrone Soup",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "gluten-free",
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Beef & Lentil Lasagne, Green Salad, Garlic Bread & Balsamic Dressing",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -7072,7 +7085,50 @@
                   "allergens": []
                 },
                 {
-                  "name": "Cumberland Pork Sausage, Mashed Potato, Roasted Vegetables & Red Onion Gravy",
+                  "name": "Roasted Butternut & Sage Lasagne, Green Salad, Garlic Bread & Balsamic Dressing",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Crème Caramel",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "gluten-free"
+                  ],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            },
+            {
+              "name": "Dinner",
+              "items": [
+                {
+                  "name": "Minestrone Soup",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "gluten-free",
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Nduja & Fennel Polpette, Polenta, Garlic Greens & Salsa Verde",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -7081,7 +7137,59 @@
                   "allergens": []
                 },
                 {
-                  "name": "Carrot & Coriander Sausages, Mashed Potato, Roasted Vegetables & Red Onion Gravy PB-GF",
+                  "name": "Roasted Vegetable & Butterbean Polpette Polenta, Garlic Greens & Salsa Verde",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Crème Caramel",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "gluten-free"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Friday 20th November October 2026",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            },
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Roasted Cauliflower Soup",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "gluten-free",
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Battered Cod Fillets, Chips, Mushy Peas, Curry Sauce, Baked Beans & Tartare Sauce",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -7090,7 +7198,19 @@
                   "allergens": []
                 },
                 {
-                  "name": "Chocolate Brownies, Creme Chantilly",
+                  "name": "Battered Mushroom & Aubergine, Chips, Mushy Peas Curry Sauce & Baked Beans",
+                  "description": "GF Available",
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Steamed Sponge Pudding, Butterscotch Sauce",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -7106,7 +7226,20 @@
               "name": "Dinner",
               "items": [
                 {
-                  "name": "Miso Parsnip Soup PB-GF",
+                  "name": "Roasted Cauliflower Soup",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "gluten-free",
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": []
+                },
+                {
+                  "name": "Halal Fried Chicken, Biscuits & Gravy, Cole Slaw",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -7115,67 +7248,19 @@
                   "allergens": []
                 },
                 {
-                  "name": "Chicken Fried Rice, Prawn Crackers, Chili Sauce",
+                  "name": "Southern Fried Plant Based Chicken, Biscuits & Gravy, Cole Slaw",
                   "description": null,
                   "category": null,
                   "price": null,
                   "price_text": null,
-                  "dietary": [],
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
                   "allergens": []
                 },
                 {
-                  "name": "Sticky Tofu Fried Rice, Rice Crackers, Chili Sauce PB",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Chocolate Brownies, Creme Chantilly",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                }
-              ],
-              "service": null,
-              "note": null
-            }
-          ]
-        },
-        {
-          "date": "2026-11-17",
-          "meals": [
-            {
-              "name": "Dinner",
-              "items": [
-                {
-                  "name": "Wednesday 18th November October 2026",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                }
-              ],
-              "service": null,
-              "note": null
-            }
-          ]
-        },
-        {
-          "date": "2026-11-19",
-          "meals": [
-            {
-              "name": "Dinner",
-              "items": [
-                {
-                  "name": "Friday 20th November October 2026",
+                  "name": "Steamed Sponge Pudding, Butterscotch Sauce",
                   "description": null,
                   "category": null,
                   "price": null,
