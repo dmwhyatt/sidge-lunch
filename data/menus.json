@@ -4411,17 +4411,454 @@
       "source_url": "https://www.catering.admin.cam.ac.uk/cafes/west-hub-canteen",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-11-21T03:57:18+00:00",
-      "content_hash": "4f53cda18c2baa0c",
-      "days": []
+      "updated_at": "2026-11-23T09:00:57+00:00",
+      "content_hash": "d0eacdd7f620717e",
+      "days": [
+        {
+          "date": "2026-11-23",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Butterbeans with roasted cherry tomatoes, flatbread, yoghurt",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Spinach & ricotta pasta bake, garlic dough balls",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Chicken tagine traybake",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Sweet, sour & spicy pork",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        },
+        {
+          "date": "2026-11-24",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Sri Lankan style green bean curry",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "New potato, spinach & goats cheese frittata, rocket & tomato salsa",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Mustard fried chicken with crispy curry leavers & mustard mayonnaise",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Slow roasted pork belly with piperade",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        },
+        {
+          "date": "2026-11-25",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Pad Thai",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Egg Florentine with gruyere sauce",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Korean style barbeque chicken",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Moussaka",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        },
+        {
+          "date": "2026-11-26",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Green tikka & coconut vegetable curry served with fragrant rice",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Homemade spicy Mexican style bean burger served in a brioche bun, slaw & chipotle mayo",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Lemon pepper chicken",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Pulled pork taco",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        },
+        {
+          "date": "2026-11-27",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Kimchee & tofu fried rice",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Mushroom & squash lasagne",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Chicken, ham & leek pie",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Homemade battered catch of the day, tartare sauce and lemon wedge",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        }
+      ]
     },
     "greenwich-house-cafe": {
       "source_url": "https://www.catering.admin.cam.ac.uk/cafes/greenwich-house-cafe",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-11-21T03:57:18+00:00",
-      "content_hash": "4f53cda18c2baa0c",
-      "days": []
+      "updated_at": "2026-11-23T09:00:57+00:00",
+      "content_hash": "497247452e461453",
+      "days": [
+        {
+          "date": "2026-11-23",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Burrito",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "carnitas burrito",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Sides",
+                  "description": "Creamy coleslaw & salt and pepper wedges",
+                  "category": "Sides",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        },
+        {
+          "date": "2026-11-24",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Mushroom and ale pie",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Chicken & leek pie",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Sides",
+                  "description": "Sweetcorn salad & roast potatoes",
+                  "category": "Sides",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        },
+        {
+          "date": "2026-11-25",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Vegetable empanada",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Chicken empanada",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Sides",
+                  "description": "Mexican slaw & garlic & siracha diced potatoes",
+                  "category": "Sides",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        },
+        {
+          "date": "2026-11-26",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Vegetable lasagne",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Lasagne al forno",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Sides",
+                  "description": "Tomato, basil & red onion salad & Breaded mozzarella sticks",
+                  "category": "Sides",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        },
+        {
+          "date": "2026-11-27",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Leek & celeriac cheesy pasta bake",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Harissa meatball bake",
+                  "description": null,
+                  "category": null,
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                },
+                {
+                  "name": "Sides",
+                  "description": "Italian slaw & garlic dough balls",
+                  "category": "Sides",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": []
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        }
+      ]
     },
     "the-mill": {
       "source_url": "https://www.themillpubcambridge.com/food-and-drink",
