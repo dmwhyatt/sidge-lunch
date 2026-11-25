@@ -6656,223 +6656,14 @@
       "source_url": "https://sway.cloud.microsoft/b7Zz74Q2g96EIhE9",
       "status": "ok",
       "error": null,
-      "updated_at": "2026-11-20T14:21:23+00:00",
-      "content_hash": "44f2d6e15dd16896",
+      "updated_at": "2026-11-25T16:02:42+00:00",
+      "content_hash": "417d7eef101c0161",
       "days": [
         {
-          "date": "2026-11-23",
+          "date": "2026-11-26",
           "meals": [
             {
-              "name": "Lunch",
-              "items": [
-                {
-                  "name": "Sweet Potato, Carrot & Lemon Grass Soup PB-GF",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Beef & Lentil Cottage Pie, Garden Greens & Red Onion Gravy - MC Gluten",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Lentil & Butternut Cottage Pie, Garden Greens & Red Onion Gravy - MC Gluten, PB",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Caramelised Pear & Ginger Vegan Panna Cotta",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "gluten-free",
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                }
-              ],
-              "service": null,
-              "note": null
-            },
-            {
               "name": "Dinner",
-              "items": [
-                {
-                  "name": "Sweet Potato, Carrot & Lemon Grass Soup PB-GF",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Chicken & Prawn Burgers, Sweet Potato Wedges, Thai Street Slaw",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Pulled Mushroom & Black Bean Burgers, Sweet Potato Wedges, Thai Street Slaw",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Caramelised Pear & Ginger Vegan Panna Cotta",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "gluten-free",
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                }
-              ],
-              "service": null,
-              "note": null
-            }
-          ]
-        },
-        {
-          "date": "2026-11-24",
-          "meals": [
-            {
-              "name": "Lunch",
-              "items": [
-                {
-                  "name": "Curried Cauliflower, Cumin & Coconut Soup",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Chorizo Shakshuka, Hummus, Pitta Bread & Pickles",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Veggie Shakshuka, Hummus, Pitta Bread & Pickles",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Vanilla & Apricot Steamed Pudding & Custard",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                }
-              ],
-              "service": null,
-              "note": null
-            },
-            {
-              "name": "Dinner",
-              "items": [
-                {
-                  "name": "Curried Cauliflower, Cumin & Coconut Soup",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Chipotle Pork, Steamed Rice, Corn & Blackbean Salsa, Sour Cream & Pickled Red Onion & Jalapeno",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Chipotle Mung Beans, Steamed Rice, Corn & Blackbean Salsa, Sour Cream & Pickled Red Onion & Jalapeno",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Vanilla & Apricot Steamed Pudding & Custard",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Wednesday 25th November October 2026",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                }
-              ],
-              "service": null,
-              "note": null
-            },
-            {
-              "name": "Lunch",
               "items": [
                 {
                   "name": "White Bean, Parsley Soup, Garlic Croutons",
@@ -6888,7 +6679,7 @@
                   "allergens": []
                 },
                 {
-                  "name": "Honey Mustard Glazed Ham, Roast Potatoes, Yam & Mallow Pie, Green Bean Cassarole & Gravy",
+                  "name": "Sticky Tofu Pad Thai, Minted Cucumber & Carrot Slaw, Vegan Prawn Crackers",
                   "description": null,
                   "category": null,
                   "price": null,
@@ -6897,12 +6688,13 @@
                   "allergens": []
                 },
                 {
-                  "name": "Honey Mustard Glazed Celeriac, Roast Potatoes, Yam & Mallow Pie, Green Bean Cassarole, Onion Gravy",
+                  "name": "Sticky Tofu Pad Thai, Minted Cucumber & Carrot Slaw, Vegan Prawn Crackers",
                   "description": null,
                   "category": null,
                   "price": null,
                   "price_text": null,
                   "dietary": [
+                    "gluten-free",
                     "vegan",
                     "vegetarian"
                   ],
@@ -6910,114 +6702,6 @@
                 },
                 {
                   "name": "Apple Pie, Whipped Custard Cream",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                }
-              ],
-              "service": null,
-              "note": null
-            }
-          ]
-        },
-        {
-          "date": "2026-11-26",
-          "meals": [
-            {
-              "name": "Lunch",
-              "items": [
-                {
-                  "name": "French Onion Soup",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "gluten-free",
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Chicken Escalopes, Creamy Mushroom Sauce, Mashed Potato, Garlic Green Beans",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "gluten-free"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Baked Tofu, Creamy Mushroom, Mashed Potato, Garlic Green Beans",
-                  "description": "MC Gluten",
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Scones, Cream & Strawberry Jam",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                }
-              ],
-              "service": null,
-              "note": null
-            },
-            {
-              "name": "Dinner",
-              "items": [
-                {
-                  "name": "French Onion Soup",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "gluten-free",
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Sticky Tofu Pad Thai, Minted Cucumber & Carrot Slaw, Vegan Prawn Crackers",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [],
-                  "allergens": []
-                },
-                {
-                  "name": "Sticky Tofu Pad Thai, Minted Cucumber & Carrot Slaw, Vegan Prawn Crackers",
-                  "description": null,
-                  "category": null,
-                  "price": null,
-                  "price_text": null,
-                  "dietary": [
-                    "gluten-free",
-                    "vegan",
-                    "vegetarian"
-                  ],
-                  "allergens": []
-                },
-                {
-                  "name": "Scones, Cream & Strawberry Jam",
                   "description": null,
                   "category": null,
                   "price": null,
