@@ -4470,11 +4470,115 @@
     },
     "robinson": {
       "source_url": "https://www.robinson.cam.ac.uk/college-life/garden-restaurant-menu",
-      "status": "error",
-      "error": "ReadTimeout: HTTPSConnectionPool(host='www.robinson.cam.ac.uk', port=443): Read timed out. (read timeout=20)",
-      "updated_at": "2026-11-24T01:39:39+00:00",
-      "content_hash": "3a4941fa25b57b0d",
-      "days": []
+      "status": "ok",
+      "error": null,
+      "updated_at": "2026-11-25T07:00:54+00:00",
+      "content_hash": "44c615f09867feaa",
+      "days": [
+        {
+          "date": "2026-11-25",
+          "meals": [
+            {
+              "name": "Lunch",
+              "items": [
+                {
+                  "name": "Chick pea, sweet potato and mushroom casserole £3.41 / £4.46",
+                  "description": null,
+                  "category": "Main Courses",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegan",
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "celery"
+                  ]
+                },
+                {
+                  "name": "Homemade halal chicken Kiev with winter slaw and coronation mayonnaise £3.88 / £4.93",
+                  "description": null,
+                  "category": "Main Courses",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": [
+                    "celery",
+                    "eggs",
+                    "gluten",
+                    "milk",
+                    "mustard",
+                    "sulphites"
+                  ]
+                },
+                {
+                  "name": "Thai beef and basil massaman curry with coconut jasmine rice £3.78 / £4.83",
+                  "description": null,
+                  "category": "Main Courses",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": [
+                    "fish",
+                    "gluten",
+                    "sesame",
+                    "soya"
+                  ]
+                }
+              ],
+              "service": null,
+              "note": null
+            },
+            {
+              "name": "Dinner",
+              "items": [
+                {
+                  "name": "Cauliflower, aubergine and tomato tikka masala with naan bread and saffron basmati rice £3.41 / £4.46",
+                  "description": null,
+                  "category": "Main Courses",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [
+                    "vegetarian"
+                  ],
+                  "allergens": [
+                    "celery",
+                    "gluten",
+                    "milk"
+                  ]
+                },
+                {
+                  "name": "Spanish style chicken thighs with a chorizo and pepper bravas sauce £3.78 / £4.83",
+                  "description": null,
+                  "category": "Main Courses",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": [
+                    "celery",
+                    "milk"
+                  ]
+                },
+                {
+                  "name": "Beef burger in a floured bap with a jalapeno and tomato relish, baby gem and melted cheddar cheese £3.78 / £4.83",
+                  "description": null,
+                  "category": "Main Courses",
+                  "price": null,
+                  "price_text": null,
+                  "dietary": [],
+                  "allergens": [
+                    "gluten",
+                    "milk",
+                    "sulphites"
+                  ]
+                }
+              ],
+              "service": null,
+              "note": null
+            }
+          ]
+        }
+      ]
     },
     "churchill": {
       "source_url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/lunch-and-dinner-menu/",
